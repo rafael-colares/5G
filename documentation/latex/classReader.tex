@@ -1,0 +1,128 @@
+\hypertarget{classReader}{}\doxysection{Reader Class Reference}
+\label{classReader}\index{Reader@{Reader}}
+
+
+{\ttfamily \#include $<$reader.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classReader_ac0ee4a4506d11d53647c9a8e8bfc835d}{Reader}} (std\+::string filepath, std\+::string delm=\char`\"{};\char`\"{})
+\item 
+\mbox{\hyperlink{classReader_a9e5043e0d38b26bc564b9ef68fb87d06}{Reader}} ()=delete
+\item 
+const std\+::string \& \mbox{\hyperlink{classReader_a4040cbfee746cdaf8a37a777cc373375}{get\+Filename}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classReader_a6331c03d0d937b4fda55202f0f6a9896}{get\+Delimeter}} () const
+\item 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classReader_a151f6b23ac151dd341c36de7be975c9a}{get\+Data}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class implements a reader of .csv files. It is used for reading the input files. 
+
+Definition at line 14 of file reader.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classReader_ac0ee4a4506d11d53647c9a8e8bfc835d}\label{classReader_ac0ee4a4506d11d53647c9a8e8bfc835d}} 
+\index{Reader@{Reader}!Reader@{Reader}}
+\index{Reader@{Reader}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{Reader()}{Reader()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Reader\+::\+Reader (\begin{DoxyParamCaption}\item[{std\+::string}]{filepath,  }\item[{std\+::string}]{delm = {\ttfamily \char`\"{};\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor.
+\begin{DoxyParams}{Parameters}
+{\em filepath} & The path of the file to be read.\\
+\hline
+{\em delm} & The delimiter to be used. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 20 of file reader.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{20 : filename(filepath), delimeter(delm)\{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReader_a9e5043e0d38b26bc564b9ef68fb87d06}\label{classReader_a9e5043e0d38b26bc564b9ef68fb87d06}} 
+\index{Reader@{Reader}!Reader@{Reader}}
+\index{Reader@{Reader}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{Reader()}{Reader()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Reader\+::\+Reader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+A file must be provided. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classReader_a151f6b23ac151dd341c36de7be975c9a}\label{classReader_a151f6b23ac151dd341c36de7be975c9a}} 
+\index{Reader@{Reader}!getData@{getData}}
+\index{getData@{getData}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{getData()}{getData()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ Reader\+::get\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Function to fetch data from a C\+SV File. It goes through the .csv file, line by line, and returns the data in a vector of vector of strings. 
+
+Definition at line 4 of file reader.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5 \{}
+\DoxyCodeLine{6     std::ifstream file(filename.c\_str());}
+\DoxyCodeLine{7     std::vector<std::vector<std::string> > dataList;}
+\DoxyCodeLine{8     \textcolor{keywordflow}{if} (file.is\_open()) \{}
+\DoxyCodeLine{9         std::string line = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{10         \textcolor{comment}{// Iterate through each line and split the content using delimeter}}
+\DoxyCodeLine{11         \textcolor{keywordflow}{while} (getline(file, line))\{}
+\DoxyCodeLine{12             std::vector<std::string> splittedVector = split(line, \mbox{\hyperlink{classReader_a6331c03d0d937b4fda55202f0f6a9896}{getDelimeter}}());}
+\DoxyCodeLine{13             dataList.push\_back(splittedVector);}
+\DoxyCodeLine{14         \}}
+\DoxyCodeLine{15         file.close();}
+\DoxyCodeLine{16     \}}
+\DoxyCodeLine{17     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{18         std::cerr << \textcolor{stringliteral}{"ERROR: Unable to open file "} << filename << \textcolor{stringliteral}{"."} << std::endl;}
+\DoxyCodeLine{19         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{20     \}}
+\DoxyCodeLine{21     \textcolor{keywordflow}{return} dataList;}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReader_a6331c03d0d937b4fda55202f0f6a9896}\label{classReader_a6331c03d0d937b4fda55202f0f6a9896}} 
+\index{Reader@{Reader}!getDelimeter@{getDelimeter}}
+\index{getDelimeter@{getDelimeter}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{getDelimeter()}{getDelimeter()}}
+{\footnotesize\ttfamily const std\+::string\& Reader\+::get\+Delimeter (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the delimiter to be used. 
+
+Definition at line 29 of file reader.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{29 \{ \textcolor{keywordflow}{return} delimeter; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classReader_a4040cbfee746cdaf8a37a777cc373375}\label{classReader_a4040cbfee746cdaf8a37a777cc373375}} 
+\index{Reader@{Reader}!getFilename@{getFilename}}
+\index{getFilename@{getFilename}!Reader@{Reader}}
+\doxysubsubsection{\texorpdfstring{getFilename()}{getFilename()}}
+{\footnotesize\ttfamily const std\+::string\& Reader\+::get\+Filename (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the file to be read. 
+
+Definition at line 27 of file reader.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{27 \{ \textcolor{keywordflow}{return} filename; \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/tools/reader.\+hpp\item 
+src/tools/reader.\+cpp\end{DoxyCompactItemize}

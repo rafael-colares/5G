@@ -1,0 +1,1278 @@
+\hypertarget{classData}{}\doxysection{Data Class Reference}
+\label{classData}\index{Data@{Data}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classData_a879781d595ff7f5938370e878828ee3d}{Data}} (const std\+::string \&parameter\+\_\+file)
+\item 
+const \mbox{\hyperlink{classInput}{Input}} \& \mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{get\+Input}} () const
+\item 
+const Graph \& \mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{get\+Graph}} () const
+\item 
+const Node\+Map \& \mbox{\hyperlink{classData_a460cd3f7da3ffc54cc787a30705a1038}{get\+Node\+Ids}} () const
+\item 
+const Node\+Map \& \mbox{\hyperlink{classData_a2b78154fa374e916408a831c8fdb1969}{get\+Lemon\+Node\+Ids}} () const
+\item 
+const Arc\+Map \& \mbox{\hyperlink{classData_a60e50d529607f8ef2ab00e94775b9436}{get\+Arc\+Ids}} () const
+\item 
+const Arc\+Map \& \mbox{\hyperlink{classData_af0a1823ded861e5ab38088c558557fed}{get\+Lemon\+Arc\+Ids}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classNode}{Node}} $>$ \& \mbox{\hyperlink{classData_a3cd7850661cf526d258c1df61d2e052d}{get\+Nodes}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classLink}{Link}} $>$ \& \mbox{\hyperlink{classData_a9d715892a884980d968e1f33369fe8a7}{get\+Links}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classVNF}{V\+NF}} $>$ \& \mbox{\hyperlink{classData_a14b9256f6009bc724fd8336eb92ead94}{get\+Vnfs}} () const
+\item 
+const std\+::vector$<$ \mbox{\hyperlink{classDemand}{Demand}} $>$ \& \mbox{\hyperlink{classData_a7ef157a26a53a9d8e4ab76042eed95ad}{get\+Demands}} () const
+\item 
+const std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classData_a3fae1be6a2eaf0b09e7b28b611071c5e}{get\+Avail\+Node\+Rank}} () const
+\item 
+const \mbox{\hyperlink{classVNF}{V\+NF}} \& \mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{get\+Vnf}} (const int i) const
+\item 
+const \mbox{\hyperlink{classDemand}{Demand}} \& \mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{get\+Demand}} (const int i) const
+\item 
+const \mbox{\hyperlink{classLink}{Link}} \& \mbox{\hyperlink{classData_aa0f01d1e34c9304b3afcf37e1efea388}{get\+Link}} (const int i) const
+\item 
+const \mbox{\hyperlink{classNode}{Node}} \& \mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{get\+Node}} (const int i) const
+\item 
+const int \mbox{\hyperlink{classData_ae6f978775db75f4064cac55fd6227aff}{get\+Nb\+Nodes}} () const
+\item 
+const int \mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{get\+Nb\+Vnfs}} () const
+\item 
+const int \mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{get\+Nb\+Demands}} () const
+\item 
+const int \& \mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{get\+Node\+Id}} (const Graph\+::\+Node \&v) const
+\item 
+const int \& \mbox{\hyperlink{classData_a3a64aebc264bdf19b61a4b94729a0586}{get\+Lemon\+Node\+Id}} (const Graph\+::\+Node \&v) const
+\item 
+const int \& \mbox{\hyperlink{classData_abed4b39766ebda2e6dd5977e784d92a1}{get\+Arc\+Id}} (const Arc \&a) const
+\item 
+const int \& \mbox{\hyperlink{classData_acbf336e9fde80abc9d0a02552e9c91bf}{get\+Lemon\+Arc\+Id}} (const Arc \&a) const
+\item 
+int \mbox{\hyperlink{classData_aa6892e5ad99bc9d6de622bedd013c309}{get\+Id\+From\+Node\+Name}} (const std\+::string name) const
+\item 
+int \mbox{\hyperlink{classData_a3f0e42bdbca08f46d6ae45c22724a98b}{get\+Id\+From\+Vnf\+Name}} (const std\+::string name) const
+\item 
+const double \mbox{\hyperlink{classData_a27d50d0df049a27552ac2ae8bfe97c2f}{get\+Failure\+Prob}} (const std\+::vector$<$ int $>$ \&nodes) const
+\item 
+const double \mbox{\hyperlink{classData_aab804b40bee75fb495b09c08635a2082}{get\+Chain\+Availability}} (const std\+::vector$<$ double $>$ \&section\+Avail) const
+\item 
+const double \mbox{\hyperlink{classData_a9f82015ae9c398224442ff6132594a83}{get\+Placement\+Cost}} (const \mbox{\hyperlink{classNode}{Node}} \&node, const \mbox{\hyperlink{classVNF}{V\+NF}} \&vnf) const
+\item 
+const int \mbox{\hyperlink{classData_ace7f7f769be8e7e335a1dd46178cd67f}{get\+Min\+Nb\+Nodes}} (double av, double B=1.\+0) const
+\item 
+const int \mbox{\hyperlink{classData_a081d1e03b4a51da4bfc2e1b423d62e3e}{get\+Node\+Rank\+Position}} (int id) const
+\item 
+const double \mbox{\hyperlink{classData_a8116dc8ebcf1637140b168e6a5d2e431}{get\+Parallel\+Availability}} (const std\+::vector$<$ int $>$ \&nodes) const
+\item 
+const std\+::vector$<$ int $>$ \mbox{\hyperlink{classData_a9eca22f61840ebe7ff5b06e1c8c4595c}{get\+N\+Most\+Available\+Nodes}} (int n) const
+\item 
+const std\+::vector$<$ int $>$ \mbox{\hyperlink{classData_a6709f979511eb6b63f9ec170b3906954}{get\+N\+Least\+Available\+Nodes}} (int n) const
+\item 
+const std\+::vector$<$ int $>$ \mbox{\hyperlink{classData_af0e371297d9d193dd3ae2419782c53eb}{get\+N\+Most\+Available\+Nodes}} (int n, const std\+::vector$<$ bool $>$ \&N\+O\+D\+ES) const
+\item 
+const int \mbox{\hyperlink{classData_a7d16b75cc741920b091f39ef55eb2099}{get\+Vnf\+LB}} (double B, int nb\+Sections) const
+\item 
+const int \mbox{\hyperlink{classData_a5e45608eaa855c26314ba73eba9cbda2}{get\+Vnf\+LB}} (const std\+::vector$<$ bool $>$ \&N\+O\+D\+ES, const int N\+B\+\_\+\+S\+E\+C\+T\+I\+O\+NS, const double A\+V\+A\+I\+L\+\_\+\+R\+E\+Q\+U\+I\+R\+ED) const
+\item 
+void \mbox{\hyperlink{classData_a06625a2bd922feaa711ce163d25b45f4}{set\+Node\+Id}} (const Graph\+::\+Node \&v, const int \&id)
+\item 
+void \mbox{\hyperlink{classData_a72ec7a841001ceda18bf89d19cf02263}{set\+Lemon\+Node\+Id}} (const Graph\+::\+Node \&v, const int \&id)
+\item 
+void \mbox{\hyperlink{classData_ae5a0b60cbcd285d0f3ddf24ef82f8d80}{set\+Arc\+Id}} (const Graph\+::\+Arc \&a, const int \&id)
+\item 
+void \mbox{\hyperlink{classData_a7b5cf551559392f7027776049ad6fff9}{set\+Lemon\+Arc\+Id}} (const Graph\+::\+Arc \&a, const int \&id)
+\item 
+void \mbox{\hyperlink{classData_a2ab5b9cc14420331bf39c453fe6491ed}{read\+Node\+File}} (const std\+::string filename)
+\item 
+void \mbox{\hyperlink{classData_ac102aa76f44ede47c5ffcb1fa916ecf7}{read\+Link\+File}} (const std\+::string filename)
+\item 
+void \mbox{\hyperlink{classData_a210d4d7e71b75bafeb986a566556bf49}{read\+Vnf\+File}} (const std\+::string filename)
+\item 
+void \mbox{\hyperlink{classData_aad910e9343f3f4d7f29629577d3bd36e}{read\+Demand\+File}} (const std\+::string filename)
+\item 
+void \mbox{\hyperlink{classData_ac3f03598e9d66c457cee4eb5868552ac}{build\+Graph}} ()
+\item 
+void \mbox{\hyperlink{classData_a198ee31c24281f3e9d98d8db16bcdcf4}{build\+Node\+Rank}} ()
+\item 
+void \mbox{\hyperlink{classData_a779ce878d01483220b49ad9e513d7366}{print}} ()
+\item 
+void \mbox{\hyperlink{classData_ad82a6d61f44fe34ebf59bc40b92c7446}{print\+Nodes}} ()
+\item 
+void \mbox{\hyperlink{classData_a94d54f4876fb22742fa50c0c1e05ddf6}{print\+Links}} ()
+\item 
+void \mbox{\hyperlink{classData_a74632982738f258ee4b90b780ff15b40}{print\+Demands}} ()
+\item 
+void \mbox{\hyperlink{classData_a64e8085c352be1c66c9605046a12bc10}{print\+Vnfs}} ()
+\item 
+void \mbox{\hyperlink{classData_aa005c87cdd6f8bad2a4e871884956298}{print\+Node\+Rank}} ()
+\item 
+\mbox{\hyperlink{classData_aab31956423290f0d62dcca47ab4d16dd}{$\sim$\+Data}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 50 of file data.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classData_a879781d595ff7f5938370e878828ee3d}\label{classData_a879781d595ff7f5938370e878828ee3d}} 
+\index{Data@{Data}!Data@{Data}}
+\index{Data@{Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{Data()}{Data()}}
+{\footnotesize\ttfamily Data\+::\+Data (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{parameter\+\_\+file }\end{DoxyParamCaption})}
+
+Constructor initializes the object with the information of an \mbox{\hyperlink{classInput}{Input}}.
+\begin{DoxyParams}{Parameters}
+{\em parameter\+\_\+file} & The parameters file.\\
+\hline
+\end{DoxyParams}
+Constructor. 
+
+Definition at line 8 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                           : params(parameter\_file)}
+\DoxyCodeLine{9 \{}
+\DoxyCodeLine{10     std::cout << std::endl;}
+\DoxyCodeLine{11     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{12     std::cout << \textcolor{stringliteral}{"-\/                Building input data structures.                -\/"} << std::endl;}
+\DoxyCodeLine{13     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{14     \mbox{\hyperlink{classData_a2ab5b9cc14420331bf39c453fe6491ed}{readNodeFile}}(params.\mbox{\hyperlink{classInput_a7fe5f18ee6290bf98fc39037db14d146}{getNodeFile}}());}
+\DoxyCodeLine{15     \mbox{\hyperlink{classData_ac102aa76f44ede47c5ffcb1fa916ecf7}{readLinkFile}}(params.\mbox{\hyperlink{classInput_af2cd12794698f15c9fc72d57674df3d1}{getLinkFile}}());}
+\DoxyCodeLine{16     \mbox{\hyperlink{classData_a210d4d7e71b75bafeb986a566556bf49}{readVnfFile}}(params.\mbox{\hyperlink{classInput_aa45295b5132cc03bccbcc38304bd1105}{getVnfFile}}());}
+\DoxyCodeLine{17     \mbox{\hyperlink{classData_aad910e9343f3f4d7f29629577d3bd36e}{readDemandFile}}(params.\mbox{\hyperlink{classInput_a2c57b8a2e75eb7e0e034972f464c1ab1}{getDemandFile}}());}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     \mbox{\hyperlink{classData_ac3f03598e9d66c457cee4eb5868552ac}{buildGraph}}();}
+\DoxyCodeLine{20     \mbox{\hyperlink{classData_a198ee31c24281f3e9d98d8db16bcdcf4}{buildNodeRank}}();}
+\DoxyCodeLine{21     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Data was correctly constructed !"} << std::endl;}
+\DoxyCodeLine{22     }
+\DoxyCodeLine{23 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_aab31956423290f0d62dcca47ab4d16dd}\label{classData_aab31956423290f0d62dcca47ab4d16dd}} 
+\index{Data@{Data}!````~Data@{$\sim$Data}}
+\index{````~Data@{$\sim$Data}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{$\sim$Data()}{~Data()}}
+{\footnotesize\ttfamily Data\+::$\sim$\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. Clears the vectors of demands and links.
+
+Desstructor. 
+
+Definition at line 465 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{466 \{}
+\DoxyCodeLine{467     this-\/>tabLinks.clear();}
+\DoxyCodeLine{468     this-\/>tabNodes.clear();}
+\DoxyCodeLine{469     this-\/>hashNode.clear();}
+\DoxyCodeLine{470     this-\/>tabDemands.clear();}
+\DoxyCodeLine{471     this-\/>tabVnfs.clear();}
+\DoxyCodeLine{472     \textcolor{keyword}{delete} nodeId;}
+\DoxyCodeLine{473     \textcolor{keyword}{delete} lemonNodeId;}
+\DoxyCodeLine{474     \textcolor{keyword}{delete} arcId;}
+\DoxyCodeLine{475     \textcolor{keyword}{delete} lemonArcId;}
+\DoxyCodeLine{476     \textcolor{keyword}{delete} graph;}
+\DoxyCodeLine{477 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classData_ac3f03598e9d66c457cee4eb5868552ac}\label{classData_ac3f03598e9d66c457cee4eb5868552ac}} 
+\index{Data@{Data}!buildGraph@{buildGraph}}
+\index{buildGraph@{buildGraph}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{buildGraph()}{buildGraph()}}
+{\footnotesize\ttfamily void Data\+::build\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Builds the network graph from data stored in tab\+Nodes and tab\+Links. 
+
+Definition at line 218 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{219 \{}
+\DoxyCodeLine{220     }
+\DoxyCodeLine{221     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Creating graph..."} << std::endl;}
+\DoxyCodeLine{222     \textcolor{comment}{/* Dymanic allocation of graph */}}
+\DoxyCodeLine{223     graph = \textcolor{keyword}{new} Graph();}
+\DoxyCodeLine{224     nodeId = \textcolor{keyword}{new} NodeMap(*graph);}
+\DoxyCodeLine{225     lemonNodeId = \textcolor{keyword}{new} NodeMap(*graph);}
+\DoxyCodeLine{226     arcId = \textcolor{keyword}{new} ArcMap(*graph);}
+\DoxyCodeLine{227     lemonArcId = \textcolor{keyword}{new} ArcMap(*graph);}
+\DoxyCodeLine{228     }
+\DoxyCodeLine{229     \textcolor{comment}{/* Define nodes */}}
+\DoxyCodeLine{230     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < tabNodes.size(); i++)\{}
+\DoxyCodeLine{231         Graph::Node n = graph-\/>addNode();}
+\DoxyCodeLine{232         \mbox{\hyperlink{classData_a06625a2bd922feaa711ce163d25b45f4}{setNodeId}}(n, tabNodes[i].getId());}
+\DoxyCodeLine{233         \mbox{\hyperlink{classData_a72ec7a841001ceda18bf89d19cf02263}{setLemonNodeId}}(n, graph-\/>id(n));}
+\DoxyCodeLine{234     \}}
+\DoxyCodeLine{235 }
+\DoxyCodeLine{236     \textcolor{comment}{/* Define arcs */}}
+\DoxyCodeLine{237     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < tabLinks.size(); i++)\{}
+\DoxyCodeLine{238         \textcolor{keywordtype}{int} source = tabLinks[i].getSource();}
+\DoxyCodeLine{239         \textcolor{keywordtype}{int} target = tabLinks[i].getTarget();}
+\DoxyCodeLine{240         Graph::Node sourceNode = lemon::INVALID;}
+\DoxyCodeLine{241         Graph::Node targetNode = lemon::INVALID;}
+\DoxyCodeLine{242         \textcolor{keywordflow}{for} (NodeIt v(\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); v != lemon::INVALID; ++v)\{}
+\DoxyCodeLine{243             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(v) == source)\{}
+\DoxyCodeLine{244                 sourceNode = v;}
+\DoxyCodeLine{245             \}}
+\DoxyCodeLine{246             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(v) == target)\{}
+\DoxyCodeLine{247                 targetNode = v;}
+\DoxyCodeLine{248             \}}
+\DoxyCodeLine{249         \}}
+\DoxyCodeLine{250         \textcolor{keywordflow}{if} (targetNode != lemon::INVALID \&\& sourceNode != lemon::INVALID)\{}
+\DoxyCodeLine{251             Arc a = graph-\/>addArc(sourceNode, targetNode);}
+\DoxyCodeLine{252             \mbox{\hyperlink{classData_a7b5cf551559392f7027776049ad6fff9}{setLemonArcId}}(a, graph-\/>id(a));}
+\DoxyCodeLine{253             \mbox{\hyperlink{classData_ae5a0b60cbcd285d0f3ddf24ef82f8d80}{setArcId}}(a, tabLinks[i].getId());}
+\DoxyCodeLine{254         \}}
+\DoxyCodeLine{255     \}}
+\DoxyCodeLine{256 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a198ee31c24281f3e9d98d8db16bcdcf4}\label{classData_a198ee31c24281f3e9d98d8db16bcdcf4}} 
+\index{Data@{Data}!buildNodeRank@{buildNodeRank}}
+\index{buildNodeRank@{buildNodeRank}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{buildNodeRank()}{buildNodeRank()}}
+{\footnotesize\ttfamily void Data\+::build\+Node\+Rank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Builds the availability ranking of nodes. \begin{DoxyNote}{Note}
+Highest availabilities first. 
+\end{DoxyNote}
+
+
+Definition at line 191 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{192 \{}
+\DoxyCodeLine{193     availNodeRank.resize(tabNodes.size());}
+\DoxyCodeLine{194     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < availNodeRank.size(); i++)\{}
+\DoxyCodeLine{195         availNodeRank[i] = i;}
+\DoxyCodeLine{196     \}}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198     \textcolor{comment}{// One by one move boundary of unsorted subarray  }}
+\DoxyCodeLine{199     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < (int)availNodeRank.size()-\/1; i++)  \{  }
+\DoxyCodeLine{200         }
+\DoxyCodeLine{201         \textcolor{comment}{// Find the minimum element in unsorted array  }}
+\DoxyCodeLine{202         \textcolor{keywordtype}{int} min = i;  }
+\DoxyCodeLine{203         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = i+1; j < (int)availNodeRank.size(); j++)\{}
+\DoxyCodeLine{204             \textcolor{keywordflow}{if} (isMoreAvailable(\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(availNodeRank[j]), \mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(availNodeRank[min])))\{}
+\DoxyCodeLine{205                 min = j;}
+\DoxyCodeLine{206             \}  }
+\DoxyCodeLine{207         \}}
+\DoxyCodeLine{208 }
+\DoxyCodeLine{209         \textcolor{comment}{// Swap the found minimum element with the first element  }}
+\DoxyCodeLine{210         \textcolor{keywordtype}{int} temp = availNodeRank[min];  }
+\DoxyCodeLine{211         availNodeRank[min] = availNodeRank[i];  }
+\DoxyCodeLine{212         availNodeRank[i] = temp;  }
+\DoxyCodeLine{213     \}  }
+\DoxyCodeLine{214     \textcolor{comment}{//printNodeRank();}}
+\DoxyCodeLine{215 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_abed4b39766ebda2e6dd5977e784d92a1}\label{classData_abed4b39766ebda2e6dd5977e784d92a1}} 
+\index{Data@{Data}!getArcId@{getArcId}}
+\index{getArcId@{getArcId}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getArcId()}{getArcId()}}
+{\footnotesize\ttfamily const int\& Data\+::get\+Arc\+Id (\begin{DoxyParamCaption}\item[{const Arc \&}]{a }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the id of a given arc. 
+
+Definition at line 110 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a60e50d529607f8ef2ab00e94775b9436}\label{classData_a60e50d529607f8ef2ab00e94775b9436}} 
+\index{Data@{Data}!getArcIds@{getArcIds}}
+\index{getArcIds@{getArcIds}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getArcIds()}{getArcIds()}}
+{\footnotesize\ttfamily const Arc\+Map\& Data\+::get\+Arc\+Ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the map storing the arcs\textquotesingle{} ids. 
+
+Definition at line 92 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a3fae1be6a2eaf0b09e7b28b611071c5e}\label{classData_a3fae1be6a2eaf0b09e7b28b611071c5e}} 
+\index{Data@{Data}!getAvailNodeRank@{getAvailNodeRank}}
+\index{getAvailNodeRank@{getAvailNodeRank}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getAvailNodeRank()}{getAvailNodeRank()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$\& Data\+::get\+Avail\+Node\+Rank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the ranking of most available nodes identified by their id. 
+
+Definition at line 98 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_aab804b40bee75fb495b09c08635a2082}\label{classData_aab804b40bee75fb495b09c08635a2082}} 
+\index{Data@{Data}!getChainAvailability@{getChainAvailability}}
+\index{getChainAvailability@{getChainAvailability}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getChainAvailability()}{getChainAvailability()}}
+{\footnotesize\ttfamily const double Data\+::get\+Chain\+Availability (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ double $>$ \&}]{section\+Avail }\end{DoxyParamCaption}) const}
+
+Returns the chain availability based on the availability of each section. \begin{DoxyNote}{Note}
+The chain availability is the product of the availability of its sections.
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em section\+Avail} & The sections availability. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 68 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{}
+\DoxyCodeLine{70     \textcolor{keywordtype}{double} prob = 1.0;}
+\DoxyCodeLine{71     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < sectionAvail.size(); i++)\{}
+\DoxyCodeLine{72         prob *= sectionAvail[i];}
+\DoxyCodeLine{73     \}}
+\DoxyCodeLine{74     \textcolor{keywordflow}{return} prob;}
+\DoxyCodeLine{75 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a5f644b81a19a2b64b3714080b73ee5b7}\label{classData_a5f644b81a19a2b64b3714080b73ee5b7}} 
+\index{Data@{Data}!getDemand@{getDemand}}
+\index{getDemand@{getDemand}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getDemand()}{getDemand()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classDemand}{Demand}}\& Data\+::get\+Demand (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the i-\/th demand. 
+
+Definition at line 101 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a7ef157a26a53a9d8e4ab76042eed95ad}\label{classData_a7ef157a26a53a9d8e4ab76042eed95ad}} 
+\index{Data@{Data}!getDemands@{getDemands}}
+\index{getDemands@{getDemands}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getDemands()}{getDemands()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{classDemand}{Demand}}$>$\& Data\+::get\+Demands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the vector of sfc demands. 
+
+Definition at line 97 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a27d50d0df049a27552ac2ae8bfe97c2f}\label{classData_a27d50d0df049a27552ac2ae8bfe97c2f}} 
+\index{Data@{Data}!getFailureProb@{getFailureProb}}
+\index{getFailureProb@{getFailureProb}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getFailureProb()}{getFailureProb()}}
+{\footnotesize\ttfamily const double Data\+::get\+Failure\+Prob (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{nodes }\end{DoxyParamCaption}) const}
+
+Returns the probability that a set of nodes fail simoustaneously.
+\begin{DoxyParams}{Parameters}
+{\em nodes} & The set of nodes to fail. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 58 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59 \{}
+\DoxyCodeLine{60     \textcolor{keywordtype}{double} prob\_fail = 1.0;}
+\DoxyCodeLine{61     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} j = 0; j < nodes.size(); j++)\{                    }
+\DoxyCodeLine{62         \textcolor{keywordtype}{int} v = nodes[j];}
+\DoxyCodeLine{63         prob\_fail *= (1.0 -\/ \mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}());}
+\DoxyCodeLine{64     \}}
+\DoxyCodeLine{65     \textcolor{keywordflow}{return} prob\_fail;}
+\DoxyCodeLine{66 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a05f695236682b1ea08cada30785dcef5}\label{classData_a05f695236682b1ea08cada30785dcef5}} 
+\index{Data@{Data}!getGraph@{getGraph}}
+\index{getGraph@{getGraph}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getGraph()}{getGraph()}}
+{\footnotesize\ttfamily const Graph\& Data\+::get\+Graph (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the data\textquotesingle{}s Graph. 
+
+Definition at line 89 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_aa6892e5ad99bc9d6de622bedd013c309}\label{classData_aa6892e5ad99bc9d6de622bedd013c309}} 
+\index{Data@{Data}!getIdFromNodeName@{getIdFromNodeName}}
+\index{getIdFromNodeName@{getIdFromNodeName}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getIdFromNodeName()}{getIdFromNodeName()}}
+{\footnotesize\ttfamily int Data\+::get\+Id\+From\+Node\+Name (\begin{DoxyParamCaption}\item[{const std\+::string}]{name }\end{DoxyParamCaption}) const}
+
+Returns the id from the node with the given name.
+\begin{DoxyParams}{Parameters}
+{\em name} & The node name. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 29 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30 \{}
+\DoxyCodeLine{31     \textcolor{keyword}{auto} search = hashNode.find(name);}
+\DoxyCodeLine{32     \textcolor{keywordflow}{if} (search != hashNode.end()) \{}
+\DoxyCodeLine{33         \textcolor{keywordflow}{return} search-\/>second;}
+\DoxyCodeLine{34     \} }
+\DoxyCodeLine{35     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{36         std::cerr << \textcolor{stringliteral}{"ERROR: Could not find a node with name '"}<< name << \textcolor{stringliteral}{"'... Abort."} << std::endl;}
+\DoxyCodeLine{37         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{38     \}}
+\DoxyCodeLine{39     \textcolor{keywordtype}{int} invalid = -\/1;}
+\DoxyCodeLine{40     \textcolor{keywordflow}{return} invalid;}
+\DoxyCodeLine{41 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a3f0e42bdbca08f46d6ae45c22724a98b}\label{classData_a3f0e42bdbca08f46d6ae45c22724a98b}} 
+\index{Data@{Data}!getIdFromVnfName@{getIdFromVnfName}}
+\index{getIdFromVnfName@{getIdFromVnfName}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getIdFromVnfName()}{getIdFromVnfName()}}
+{\footnotesize\ttfamily int Data\+::get\+Id\+From\+Vnf\+Name (\begin{DoxyParamCaption}\item[{const std\+::string}]{name }\end{DoxyParamCaption}) const}
+
+Returns the id from the vnf with the given name.
+\begin{DoxyParams}{Parameters}
+{\em name} & The vnf name. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 43 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{}
+\DoxyCodeLine{45     \textcolor{keywordflow}{for}( \textcolor{keyword}{const} \textcolor{keyword}{auto}\& it : hashVnf ) \{}
+\DoxyCodeLine{46         \textcolor{keywordflow}{if} (it.first == name)\{}
+\DoxyCodeLine{47             \textcolor{keywordflow}{return} it.second;}
+\DoxyCodeLine{48         \}}
+\DoxyCodeLine{49     \}}
+\DoxyCodeLine{50     }
+\DoxyCodeLine{51     std::cerr << \textcolor{stringliteral}{"ERROR: Could not find a vnf with name '"}<< name << \textcolor{stringliteral}{"'... Abort."} << std::endl;}
+\DoxyCodeLine{52     exit(EXIT\_FAILURE);}
+\DoxyCodeLine{53     }
+\DoxyCodeLine{54     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{55 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_aefa6d5c46bf11f61fecc53774b5c7509}\label{classData_aefa6d5c46bf11f61fecc53774b5c7509}} 
+\index{Data@{Data}!getInput@{getInput}}
+\index{getInput@{getInput}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getInput()}{getInput()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput}{Input}}\& Data\+::get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the data\textquotesingle{}s \mbox{\hyperlink{classInput}{Input}}. 
+
+Definition at line 88 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_acbf336e9fde80abc9d0a02552e9c91bf}\label{classData_acbf336e9fde80abc9d0a02552e9c91bf}} 
+\index{Data@{Data}!getLemonArcId@{getLemonArcId}}
+\index{getLemonArcId@{getLemonArcId}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getLemonArcId()}{getLemonArcId()}}
+{\footnotesize\ttfamily const int\& Data\+::get\+Lemon\+Arc\+Id (\begin{DoxyParamCaption}\item[{const Arc \&}]{a }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the lemon id of a given arc. 
+
+Definition at line 111 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_af0a1823ded861e5ab38088c558557fed}\label{classData_af0a1823ded861e5ab38088c558557fed}} 
+\index{Data@{Data}!getLemonArcIds@{getLemonArcIds}}
+\index{getLemonArcIds@{getLemonArcIds}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getLemonArcIds()}{getLemonArcIds()}}
+{\footnotesize\ttfamily const Arc\+Map\& Data\+::get\+Lemon\+Arc\+Ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the map storing the arcs\textquotesingle{} lemon ids. 
+
+Definition at line 93 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a3a64aebc264bdf19b61a4b94729a0586}\label{classData_a3a64aebc264bdf19b61a4b94729a0586}} 
+\index{Data@{Data}!getLemonNodeId@{getLemonNodeId}}
+\index{getLemonNodeId@{getLemonNodeId}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getLemonNodeId()}{getLemonNodeId()}}
+{\footnotesize\ttfamily const int\& Data\+::get\+Lemon\+Node\+Id (\begin{DoxyParamCaption}\item[{const Graph\+::\+Node \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the lemon id of a given node. 
+
+Definition at line 109 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a2b78154fa374e916408a831c8fdb1969}\label{classData_a2b78154fa374e916408a831c8fdb1969}} 
+\index{Data@{Data}!getLemonNodeIds@{getLemonNodeIds}}
+\index{getLemonNodeIds@{getLemonNodeIds}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getLemonNodeIds()}{getLemonNodeIds()}}
+{\footnotesize\ttfamily const Node\+Map\& Data\+::get\+Lemon\+Node\+Ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the map storing the nodes\textquotesingle{} lemon ids. 
+
+Definition at line 91 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_aa0f01d1e34c9304b3afcf37e1efea388}\label{classData_aa0f01d1e34c9304b3afcf37e1efea388}} 
+\index{Data@{Data}!getLink@{getLink}}
+\index{getLink@{getLink}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getLink()}{getLink()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classLink}{Link}}\& Data\+::get\+Link (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the i-\/th arc. 
+
+Definition at line 102 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a9d715892a884980d968e1f33369fe8a7}\label{classData_a9d715892a884980d968e1f33369fe8a7}} 
+\index{Data@{Data}!getLinks@{getLinks}}
+\index{getLinks@{getLinks}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getLinks()}{getLinks()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{classLink}{Link}}$>$\& Data\+::get\+Links (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the vector of arcs. 
+
+Definition at line 95 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_ace7f7f769be8e7e335a1dd46178cd67f}\label{classData_ace7f7f769be8e7e335a1dd46178cd67f}} 
+\index{Data@{Data}!getMinNbNodes@{getMinNbNodes}}
+\index{getMinNbNodes@{getMinNbNodes}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getMinNbNodes()}{getMinNbNodes()}}
+{\footnotesize\ttfamily const int Data\+::get\+Min\+Nb\+Nodes (\begin{DoxyParamCaption}\item[{double}]{av,  }\item[{double}]{B = {\ttfamily 1.0} }\end{DoxyParamCaption}) const}
+
+Returns the minimum number of nodes with availability at most B required (in parallel) to ensure a given availability level.
+\begin{DoxyParams}{Parameters}
+{\em av} & The availability requested.\\
+\hline
+{\em B} & Nodes with availability higher than B are not considered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Returns -\/1 if the availability requested cannot be satisfied. 
+\end{DoxyNote}
+
+
+Definition at line 268 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{269 \{}
+\DoxyCodeLine{270     \textcolor{keywordtype}{double} fail\_prob = 1.0;}
+\DoxyCodeLine{271     \textcolor{keywordtype}{double} av\_prob = 1.0 -\/ fail\_prob;}
+\DoxyCodeLine{272     \textcolor{keywordtype}{int} nb = 0;}
+\DoxyCodeLine{273     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{274     \textcolor{comment}{//std::cout << "Required availability: " << av << std::endl;}}
+\DoxyCodeLine{275     \textcolor{keywordflow}{while}(av\_prob < av \&\& i < (\textcolor{keywordtype}{int})availNodeRank.size())\{}
+\DoxyCodeLine{276         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(availNodeRank[i]).getAvailability() <= B)\{}
+\DoxyCodeLine{277             fail\_prob *= (1 -\/ \mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(availNodeRank[i]).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}());}
+\DoxyCodeLine{278             nb++;}
+\DoxyCodeLine{279             av\_prob = 1.0 -\/ fail\_prob;}
+\DoxyCodeLine{280             \textcolor{comment}{//std::cout << "Add node " << getNode(availNodeRank[i]).getId() << " with availability " << getNode(availNodeRank[i]).getAvailability() << std::endl;}}
+\DoxyCodeLine{281         \}}
+\DoxyCodeLine{282         i++;}
+\DoxyCodeLine{283     \}}
+\DoxyCodeLine{284     \textcolor{comment}{//std::cout << "STOP including nodes. nb = " << nb << std::endl;}}
+\DoxyCodeLine{285     \textcolor{keywordflow}{if} (av\_prob >= av)\{}
+\DoxyCodeLine{286         \textcolor{keywordflow}{return} nb;}
+\DoxyCodeLine{287     \}}
+\DoxyCodeLine{288     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{289         \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{290     \}}
+\DoxyCodeLine{291 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_abf876f3db0583955968023e9163ac1d5}\label{classData_abf876f3db0583955968023e9163ac1d5}} 
+\index{Data@{Data}!getNbDemands@{getNbDemands}}
+\index{getNbDemands@{getNbDemands}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNbDemands()}{getNbDemands()}}
+{\footnotesize\ttfamily const int Data\+::get\+Nb\+Demands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of sfc demands. 
+
+Definition at line 107 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_ae6f978775db75f4064cac55fd6227aff}\label{classData_ae6f978775db75f4064cac55fd6227aff}} 
+\index{Data@{Data}!getNbNodes@{getNbNodes}}
+\index{getNbNodes@{getNbNodes}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNbNodes()}{getNbNodes()}}
+{\footnotesize\ttfamily const int Data\+::get\+Nb\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of nodes. 
+
+Definition at line 105 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a8398677b7fc6b484a1871ec3761a42f0}\label{classData_a8398677b7fc6b484a1871ec3761a42f0}} 
+\index{Data@{Data}!getNbVnfs@{getNbVnfs}}
+\index{getNbVnfs@{getNbVnfs}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNbVnfs()}{getNbVnfs()}}
+{\footnotesize\ttfamily const int Data\+::get\+Nb\+Vnfs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of vnfs. 
+
+Definition at line 106 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a6709f979511eb6b63f9ec170b3906954}\label{classData_a6709f979511eb6b63f9ec170b3906954}} 
+\index{Data@{Data}!getNLeastAvailableNodes@{getNLeastAvailableNodes}}
+\index{getNLeastAvailableNodes@{getNLeastAvailableNodes}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNLeastAvailableNodes()}{getNLeastAvailableNodes()}}
+{\footnotesize\ttfamily const std\+::vector$<$ int $>$ Data\+::get\+N\+Least\+Available\+Nodes (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption}) const}
+
+Returns a vector containing the ids of the n least available nodes.
+\begin{DoxyParams}{Parameters}
+{\em n} & The number of nodes to be returned. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 337 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{337                                                              \{}
+\DoxyCodeLine{338     n = std::min(n, (\textcolor{keywordtype}{int})availNodeRank.size());}
+\DoxyCodeLine{339     std::vector<int> nodes;}
+\DoxyCodeLine{340     nodes.resize(n);}
+\DoxyCodeLine{341     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < n; i++)\{}
+\DoxyCodeLine{342         \textcolor{keywordtype}{int} index = (int)availNodeRank.size() -\/ 1 -\/ i;}
+\DoxyCodeLine{343         nodes[i] = availNodeRank[index];}
+\DoxyCodeLine{344     \}}
+\DoxyCodeLine{345     \textcolor{keywordflow}{return} nodes;}
+\DoxyCodeLine{346 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a9eca22f61840ebe7ff5b06e1c8c4595c}\label{classData_a9eca22f61840ebe7ff5b06e1c8c4595c}} 
+\index{Data@{Data}!getNMostAvailableNodes@{getNMostAvailableNodes}}
+\index{getNMostAvailableNodes@{getNMostAvailableNodes}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNMostAvailableNodes()}{getNMostAvailableNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ int $>$ Data\+::get\+N\+Most\+Available\+Nodes (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption}) const}
+
+Returns a vector containing the ids of the n most available nodes.
+\begin{DoxyParams}{Parameters}
+{\em n} & The number of nodes to be returned. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 308 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{309 \{}
+\DoxyCodeLine{310     n = std::min(n, (\textcolor{keywordtype}{int})availNodeRank.size());}
+\DoxyCodeLine{311     std::vector<int> nodes;}
+\DoxyCodeLine{312     nodes.resize(n);}
+\DoxyCodeLine{313     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < n; i++)\{}
+\DoxyCodeLine{314         nodes[i] = availNodeRank[i];}
+\DoxyCodeLine{315     \}}
+\DoxyCodeLine{316     \textcolor{keywordflow}{return} nodes;}
+\DoxyCodeLine{317 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_af0e371297d9d193dd3ae2419782c53eb}\label{classData_af0e371297d9d193dd3ae2419782c53eb}} 
+\index{Data@{Data}!getNMostAvailableNodes@{getNMostAvailableNodes}}
+\index{getNMostAvailableNodes@{getNMostAvailableNodes}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNMostAvailableNodes()}{getNMostAvailableNodes()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ int $>$ Data\+::get\+N\+Most\+Available\+Nodes (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{const std\+::vector$<$ bool $>$ \&}]{N\+O\+D\+ES }\end{DoxyParamCaption}) const}
+
+Returns a vector containing the ids of the n most available nodes among a subset of nodes.
+\begin{DoxyParams}{Parameters}
+{\em n} & The number of nodes to be selected.\\
+\hline
+{\em N\+O\+D\+ES} & The set of nodes that can be selected. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 320 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{320                                                                                           \{}
+\DoxyCodeLine{321     n = std::min(n, (\textcolor{keywordtype}{int})std::count(NODES.begin(), NODES.end(), \textcolor{keyword}{true}));}
+\DoxyCodeLine{322     std::vector<int> selected\_nodes;}
+\DoxyCodeLine{323     selected\_nodes.resize(n);}
+\DoxyCodeLine{324     \textcolor{keywordtype}{int} nb\_selected = 0;}
+\DoxyCodeLine{325     \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{326     \textcolor{keywordflow}{while} (nb\_selected < n)\{}
+\DoxyCodeLine{327         \textcolor{keywordflow}{if} (NODES[availNodeRank[i]] == \textcolor{keyword}{true})\{}
+\DoxyCodeLine{328             selected\_nodes[nb\_selected] = availNodeRank[i];}
+\DoxyCodeLine{329             nb\_selected++;}
+\DoxyCodeLine{330         \}}
+\DoxyCodeLine{331         i++;}
+\DoxyCodeLine{332     \}}
+\DoxyCodeLine{333     \textcolor{keywordflow}{return} selected\_nodes;}
+\DoxyCodeLine{334 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a4911e5e732480bcafad13a74846b5abe}\label{classData_a4911e5e732480bcafad13a74846b5abe}} 
+\index{Data@{Data}!getNode@{getNode}}
+\index{getNode@{getNode}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNode()}{getNode()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classNode}{Node}}\& Data\+::get\+Node (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the i-\/th node. 
+
+Definition at line 103 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a98dd1828cb3104e0cf3642117e9efd5e}\label{classData_a98dd1828cb3104e0cf3642117e9efd5e}} 
+\index{Data@{Data}!getNodeId@{getNodeId}}
+\index{getNodeId@{getNodeId}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNodeId()}{getNodeId()}}
+{\footnotesize\ttfamily const int\& Data\+::get\+Node\+Id (\begin{DoxyParamCaption}\item[{const Graph\+::\+Node \&}]{v }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the id of a given node. 
+
+Definition at line 108 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a460cd3f7da3ffc54cc787a30705a1038}\label{classData_a460cd3f7da3ffc54cc787a30705a1038}} 
+\index{Data@{Data}!getNodeIds@{getNodeIds}}
+\index{getNodeIds@{getNodeIds}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNodeIds()}{getNodeIds()}}
+{\footnotesize\ttfamily const Node\+Map\& Data\+::get\+Node\+Ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the map storing the nodes\textquotesingle{} ids. 
+
+Definition at line 90 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a081d1e03b4a51da4bfc2e1b423d62e3e}\label{classData_a081d1e03b4a51da4bfc2e1b423d62e3e}} 
+\index{Data@{Data}!getNodeRankPosition@{getNodeRankPosition}}
+\index{getNodeRankPosition@{getNodeRankPosition}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNodeRankPosition()}{getNodeRankPosition()}}
+{\footnotesize\ttfamily const int Data\+::get\+Node\+Rank\+Position (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+Returns the node position on availability ranking.
+\begin{DoxyParams}{Parameters}
+{\em id} & The node\textquotesingle{}s id. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Returns -\/1 if id is not found. 
+\end{DoxyNote}
+
+
+Definition at line 259 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{260 \{}
+\DoxyCodeLine{261     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < availNodeRank.size(); i++)\{}
+\DoxyCodeLine{262         \textcolor{keywordflow}{if} (availNodeRank[i] == \textcolor{keywordtype}{id}) \textcolor{keywordflow}{return} i;}
+\DoxyCodeLine{263     \}}
+\DoxyCodeLine{264     \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{265 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a3cd7850661cf526d258c1df61d2e052d}\label{classData_a3cd7850661cf526d258c1df61d2e052d}} 
+\index{Data@{Data}!getNodes@{getNodes}}
+\index{getNodes@{getNodes}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getNodes()}{getNodes()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{classNode}{Node}}$>$\& Data\+::get\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the vector of nodes. 
+
+Definition at line 94 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a8116dc8ebcf1637140b168e6a5d2e431}\label{classData_a8116dc8ebcf1637140b168e6a5d2e431}} 
+\index{Data@{Data}!getParallelAvailability@{getParallelAvailability}}
+\index{getParallelAvailability@{getParallelAvailability}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getParallelAvailability()}{getParallelAvailability()}}
+{\footnotesize\ttfamily const double Data\+::get\+Parallel\+Availability (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{nodes }\end{DoxyParamCaption}) const}
+
+Returns the availability obtained from the placement of a set of nodes in parallel.
+\begin{DoxyParams}{Parameters}
+{\em nodes} & The set of nodes \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 295 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{296 \{}
+\DoxyCodeLine{297     \textcolor{keywordtype}{double} fail\_prob = 1.0;}
+\DoxyCodeLine{298     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < nodes.size(); i++)\{}
+\DoxyCodeLine{299         \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = nodes[i];}
+\DoxyCodeLine{300         \textcolor{keywordtype}{double} av = \mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(\textcolor{keywordtype}{id}).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}();}
+\DoxyCodeLine{301         fail\_prob *= (1.0 -\/ av);}
+\DoxyCodeLine{302     \}}
+\DoxyCodeLine{303     \textcolor{keywordtype}{double} val = 1.0 -\/ fail\_prob;}
+\DoxyCodeLine{304     \textcolor{keywordflow}{return} (val);}
+\DoxyCodeLine{305 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a9f82015ae9c398224442ff6132594a83}\label{classData_a9f82015ae9c398224442ff6132594a83}} 
+\index{Data@{Data}!getPlacementCost@{getPlacementCost}}
+\index{getPlacementCost@{getPlacementCost}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getPlacementCost()}{getPlacementCost()}}
+{\footnotesize\ttfamily const double Data\+::get\+Placement\+Cost (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classNode}{Node}} \&}]{node,  }\item[{const \mbox{\hyperlink{classVNF}{V\+NF}} \&}]{vnf }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Return the cost of placing a vnf on a node.
+\begin{DoxyParams}{Parameters}
+{\em node} & The node to receive the vnf.\\
+\hline
+{\em vnf} & The vnf to be installed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 126 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a4f2ec71a9919b4f810e127a6e484c0f4}\label{classData_a4f2ec71a9919b4f810e127a6e484c0f4}} 
+\index{Data@{Data}!getVnf@{getVnf}}
+\index{getVnf@{getVnf}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getVnf()}{getVnf()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classVNF}{V\+NF}}\& Data\+::get\+Vnf (\begin{DoxyParamCaption}\item[{const int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the i-\/th vnf. 
+
+Definition at line 100 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a5e45608eaa855c26314ba73eba9cbda2}\label{classData_a5e45608eaa855c26314ba73eba9cbda2}} 
+\index{Data@{Data}!getVnfLB@{getVnfLB}}
+\index{getVnfLB@{getVnfLB}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getVnfLB()}{getVnfLB()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily const int Data\+::get\+Vnf\+LB (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ bool $>$ \&}]{N\+O\+D\+ES,  }\item[{const int}]{N\+B\+\_\+\+S\+E\+C\+T\+I\+O\+NS,  }\item[{const double}]{A\+V\+A\+I\+L\+\_\+\+R\+E\+Q\+U\+I\+R\+ED }\end{DoxyParamCaption}) const}
+
+Returns the minimum number of vnfs to be installed among certain nodes over a certain number of sections in order to achieve a certain availability level.
+\begin{DoxyParams}{Parameters}
+{\em N\+O\+D\+ES} & The set of nodes that can receive a vnf.\\
+\hline
+{\em N\+B\+\_\+\+S\+E\+C\+T\+I\+O\+NS} & The number of sections to be considered.\\
+\hline
+{\em A\+V\+A\+I\+L\+\_\+\+R\+E\+Q\+U\+I\+R\+ED} & The availabily level required. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+If availability cannot be met, return -\/1. 
+\end{DoxyNote}
+
+
+Definition at line 372 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{372                                                                                                               \{}
+\DoxyCodeLine{373     \textcolor{comment}{/* Get max number of most available nodes per section violating the availability requirement */}}
+\DoxyCodeLine{374     \textcolor{keywordtype}{int} vnfs\_per\_section = 1;}
+\DoxyCodeLine{375     \textcolor{keywordflow}{while} (std::pow(\mbox{\hyperlink{classData_a8116dc8ebcf1637140b168e6a5d2e431}{getParallelAvailability}}(\mbox{\hyperlink{classData_a9eca22f61840ebe7ff5b06e1c8c4595c}{getNMostAvailableNodes}}(vnfs\_per\_section, NODES)), NB\_SECTIONS) < AVAIL\_REQUIRED)\{}
+\DoxyCodeLine{376         vnfs\_per\_section++;}
+\DoxyCodeLine{377         \textcolor{comment}{/* If availability cannot be met with the given NODES*/}}
+\DoxyCodeLine{378         \textcolor{keywordflow}{if} (vnfs\_per\_section > (\textcolor{keywordtype}{int})std::count(NODES.begin(), NODES.end(), \textcolor{keyword}{true}))\{}
+\DoxyCodeLine{379             \textcolor{keywordflow}{return} -\/1;}
+\DoxyCodeLine{380         \}}
+\DoxyCodeLine{381     \}}
+\DoxyCodeLine{382     \textcolor{keywordtype}{int} base = std::max(vnfs\_per\_section -\/ 1, 1);}
+\DoxyCodeLine{383     \textcolor{keywordtype}{int} result = base*NB\_SECTIONS;}
+\DoxyCodeLine{384     \textcolor{comment}{/* Try to improve the number of vnfs */}}
+\DoxyCodeLine{385     \textcolor{keywordtype}{double} section\_avail = \mbox{\hyperlink{classData_a8116dc8ebcf1637140b168e6a5d2e431}{getParallelAvailability}}(\mbox{\hyperlink{classData_a9eca22f61840ebe7ff5b06e1c8c4595c}{getNMostAvailableNodes}}(base, NODES));}
+\DoxyCodeLine{386     \textcolor{keywordtype}{double} chain\_avail = std::pow(section\_avail, NB\_SECTIONS);}
+\DoxyCodeLine{387     \textcolor{keywordtype}{double} new\_section\_avail = \mbox{\hyperlink{classData_a8116dc8ebcf1637140b168e6a5d2e431}{getParallelAvailability}}(\mbox{\hyperlink{classData_a9eca22f61840ebe7ff5b06e1c8c4595c}{getNMostAvailableNodes}}(base+1, NODES));}
+\DoxyCodeLine{388     \textcolor{keywordflow}{while} (chain\_avail < AVAIL\_REQUIRED)\{}
+\DoxyCodeLine{389         chain\_avail = (chain\_avail*new\_section\_avail)/section\_avail;}
+\DoxyCodeLine{390         result++;}
+\DoxyCodeLine{391     \}}
+\DoxyCodeLine{392     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{393 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a7d16b75cc741920b091f39ef55eb2099}\label{classData_a7d16b75cc741920b091f39ef55eb2099}} 
+\index{Data@{Data}!getVnfLB@{getVnfLB}}
+\index{getVnfLB@{getVnfLB}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getVnfLB()}{getVnfLB()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const int Data\+::get\+Vnf\+LB (\begin{DoxyParamCaption}\item[{double}]{B,  }\item[{int}]{nb\+Sections }\end{DoxyParamCaption}) const}
+
+Returns the minimum number of vnfs to be installed for a S\+FC.
+\begin{DoxyParams}{Parameters}
+{\em B} & The S\+FC availability requirement.\\
+\hline
+{\em nb\+Sections} & The number of sections to be considered. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+All nodes are considered accessible. 
+\end{DoxyNote}
+
+
+Definition at line 349 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{350 \{}
+\DoxyCodeLine{351     \textcolor{comment}{/* Get max number of most available nodes per section violating the availability requirement */}}
+\DoxyCodeLine{352     \textcolor{keywordtype}{int} vnfs\_per\_section = 1;}
+\DoxyCodeLine{353     \textcolor{keywordflow}{while} (std::pow(\mbox{\hyperlink{classData_a8116dc8ebcf1637140b168e6a5d2e431}{getParallelAvailability}}(\mbox{\hyperlink{classData_a9eca22f61840ebe7ff5b06e1c8c4595c}{getNMostAvailableNodes}}(vnfs\_per\_section)), nbSections) < B)\{}
+\DoxyCodeLine{354         vnfs\_per\_section++;}
+\DoxyCodeLine{355     \}}
+\DoxyCodeLine{356     \textcolor{keywordtype}{int} base = std::max(vnfs\_per\_section -\/ 1, 1);}
+\DoxyCodeLine{357     \textcolor{keywordtype}{int} result = base*nbSections;}
+\DoxyCodeLine{358     \textcolor{comment}{/* Try to improve the number of vnfs */}}
+\DoxyCodeLine{359     \textcolor{keywordtype}{double} section\_avail = \mbox{\hyperlink{classData_a8116dc8ebcf1637140b168e6a5d2e431}{getParallelAvailability}}(\mbox{\hyperlink{classData_a9eca22f61840ebe7ff5b06e1c8c4595c}{getNMostAvailableNodes}}(base));}
+\DoxyCodeLine{360     \textcolor{keywordtype}{double} chain\_avail = std::pow(section\_avail, nbSections);}
+\DoxyCodeLine{361     \textcolor{keywordtype}{double} new\_section\_avail = \mbox{\hyperlink{classData_a8116dc8ebcf1637140b168e6a5d2e431}{getParallelAvailability}}(\mbox{\hyperlink{classData_a9eca22f61840ebe7ff5b06e1c8c4595c}{getNMostAvailableNodes}}(base+1));}
+\DoxyCodeLine{362     \textcolor{keywordflow}{while} (chain\_avail < B)\{}
+\DoxyCodeLine{363         chain\_avail = (chain\_avail*new\_section\_avail)/section\_avail;}
+\DoxyCodeLine{364         result++;}
+\DoxyCodeLine{365     \}}
+\DoxyCodeLine{366 }
+\DoxyCodeLine{367     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{368 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a14b9256f6009bc724fd8336eb92ead94}\label{classData_a14b9256f6009bc724fd8336eb92ead94}} 
+\index{Data@{Data}!getVnfs@{getVnfs}}
+\index{getVnfs@{getVnfs}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{getVnfs()}{getVnfs()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{classVNF}{V\+NF}}$>$\& Data\+::get\+Vnfs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns a reference to the vector of vnfs. 
+
+Definition at line 96 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a779ce878d01483220b49ad9e513d7366}\label{classData_a779ce878d01483220b49ad9e513d7366}} 
+\index{Data@{Data}!print@{print}}
+\index{print@{print}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Data\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints global data information. 
+
+Definition at line 398 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{398                 \{}
+\DoxyCodeLine{399     \mbox{\hyperlink{classData_ad82a6d61f44fe34ebf59bc40b92c7446}{printNodes}}();}
+\DoxyCodeLine{400     \mbox{\hyperlink{classData_a94d54f4876fb22742fa50c0c1e05ddf6}{printLinks}}();}
+\DoxyCodeLine{401     \mbox{\hyperlink{classData_a64e8085c352be1c66c9605046a12bc10}{printVnfs}}();}
+\DoxyCodeLine{402     \mbox{\hyperlink{classData_a74632982738f258ee4b90b780ff15b40}{printDemands}}();}
+\DoxyCodeLine{403 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a74632982738f258ee4b90b780ff15b40}\label{classData_a74632982738f258ee4b90b780ff15b40}} 
+\index{Data@{Data}!printDemands@{printDemands}}
+\index{printDemands@{printDemands}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{printDemands()}{printDemands()}}
+{\footnotesize\ttfamily void Data\+::print\+Demands (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints demand information. 
+
+Definition at line 440 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{440                        \{}
+\DoxyCodeLine{441     std::cout << std::endl;}
+\DoxyCodeLine{442     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{443     std::cout << \textcolor{stringliteral}{"-\/            Description of Service Function Chains.            -\/"} << std::endl;}
+\DoxyCodeLine{444     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{445 }
+\DoxyCodeLine{446     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < tabDemands.size(); i++)\{}
+\DoxyCodeLine{447         tabDemands[i].print();}
+\DoxyCodeLine{448     \}}
+\DoxyCodeLine{449     std::cout << std::endl;}
+\DoxyCodeLine{450 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a94d54f4876fb22742fa50c0c1e05ddf6}\label{classData_a94d54f4876fb22742fa50c0c1e05ddf6}} 
+\index{Data@{Data}!printLinks@{printLinks}}
+\index{printLinks@{printLinks}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{printLinks()}{printLinks()}}
+{\footnotesize\ttfamily void Data\+::print\+Links (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints link information. 
+
+Definition at line 417 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{417                      \{}
+\DoxyCodeLine{418     std::cout << std::endl;}
+\DoxyCodeLine{419     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{420     std::cout << \textcolor{stringliteral}{"-\/                     Description of links.                     -\/"} << std::endl;}
+\DoxyCodeLine{421     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{422 }
+\DoxyCodeLine{423     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < tabLinks.size(); i++)\{}
+\DoxyCodeLine{424         tabLinks[i].print();}
+\DoxyCodeLine{425     \}}
+\DoxyCodeLine{426     std::cout << std::endl;}
+\DoxyCodeLine{427 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_aa005c87cdd6f8bad2a4e871884956298}\label{classData_aa005c87cdd6f8bad2a4e871884956298}} 
+\index{Data@{Data}!printNodeRank@{printNodeRank}}
+\index{printNodeRank@{printNodeRank}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{printNodeRank()}{printNodeRank()}}
+{\footnotesize\ttfamily void Data\+::print\+Node\+Rank (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints node information sorted by their availability. 
+
+Definition at line 452 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{452                         \{}
+\DoxyCodeLine{453     std::cout << \textcolor{stringliteral}{"Node ranking: "} << std::endl;}
+\DoxyCodeLine{454     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < availNodeRank.size(); i++)\{}
+\DoxyCodeLine{455         \mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(availNodeRank[i]).\mbox{\hyperlink{classNode_a31cee4b81a8032272bd949254833e551}{print}}();}
+\DoxyCodeLine{456     \}}
+\DoxyCodeLine{457 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_ad82a6d61f44fe34ebf59bc40b92c7446}\label{classData_ad82a6d61f44fe34ebf59bc40b92c7446}} 
+\index{Data@{Data}!printNodes@{printNodes}}
+\index{printNodes@{printNodes}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{printNodes()}{printNodes()}}
+{\footnotesize\ttfamily void Data\+::print\+Nodes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints node information. 
+
+Definition at line 406 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{406                      \{}
+\DoxyCodeLine{407     std::cout << std::endl;}
+\DoxyCodeLine{408     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{409     std::cout << \textcolor{stringliteral}{"-\/                     Description of nodes.                     -\/"} << std::endl;}
+\DoxyCodeLine{410     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{411 }
+\DoxyCodeLine{412     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < tabNodes.size(); i++)\{}
+\DoxyCodeLine{413         tabNodes[i].print();}
+\DoxyCodeLine{414     \}}
+\DoxyCodeLine{415     std::cout << std::endl;}
+\DoxyCodeLine{416 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a64e8085c352be1c66c9605046a12bc10}\label{classData_a64e8085c352be1c66c9605046a12bc10}} 
+\index{Data@{Data}!printVnfs@{printVnfs}}
+\index{printVnfs@{printVnfs}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{printVnfs()}{printVnfs()}}
+{\footnotesize\ttfamily void Data\+::print\+Vnfs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Prints vnfs information. 
+
+Definition at line 429 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{429                     \{}
+\DoxyCodeLine{430     std::cout << std::endl;}
+\DoxyCodeLine{431     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{432     std::cout << \textcolor{stringliteral}{"-\/           Description of Virtual Network Functions.           -\/"} << std::endl;}
+\DoxyCodeLine{433     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{434 }
+\DoxyCodeLine{435     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < tabVnfs.size(); i++)\{}
+\DoxyCodeLine{436         tabVnfs[i].print();}
+\DoxyCodeLine{437     \}}
+\DoxyCodeLine{438     std::cout << std::endl;}
+\DoxyCodeLine{439 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_aad910e9343f3f4d7f29629577d3bd36e}\label{classData_aad910e9343f3f4d7f29629577d3bd36e}} 
+\index{Data@{Data}!readDemandFile@{readDemandFile}}
+\index{readDemandFile@{readDemandFile}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{readDemandFile()}{readDemandFile()}}
+{\footnotesize\ttfamily void Data\+::read\+Demand\+File (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+Reads the demand file and fills the set of demands.
+\begin{DoxyParams}{Parameters}
+{\em filename} & The demand file to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 157 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{158 \{}
+\DoxyCodeLine{159     \textcolor{keywordflow}{if} (filename.empty())\{}
+\DoxyCodeLine{160         std::cerr << \textcolor{stringliteral}{"ERROR: A demand file MUST be declared in the parameters file.\(\backslash\)n"};}
+\DoxyCodeLine{161         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{162     \}}
+\DoxyCodeLine{163     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Reading "} << filename << \textcolor{stringliteral}{" ..."}  << std::endl;}
+\DoxyCodeLine{164     \mbox{\hyperlink{classReader}{Reader}} reader(filename);}
+\DoxyCodeLine{165     \textcolor{comment}{/* dataList is a vector of vectors of strings. */}}
+\DoxyCodeLine{166     \textcolor{comment}{/* dataList[0] corresponds to the first line of the document and dataList[0][i] to the i-\/th word.*/}}
+\DoxyCodeLine{167     std::vector<std::vector<std::string> > dataList = reader.getData();}
+\DoxyCodeLine{168     \textcolor{comment}{// skip the first line (headers)}}
+\DoxyCodeLine{169     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 1; i < dataList.size(); i++)  \{}
+\DoxyCodeLine{170         \textcolor{keywordtype}{int} demandId = (int)i -\/ 1;}
+\DoxyCodeLine{171         std::string demandName = dataList[i][0];}
+\DoxyCodeLine{172         \textcolor{keywordtype}{int} source = \mbox{\hyperlink{classData_aa6892e5ad99bc9d6de622bedd013c309}{getIdFromNodeName}}(dataList[i][1]);}
+\DoxyCodeLine{173         \textcolor{keywordtype}{int} target = \mbox{\hyperlink{classData_aa6892e5ad99bc9d6de622bedd013c309}{getIdFromNodeName}}(dataList[i][2]);}
+\DoxyCodeLine{174         \textcolor{keywordtype}{double} latency = atof(dataList[i][3].c\_str());}
+\DoxyCodeLine{175         \textcolor{keywordtype}{double} band = atof(dataList[i][4].c\_str());}
+\DoxyCodeLine{176         \textcolor{keywordtype}{double} availability = atof(dataList[i][5].c\_str());}
+\DoxyCodeLine{177         this-\/>tabDemands.push\_back(\mbox{\hyperlink{classDemand}{Demand}}(demandId, demandName, source, target, latency, band, availability));}
+\DoxyCodeLine{178         std::vector<std::string> list = split(dataList[i][6], \textcolor{stringliteral}{","});}
+\DoxyCodeLine{179         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} j = 0; j < list.size(); j++)\{}
+\DoxyCodeLine{180             \textcolor{keywordflow}{if} (!list[j].empty())\{}
+\DoxyCodeLine{181                 \textcolor{keywordtype}{int} vnfId = \mbox{\hyperlink{classData_a3f0e42bdbca08f46d6ae45c22724a98b}{getIdFromVnfName}}(list[j]);}
+\DoxyCodeLine{182                 tabDemands[demandId].addVNF(vnfId);}
+\DoxyCodeLine{183             \}}
+\DoxyCodeLine{184         \}}
+\DoxyCodeLine{185     \}}
+\DoxyCodeLine{186 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_ac102aa76f44ede47c5ffcb1fa916ecf7}\label{classData_ac102aa76f44ede47c5ffcb1fa916ecf7}} 
+\index{Data@{Data}!readLinkFile@{readLinkFile}}
+\index{readLinkFile@{readLinkFile}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{readLinkFile()}{readLinkFile()}}
+{\footnotesize\ttfamily void Data\+::read\+Link\+File (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+Reads the link file and fills the set of link.
+\begin{DoxyParams}{Parameters}
+{\em filename} & The link file to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 109 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{110 \{}
+\DoxyCodeLine{111     \textcolor{keywordflow}{if} (filename.empty())\{}
+\DoxyCodeLine{112         std::cerr << \textcolor{stringliteral}{"ERROR: A link file MUST be declared in the parameters file.\(\backslash\)n"};}
+\DoxyCodeLine{113         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{114     \}}
+\DoxyCodeLine{115     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Reading "} << filename << \textcolor{stringliteral}{" ..."}  << std::endl;}
+\DoxyCodeLine{116     \mbox{\hyperlink{classReader}{Reader}} reader(filename);}
+\DoxyCodeLine{117     \textcolor{comment}{/* dataList is a vector of vectors of strings. */}}
+\DoxyCodeLine{118     \textcolor{comment}{/* dataList[0] corresponds to the first line of the document and dataList[0][i] to the i-\/th word.*/}}
+\DoxyCodeLine{119     std::vector<std::vector<std::string> > dataList = reader.getData();}
+\DoxyCodeLine{120     \textcolor{comment}{// skip the first line (headers)}}
+\DoxyCodeLine{121     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 1; i < dataList.size(); i++)  \{}
+\DoxyCodeLine{122         \textcolor{keywordtype}{int} linkId = (int)i -\/ 1;}
+\DoxyCodeLine{123         std::string linkName = dataList[i][0];}
+\DoxyCodeLine{124         \textcolor{keywordtype}{int} source = \mbox{\hyperlink{classData_aa6892e5ad99bc9d6de622bedd013c309}{getIdFromNodeName}}(dataList[i][1]);}
+\DoxyCodeLine{125         \textcolor{keywordtype}{int} target = \mbox{\hyperlink{classData_aa6892e5ad99bc9d6de622bedd013c309}{getIdFromNodeName}}(dataList[i][2]);}
+\DoxyCodeLine{126         \textcolor{keywordtype}{double} delay = atof(dataList[i][3].c\_str());;}
+\DoxyCodeLine{127         \textcolor{keywordtype}{double} bandwidth = atof(dataList[i][4].c\_str());}
+\DoxyCodeLine{128         this-\/>tabLinks.push\_back(\mbox{\hyperlink{classLink}{Link}}(linkId, linkName, source, target, delay, bandwidth));}
+\DoxyCodeLine{129     \}}
+\DoxyCodeLine{130 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a2ab5b9cc14420331bf39c453fe6491ed}\label{classData_a2ab5b9cc14420331bf39c453fe6491ed}} 
+\index{Data@{Data}!readNodeFile@{readNodeFile}}
+\index{readNodeFile@{readNodeFile}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{readNodeFile()}{readNodeFile()}}
+{\footnotesize\ttfamily void Data\+::read\+Node\+File (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+Reads the node file and fills the set of nodes.
+\begin{DoxyParams}{Parameters}
+{\em filename} & The node file to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83 \{}
+\DoxyCodeLine{84     \textcolor{keywordflow}{if} (filename.empty())\{}
+\DoxyCodeLine{85         std::cerr << \textcolor{stringliteral}{"ERROR: A node file MUST be declared in the parameters file.\(\backslash\)n"};}
+\DoxyCodeLine{86         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{87     \}}
+\DoxyCodeLine{88     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Reading "} << filename << \textcolor{stringliteral}{" ..."}  << std::endl;}
+\DoxyCodeLine{89     \mbox{\hyperlink{classReader}{Reader}} reader(filename);}
+\DoxyCodeLine{90     \textcolor{comment}{/* dataList is a vector of vectors of strings. */}}
+\DoxyCodeLine{91     \textcolor{comment}{/* dataList[0] corresponds to the first line of the document and dataList[0][i] to the i-\/th word.*/}}
+\DoxyCodeLine{92     std::vector<std::vector<std::string> > dataList = reader.getData();}
+\DoxyCodeLine{93     \textcolor{comment}{// skip the first line (headers)}}
+\DoxyCodeLine{94     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 1; i < dataList.size(); i++)  \{}
+\DoxyCodeLine{95         \textcolor{keywordtype}{int} nodeId = (int)i -\/ 1;}
+\DoxyCodeLine{96         std::string nodeName = dataList[i][0];}
+\DoxyCodeLine{97         \textcolor{keywordtype}{double} nodeX = atof(dataList[i][1].c\_str());}
+\DoxyCodeLine{98         \textcolor{keywordtype}{double} nodeY = atof(dataList[i][2].c\_str());}
+\DoxyCodeLine{99         \textcolor{keywordtype}{double} capacity = atof(dataList[i][3].c\_str());}
+\DoxyCodeLine{100         \textcolor{keywordtype}{double} avail = atof(dataList[i][4].c\_str());}
+\DoxyCodeLine{101         \textcolor{keywordtype}{double} cost = atof(dataList[i][5].c\_str());}
+\DoxyCodeLine{102         this-\/>tabNodes.push\_back(\mbox{\hyperlink{classNode}{Node}}(nodeId, nodeName, nodeX, nodeY, capacity, avail, cost));}
+\DoxyCodeLine{103         hashNode.insert(\{nodeName, nodeId\});}
+\DoxyCodeLine{104     \}}
+\DoxyCodeLine{105     \mbox{\hyperlink{classData_ad82a6d61f44fe34ebf59bc40b92c7446}{printNodes}}();}
+\DoxyCodeLine{106 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_a210d4d7e71b75bafeb986a566556bf49}\label{classData_a210d4d7e71b75bafeb986a566556bf49}} 
+\index{Data@{Data}!readVnfFile@{readVnfFile}}
+\index{readVnfFile@{readVnfFile}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{readVnfFile()}{readVnfFile()}}
+{\footnotesize\ttfamily void Data\+::read\+Vnf\+File (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+Reads the vnf file and fills the set of vnfs.
+\begin{DoxyParams}{Parameters}
+{\em filename} & The vnf file to be read. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 135 of file data.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{136 \{}
+\DoxyCodeLine{137     \textcolor{keywordflow}{if} (filename.empty())\{}
+\DoxyCodeLine{138         std::cerr << \textcolor{stringliteral}{"ERROR: A vnf file MUST be declared in the parameters file.\(\backslash\)n"};}
+\DoxyCodeLine{139         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{140     \}}
+\DoxyCodeLine{141     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Reading "} << filename << \textcolor{stringliteral}{" ..."}  << std::endl;}
+\DoxyCodeLine{142     \mbox{\hyperlink{classReader}{Reader}} reader(filename);}
+\DoxyCodeLine{143     \textcolor{comment}{/* dataList is a vector of vectors of strings. */}}
+\DoxyCodeLine{144     \textcolor{comment}{/* dataList[0] corresponds to the first line of the document and dataList[0][i] to the i-\/th word.*/}}
+\DoxyCodeLine{145     std::vector<std::vector<std::string> > dataList = reader.getData();}
+\DoxyCodeLine{146     \textcolor{comment}{// skip the first line (headers)}}
+\DoxyCodeLine{147     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 1; i < dataList.size(); i++)  \{}
+\DoxyCodeLine{148         \textcolor{keywordtype}{int} vnfId = (int)i -\/ 1;}
+\DoxyCodeLine{149         std::string vnfName = dataList[i][0];}
+\DoxyCodeLine{150         \textcolor{keywordtype}{double} resource\_consumption = atof(dataList[i][1].c\_str());}
+\DoxyCodeLine{151         this-\/>tabVnfs.push\_back(\mbox{\hyperlink{classVNF}{VNF}}(vnfId, vnfName, resource\_consumption));}
+\DoxyCodeLine{152         hashVnf.insert(\{vnfName, vnfId\});}
+\DoxyCodeLine{153     \}}
+\DoxyCodeLine{154 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classData_ae5a0b60cbcd285d0f3ddf24ef82f8d80}\label{classData_ae5a0b60cbcd285d0f3ddf24ef82f8d80}} 
+\index{Data@{Data}!setArcId@{setArcId}}
+\index{setArcId@{setArcId}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setArcId()}{setArcId()}}
+{\footnotesize\ttfamily void Data\+::set\+Arc\+Id (\begin{DoxyParamCaption}\item[{const Graph\+::\+Arc \&}]{a,  }\item[{const int \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the id of a given arc on the arc map. 
+
+Definition at line 157 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a7b5cf551559392f7027776049ad6fff9}\label{classData_a7b5cf551559392f7027776049ad6fff9}} 
+\index{Data@{Data}!setLemonArcId@{setLemonArcId}}
+\index{setLemonArcId@{setLemonArcId}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setLemonArcId()}{setLemonArcId()}}
+{\footnotesize\ttfamily void Data\+::set\+Lemon\+Arc\+Id (\begin{DoxyParamCaption}\item[{const Graph\+::\+Arc \&}]{a,  }\item[{const int \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the lemon id of a given arc on the arc map. 
+
+Definition at line 158 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a72ec7a841001ceda18bf89d19cf02263}\label{classData_a72ec7a841001ceda18bf89d19cf02263}} 
+\index{Data@{Data}!setLemonNodeId@{setLemonNodeId}}
+\index{setLemonNodeId@{setLemonNodeId}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setLemonNodeId()}{setLemonNodeId()}}
+{\footnotesize\ttfamily void Data\+::set\+Lemon\+Node\+Id (\begin{DoxyParamCaption}\item[{const Graph\+::\+Node \&}]{v,  }\item[{const int \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the lemon id of a given node on the node map. 
+
+Definition at line 156 of file data.\+hpp.
+
+\mbox{\Hypertarget{classData_a06625a2bd922feaa711ce163d25b45f4}\label{classData_a06625a2bd922feaa711ce163d25b45f4}} 
+\index{Data@{Data}!setNodeId@{setNodeId}}
+\index{setNodeId@{setNodeId}!Data@{Data}}
+\doxysubsubsection{\texorpdfstring{setNodeId()}{setNodeId()}}
+{\footnotesize\ttfamily void Data\+::set\+Node\+Id (\begin{DoxyParamCaption}\item[{const Graph\+::\+Node \&}]{v,  }\item[{const int \&}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the id of a given node on the node map. 
+
+Definition at line 155 of file data.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/instance/data.\+hpp\item 
+src/instance/data.\+cpp\end{DoxyCompactItemize}

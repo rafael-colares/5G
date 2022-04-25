@@ -1,0 +1,2 @@
+name;source;target;max_latency;bandwidth;availability;vnf_list
+d_1;N14;N6;60000;1;0.999;vnf_2

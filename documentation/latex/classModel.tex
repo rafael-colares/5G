@@ -1,0 +1,1385 @@
+\hypertarget{classModel}{}\doxysection{Model Class Reference}
+\label{classModel}\index{Model@{Model}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classModel_ad0edab198af918f54b88a06f573f85ee}{Model}} (const Ilo\+Env \&env, const \mbox{\hyperlink{classData}{Data}} \&data)
+\item 
+\mbox{\Hypertarget{classModel_a4aa95dee956d8b637c856550dbe9b9a1}\label{classModel_a4aa95dee956d8b637c856550dbe9b9a1}} 
+{\bfseries Model} (const Ilo\+Env \&env, const \mbox{\hyperlink{classData}{Data}} \&\&)=delete
+\item 
+void \mbox{\hyperlink{classModel_aa286bb5e9079066ec0c8002cb6da1acc}{set\+Cplex\+Parameters}} ()
+\item 
+void \mbox{\hyperlink{classModel_a9c115a91fadc7fb457cc23d179037e70}{set\+Variables}} ()
+\item 
+void \mbox{\hyperlink{classModel_ad87e53b26703634b8741b80bdbc9f8ee}{set\+Placement\+Variables}} ()
+\item 
+void \mbox{\hyperlink{classModel_a43f0b853c716c4ff90e9d887d727ee5d}{set\+Assignment\+Variables}} ()
+\item 
+void \mbox{\hyperlink{classModel_a178a2721aae5c591fcc66c6458c5f358}{set\+Pair\+Assignment\+Variables}} ()
+\item 
+void \mbox{\hyperlink{classModel_a82df70f98d1d769a2d10e1cce22ea879}{set\+Routing\+Variables}} ()
+\item 
+void \mbox{\hyperlink{classModel_a40b73dc319080851a82abe2d2bd2b342}{set\+Delay\+Variables}} ()
+\item 
+void \mbox{\hyperlink{classModel_a84323566317a3a2f0bb99911ef628193}{set\+Arc\+Usage\+Variables}} ()
+\item 
+void \mbox{\hyperlink{classModel_a1363471920be26e141f9ee4af7e79600}{set\+Availability\+Variables}} ()
+\item 
+void \mbox{\hyperlink{classModel_aca66921ff00023f1cff2d0673e13e1b4}{set\+Objective}} ()
+\item 
+void \mbox{\hyperlink{classModel_ae8911b15f6c396d6c6cd04bab589f9a1}{set\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classModel_ab9c051e00cc23088f48afe2b68e3207a}{set\+Vnf\+Assignment\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classModel_aaf1d2b2bdb6a9a1d7baec3f9679701cd}{set\+Vnf\+Placement\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classModel_af362cb01dbf65a7d06b59df7abdf385a}{set\+Original\+Vnf\+Placement\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classModel_a0edd0d607e2072a84d5f4ca87d3380e9}{set\+Node\+Capacity\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classModel_a98f46f94ffc56357367bca09d315a08e}{set\+Strong\+Node\+Capacity\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classModel_a5e4d68f54c63a74363b2fdf4a88ea3a8}{set\+Delay\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classModel_abf52678ca9e6e71808b81b2c96416248}{set\+Bandwidth\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classModel_a07288a33ed7eeb2882b1721b7a0b0ad1}{set\+Linking\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classModel_a79a8787ea56eb7a681d9ef01d3695a83}{set\+Routing\+Constraints}} ()
+\item 
+\mbox{\Hypertarget{classModel_a768c14e5ee8d4acd5d4653327bbc1ac3}\label{classModel_a768c14e5ee8d4acd5d4653327bbc1ac3}} 
+void {\bfseries set\+Section\+Availability\+Approx\+Constraints} ()
+\item 
+\mbox{\Hypertarget{classModel_a80338d14f9ab15528527f8a6e84c9234}\label{classModel_a80338d14f9ab15528527f8a6e84c9234}} 
+void {\bfseries set\+S\+F\+C\+Availability\+Approx\+Constraints} ()
+\item 
+void \mbox{\hyperlink{classModel_aef475e4724f28b31c2dabb4525e3d55e}{run}} ()
+\item 
+void \mbox{\hyperlink{classModel_a620ff4d0804b5a5d606012b28fbf3059}{build\+Approximation\+Function\+Avail}} (int demand, Ilo\+Num\+Array \&breakpoints, Ilo\+Num\+Array \&slopes)
+\item 
+\mbox{\Hypertarget{classModel_a502a5a527d889cd8896c1e35b0f490c4}\label{classModel_a502a5a527d889cd8896c1e35b0f490c4}} 
+void {\bfseries build\+Approximation\+Function\+Unavail} (int demand, Ilo\+Num\+Array \&breakpoints, Ilo\+Num\+Array \&slopes)
+\item 
+\mbox{\Hypertarget{classModel_a330c7157c96f624987cc6994c58fd8cd}\label{classModel_a330c7157c96f624987cc6994c58fd8cd}} 
+void {\bfseries build\+Avail\+Touchs} (int demand, Ilo\+Num\+Array \&touchs)
+\item 
+\mbox{\Hypertarget{classModel_a7d16244f2d29d5038bbc5932bb6e60f7}\label{classModel_a7d16244f2d29d5038bbc5932bb6e60f7}} 
+void {\bfseries build\+Avail\+Breakpoints} (int demand, Ilo\+Num\+Array \&breakpoints, Ilo\+Num\+Array \&touchs)
+\item 
+void \mbox{\hyperlink{classModel_a67c8943ddb89a869c849c2b6b57ac1ca}{build\+Unavail\+Touchs}} (int demand, Ilo\+Num\+Array \&touchs)
+\item 
+\mbox{\Hypertarget{classModel_acdcb8cd0935b7d3094f652e045525016}\label{classModel_acdcb8cd0935b7d3094f652e045525016}} 
+void {\bfseries build\+Unavail\+Breakpoints} (int demand, Ilo\+Num\+Array \&breakpoints, Ilo\+Num\+Array \&touchs)
+\item 
+void \mbox{\hyperlink{classModel_ad3cc83fc40c257979a9ca2f943c42c58}{print\+Result}} ()
+\item 
+\mbox{\Hypertarget{classModel_ae464b64a625fc3987d600a718065f2b9}\label{classModel_ae464b64a625fc3987d600a718065f2b9}} 
+void {\bfseries print\+Demand} (const int demand)
+\item 
+\mbox{\Hypertarget{classModel_a6d1d7bec2add45efaf420aa647c4ae4a}\label{classModel_a6d1d7bec2add45efaf420aa647c4ae4a}} 
+void {\bfseries print\+Section\+Placement} (const int demand, const int section)
+\item 
+\mbox{\Hypertarget{classModel_a0f263d7e0ef5a89faa10d1a45a1025ef}\label{classModel_a0f263d7e0ef5a89faa10d1a45a1025ef}} 
+void {\bfseries print\+Section\+Availability} (const int demand, const int section)
+\item 
+\mbox{\Hypertarget{classModel_a2ff6c27f5ae68679573702fa3f9ebd8a}\label{classModel_a2ff6c27f5ae68679573702fa3f9ebd8a}} 
+void {\bfseries print\+Routing} (const int demand, const int section)
+\item 
+\mbox{\Hypertarget{classModel_ad1e8d3a0067cabb571b9935a5e5453de}\label{classModel_ad1e8d3a0067cabb571b9935a5e5453de}} 
+void {\bfseries print\+Path} (const int demand, const int section, Graph\+::\+Node \&s, Graph\+::\+Node \&t)
+\item 
+double \mbox{\hyperlink{classModel_a82fb8298145999776563d541a4f2777a}{get\+Service\+Avail}} (const int demand)
+\item 
+\mbox{\Hypertarget{classModel_a553b39a76b3dc76bbd1fca7d01961c4d}\label{classModel_a553b39a76b3dc76bbd1fca7d01961c4d}} 
+int {\bfseries get\+Nb\+Avail\+Violation} ()
+\item 
+\mbox{\Hypertarget{classModel_ab7b95753f70fe9b2c5cea05e7c789b62}\label{classModel_ab7b95753f70fe9b2c5cea05e7c789b62}} 
+double {\bfseries get\+Max\+Avail\+Violation} ()
+\item 
+void \mbox{\hyperlink{classModel_ae8dce99f0f6b9bff35013095f9a7904b}{output}} ()
+\item 
+\mbox{\hyperlink{classModel_ad6ebd2062a0b823db841a0b88baac4c0}{$\sim$\+Model}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 35 of file model.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModel_ad0edab198af918f54b88a06f573f85ee}\label{classModel_ad0edab198af918f54b88a06f573f85ee}} 
+\index{Model@{Model}!Model@{Model}}
+\index{Model@{Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{Model()}{Model()}}
+{\footnotesize\ttfamily Model\+::\+Model (\begin{DoxyParamCaption}\item[{const Ilo\+Env \&}]{env\+\_\+,  }\item[{const \mbox{\hyperlink{classData}{Data}} \&}]{data\+\_\+ }\end{DoxyParamCaption})}
+
+Constructor. Builds the model (variables, objective function, constraints and further parameters).
+
+Constructor\+: Builds and exports the mathematical model to mip.\+lp file. Also sets up C\+P\+L\+EX parameters. 
+
+Definition at line 4 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{4                                                   : }
+\DoxyCodeLine{5                 env(env\_), model(env), cplex(model), data(data\_), }
+\DoxyCodeLine{6                 obj(env), constraints(env)}
+\DoxyCodeLine{7 \{}
+\DoxyCodeLine{8     std::cout << std::endl;}
+\DoxyCodeLine{9     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{10     std::cout << \textcolor{stringliteral}{"-\/                  Building optimization model.                 -\/"} << std::endl;}
+\DoxyCodeLine{11     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{12     \mbox{\hyperlink{classModel_a9c115a91fadc7fb457cc23d179037e70}{setVariables}}();}
+\DoxyCodeLine{13     \mbox{\hyperlink{classModel_aca66921ff00023f1cff2d0673e13e1b4}{setObjective}}();  }
+\DoxyCodeLine{14     \mbox{\hyperlink{classModel_ae8911b15f6c396d6c6cd04bab589f9a1}{setConstraints}}();  }
+\DoxyCodeLine{15     \mbox{\hyperlink{classModel_aa286bb5e9079066ec0c8002cb6da1acc}{setCplexParameters}}();}
+\DoxyCodeLine{16     cplex.exportModel(\textcolor{stringliteral}{"mip.lp"});}
+\DoxyCodeLine{17     std::cout << std::endl << \textcolor{stringliteral}{"Model was correctly built ! "} << std::endl;                 }
+\DoxyCodeLine{18 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_ad6ebd2062a0b823db841a0b88baac4c0}\label{classModel_ad6ebd2062a0b823db841a0b88baac4c0}} 
+\index{Model@{Model}!````~Model@{$\sim$Model}}
+\index{````~Model@{$\sim$Model}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{$\sim$Model()}{~Model()}}
+{\footnotesize\ttfamily Model\+::$\sim$\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Destructor. Free dynamic allocated memory. 
+
+Definition at line 1199 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1199              \{}
+\DoxyCodeLine{1200     \textcolor{keyword}{delete} callback;}
+\DoxyCodeLine{1201 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classModel_a620ff4d0804b5a5d606012b28fbf3059}\label{classModel_a620ff4d0804b5a5d606012b28fbf3059}} 
+\index{Model@{Model}!buildApproximationFunctionAvail@{buildApproximationFunctionAvail}}
+\index{buildApproximationFunctionAvail@{buildApproximationFunctionAvail}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{buildApproximationFunctionAvail()}{buildApproximationFunctionAvail()}}
+{\footnotesize\ttfamily void Model\+::build\+Approximation\+Function\+Avail (\begin{DoxyParamCaption}\item[{int}]{demand,  }\item[{Ilo\+Num\+Array \&}]{breakpoints,  }\item[{Ilo\+Num\+Array \&}]{slopes }\end{DoxyParamCaption})}
+
+Approximation related methods 
+
+Definition at line 789 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{789                                                                                                     \{}
+\DoxyCodeLine{790     \textcolor{comment}{//initialize parameters}}
+\DoxyCodeLine{791     breakpoints.clear();}
+\DoxyCodeLine{792     slopes.clear();}
+\DoxyCodeLine{793 }
+\DoxyCodeLine{794     \textcolor{comment}{// get touch points and breakpoints}}
+\DoxyCodeLine{795     IloNumArray touchs(env);}
+\DoxyCodeLine{796     buildAvailTouchs(demand, touchs);}
+\DoxyCodeLine{797     buildAvailBreakpoints(demand, breakpoints, touchs);}
+\DoxyCodeLine{798 }
+\DoxyCodeLine{799     \textcolor{comment}{// get slopes}}
+\DoxyCodeLine{800     \textcolor{keywordflow}{switch} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a81f1950337e045f575122540250622d6}{getApproximationType}}())\{}
+\DoxyCodeLine{801         \textcolor{keywordflow}{case} Input::APPROXIMATION\_TYPE\_RESTRICTION:}
+\DoxyCodeLine{802             slopes.add( 1.0/touchs[0] );}
+\DoxyCodeLine{803             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < touchs.getSize()-\/1; i++)\{}
+\DoxyCodeLine{804                 \textcolor{keywordtype}{double} delta\_X = touchs[i+1] -\/ touchs[i];}
+\DoxyCodeLine{805                 \textcolor{keywordtype}{double} delta\_Y = std::log(touchs[i+1]) -\/ std::log(touchs[i]);}
+\DoxyCodeLine{806                 slopes.add( delta\_Y/delta\_X );}
+\DoxyCodeLine{807             \}}
+\DoxyCodeLine{808             slopes.add( 0 );}
+\DoxyCodeLine{809             }
+\DoxyCodeLine{810             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{811         \textcolor{keywordflow}{case} Input::APPROXIMATION\_TYPE\_RELAXATION:}
+\DoxyCodeLine{812             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < touchs.getSize(); i++)\{}
+\DoxyCodeLine{813                 \textcolor{keywordtype}{double} tangent = 1.0/touchs[i];}
+\DoxyCodeLine{814                 slopes.add(tangent);}
+\DoxyCodeLine{815             \}}
+\DoxyCodeLine{816             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{817         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{818             \textcolor{keywordflow}{throw} IloCplex::Exception(-\/1, \textcolor{stringliteral}{"ERROR: Unexpected availability approx !"});}
+\DoxyCodeLine{819     \}}
+\DoxyCodeLine{820 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a67c8943ddb89a869c849c2b6b57ac1ca}\label{classModel_a67c8943ddb89a869c849c2b6b57ac1ca}} 
+\index{Model@{Model}!buildUnavailTouchs@{buildUnavailTouchs}}
+\index{buildUnavailTouchs@{buildUnavailTouchs}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{buildUnavailTouchs()}{buildUnavailTouchs()}}
+{\footnotesize\ttfamily void Model\+::build\+Unavail\+Touchs (\begin{DoxyParamCaption}\item[{int}]{demand,  }\item[{Ilo\+Num\+Array \&}]{touchs }\end{DoxyParamCaption})}
+
+billionnet spacement of touchs
+
+linearly spaced touchs
+
+Definition at line 900 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{900                                                              \{}
+\DoxyCodeLine{901 }
+\DoxyCodeLine{902     \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_BREAKS  = data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_aa46b82ee6882534e9d4c3df572aed986}{getNbBreakpoints}}();}
+\DoxyCodeLine{903     \textcolor{keywordtype}{int}       NB\_TOUCHS  = NB\_BREAKS;}
+\DoxyCodeLine{904 }
+\DoxyCodeLine{905     \textcolor{comment}{// If approximation from above}}
+\DoxyCodeLine{906     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a81f1950337e045f575122540250622d6}{getApproximationType}}() ==  Input::APPROXIMATION\_TYPE\_RELAXATION)\{}
+\DoxyCodeLine{907         NB\_TOUCHS = NB\_BREAKS + 1;}
+\DoxyCodeLine{908     \}}
+\DoxyCodeLine{909 }
+\DoxyCodeLine{910     \textcolor{keyword}{const} \textcolor{keywordtype}{double} minAvail = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(demand).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}();}
+\DoxyCodeLine{911     \textcolor{comment}{// const double minAvail = data.getParallelAvailability(data.getNMostAvailableNodes(1));}}
+\DoxyCodeLine{912     \textcolor{keyword}{const} \textcolor{keywordtype}{double} maxAvail = data.\mbox{\hyperlink{classData_a8116dc8ebcf1637140b168e6a5d2e431}{getParallelAvailability}}(data.\mbox{\hyperlink{classData_a3fae1be6a2eaf0b09e7b28b611071c5e}{getAvailNodeRank}}());}
+\DoxyCodeLine{913     \textcolor{comment}{// const double maxAvail = data.getParallelAvailability(data.getNMostAvailableNodes(5));}}
+\DoxyCodeLine{914     \textcolor{keyword}{const} \textcolor{keywordtype}{double} EPSILON\_PRECISION = 1e-\/8;}
+\DoxyCodeLine{915     \textcolor{keywordtype}{double} UB = std::min(1.0 -\/ minAvail, 1.0 -\/ EPSILON\_PRECISION);}
+\DoxyCodeLine{916     \textcolor{keywordtype}{double} LB = std::max(1.0 -\/ maxAvail, EPSILON\_PRECISION);}
+\DoxyCodeLine{917     \textcolor{comment}{// std::cout <<"UB : " << UB << std::endl;}}
+\DoxyCodeLine{918     \textcolor{comment}{// std::cout <<"LB : " << LB << std::endl;}}
+\DoxyCodeLine{919 }
+\DoxyCodeLine{921     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 1; k <= NB\_TOUCHS; k++)\{}
+\DoxyCodeLine{922         \textcolor{keywordtype}{double} expo = ((double) (NB\_TOUCHS -\/ k)) / (NB\_TOUCHS -\/ 1);}
+\DoxyCodeLine{923         \textcolor{comment}{// std::cout <<"exp : " << expo << std::endl;}}
+\DoxyCodeLine{924         \textcolor{keywordtype}{double} u = (UB) * std::pow((LB/UB), expo);}
+\DoxyCodeLine{925         \textcolor{comment}{// std::cout <<"touch : " << u << std::endl;}}
+\DoxyCodeLine{926         touchs.add(u);}
+\DoxyCodeLine{927     \}}
+\DoxyCodeLine{928 }
+\DoxyCodeLine{930     \textcolor{comment}{// double interval = (UB -\/ LB)/(NB\_TOUCHS-\/1);}}
+\DoxyCodeLine{931     \textcolor{comment}{// for (int k = 0; k < NB\_TOUCHS; k++)\{}}
+\DoxyCodeLine{932     \textcolor{comment}{//     double u = LB + interval*k;}}
+\DoxyCodeLine{933     \textcolor{comment}{//     touchs.add(u);}}
+\DoxyCodeLine{934     \textcolor{comment}{// \}}}
+\DoxyCodeLine{935 }
+\DoxyCodeLine{936 }
+\DoxyCodeLine{937     touchs.add(1.0);}
+\DoxyCodeLine{938     \textcolor{comment}{// std::cout <<"Unavail touchs : " << touchs << std::endl;}}
+\DoxyCodeLine{939 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a82fb8298145999776563d541a4f2777a}\label{classModel_a82fb8298145999776563d541a4f2777a}} 
+\index{Model@{Model}!getServiceAvail@{getServiceAvail}}
+\index{getServiceAvail@{getServiceAvail}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{getServiceAvail()}{getServiceAvail()}}
+{\footnotesize\ttfamily double Model\+::get\+Service\+Avail (\begin{DoxyParamCaption}\item[{const int}]{demand }\end{DoxyParamCaption})}
+
+Auxialiary getters 
+
+Definition at line 1068 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1068                                              \{}
+\DoxyCodeLine{1069     \textcolor{keywordtype}{double} result = 1.0;}
+\DoxyCodeLine{1070     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(demand).getNbVNFs(); ++i)\{}
+\DoxyCodeLine{1071         \textcolor{keywordtype}{double} unavail = 1.0;}
+\DoxyCodeLine{1072         \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{1073             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{1074             \textcolor{keywordflow}{if} (cplex.getValue(x[demand][i][v]) > 1.0 -\/ EPS )\{}
+\DoxyCodeLine{1075                 unavail *= (1.0 -\/ data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}());}
+\DoxyCodeLine{1076             \}}
+\DoxyCodeLine{1077         \}}
+\DoxyCodeLine{1078         \textcolor{keywordtype}{double} avail = 1.0 -\/ unavail;}
+\DoxyCodeLine{1079         result *= avail;}
+\DoxyCodeLine{1080     \}}
+\DoxyCodeLine{1081     \textcolor{keywordflow}{return} result;}
+\DoxyCodeLine{1082 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_ae8dce99f0f6b9bff35013095f9a7904b}\label{classModel_ae8dce99f0f6b9bff35013095f9a7904b}} 
+\index{Model@{Model}!output@{output}}
+\index{output@{output}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{output()}{output()}}
+{\footnotesize\ttfamily void Model\+::output (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Outputs the obtained results 
+
+Definition at line 1141 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1141                   \{}
+\DoxyCodeLine{1142     std::cout << \textcolor{stringliteral}{"Writting results to file..."} << std::endl;}
+\DoxyCodeLine{1143     std::string output\_file = data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_ad1534a880d0564ba7baa43c0ffa2ca7e}{getOutputFile}}();}
+\DoxyCodeLine{1144     \textcolor{keywordflow}{if} (output\_file.empty())\{}
+\DoxyCodeLine{1145         std::cout << \textcolor{stringliteral}{"Warning: There is no output file."} << std::endl;}
+\DoxyCodeLine{1146         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{1147     \}}
+\DoxyCodeLine{1148 }
+\DoxyCodeLine{1149     std::ofstream fileReport(output\_file, std::ios\_base::app); \textcolor{comment}{// File report}}
+\DoxyCodeLine{1150     \textcolor{comment}{// If file\_output can't be opened }}
+\DoxyCodeLine{1151     \textcolor{keywordflow}{if}(!fileReport)}
+\DoxyCodeLine{1152     \{}
+\DoxyCodeLine{1153         std::cerr << \textcolor{stringliteral}{"ERROR: Unable to access output file."} << std::endl;}
+\DoxyCodeLine{1154         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{1155     \}}
+\DoxyCodeLine{1156 }
+\DoxyCodeLine{1157     std::string demand\_name = data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a2c57b8a2e75eb7e0e034972f464c1ab1}{getDemandFile}}();}
+\DoxyCodeLine{1158     std::string node\_name   = data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a7fe5f18ee6290bf98fc39037db14d146}{getNodeFile}}();}
+\DoxyCodeLine{1159     std::string link\_name   = data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_af2cd12794698f15c9fc72d57674df3d1}{getLinkFile}}();}
+\DoxyCodeLine{1160     std::string vnf\_name    = data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_aa45295b5132cc03bccbcc38304bd1105}{getVnfFile}}();}
+\DoxyCodeLine{1161     std::string relax\_type  = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{1162     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a81f1950337e045f575122540250622d6}{getApproximationType}}() == Input::APPROXIMATION\_TYPE\_NONE)\{}
+\DoxyCodeLine{1163         relax\_type = \textcolor{stringliteral}{"NO\_APPROX"};}
+\DoxyCodeLine{1164     \}}
+\DoxyCodeLine{1165     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a81f1950337e045f575122540250622d6}{getApproximationType}}() == Input::APPROXIMATION\_TYPE\_RESTRICTION)\{}
+\DoxyCodeLine{1166         relax\_type = \textcolor{stringliteral}{"RESTRICTION\_"} + std::to\_string(data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_aa46b82ee6882534e9d4c3df572aed986}{getNbBreakpoints}}());}
+\DoxyCodeLine{1167     \}}
+\DoxyCodeLine{1168     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a81f1950337e045f575122540250622d6}{getApproximationType}}() == Input::APPROXIMATION\_TYPE\_RELAXATION)\{}
+\DoxyCodeLine{1169         relax\_type = \textcolor{stringliteral}{"RELAX\_"} + std::to\_string(data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_aa46b82ee6882534e9d4c3df572aed986}{getNbBreakpoints}}());}
+\DoxyCodeLine{1170     \}}
+\DoxyCodeLine{1171     std::string instance\_name = node\_name + \textcolor{stringliteral}{"\_"} + demand\_name;}
+\DoxyCodeLine{1172 }
+\DoxyCodeLine{1173     fileReport << link\_name << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1174                << node\_name << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1175                << demand\_name << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1176                << vnf\_name << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1177                << relax\_type << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1178                << time << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1179                << cplex.getObjValue() << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1180                << cplex.getBestObjValue() << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1181                << cplex.getMIPRelativeGap()*100 << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1182                << cplex.getNnodes() << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1183                << cplex.getNnodesLeft() << \textcolor{stringliteral}{";"} }
+\DoxyCodeLine{1184                << callback-\/>\mbox{\hyperlink{classCallback_a2e355ff1f8150a2bc19d81fbb3f896e0}{getNbLazyConstraints}}() << \textcolor{stringliteral}{";"} }
+\DoxyCodeLine{1185                << callback-\/>\mbox{\hyperlink{classCallback_a5c5e35c895664da84eb90dcd36364349}{getNbUserCuts}}() << \textcolor{stringliteral}{";"} }
+\DoxyCodeLine{1186                << callback-\/>\mbox{\hyperlink{classCallback_ae9308c0c4da4973d60bb5fb8e24e7fff}{getTime}}() << \textcolor{stringliteral}{";"} }
+\DoxyCodeLine{1187                << getNbAvailViolation() << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1188                << getMaxAvailViolation() << \textcolor{stringliteral}{";"}}
+\DoxyCodeLine{1189                << std::endl;}
+\DoxyCodeLine{1190                }
+\DoxyCodeLine{1191     \textcolor{comment}{// Finalization ***}}
+\DoxyCodeLine{1192     fileReport.close();}
+\DoxyCodeLine{1193 }
+\DoxyCodeLine{1194 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_ad3cc83fc40c257979a9ca2f943c42c58}\label{classModel_ad3cc83fc40c257979a9ca2f943c42c58}} 
+\index{Model@{Model}!printResult@{printResult}}
+\index{printResult@{printResult}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{printResult()}{printResult()}}
+{\footnotesize\ttfamily void Model\+::print\+Result (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays the obtained results 
+
+Definition at line 997 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{997                        \{}
+\DoxyCodeLine{998     }
+\DoxyCodeLine{999     std::cout << std::endl;}
+\DoxyCodeLine{1000     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{1001     std::cout << \textcolor{stringliteral}{"-\/                 Printing best solution found.                 -\/"} << std::endl;}
+\DoxyCodeLine{1002     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{1003     std::cout << \textcolor{stringliteral}{"Printing VNF placement..."} << std::endl;}
+\DoxyCodeLine{1004     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{1005         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{1006         std::string vnfs;}
+\DoxyCodeLine{1007         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} f = 0; f < data.\mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{getNbVnfs}}(); f++)\{}
+\DoxyCodeLine{1008             \textcolor{keywordflow}{if} (cplex.getValue(y[v][f]) > 1.0 -\/ EPS)\{}
+\DoxyCodeLine{1009                 vnfs += data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(f).\mbox{\hyperlink{classVNF_ab6aad4822fc4820561e6091a97f8989d}{getName}}();}
+\DoxyCodeLine{1010                 vnfs += \textcolor{stringliteral}{", "};}
+\DoxyCodeLine{1011             \}}
+\DoxyCodeLine{1012         \}}
+\DoxyCodeLine{1013         \textcolor{keywordflow}{if} (!vnfs.empty())\{}
+\DoxyCodeLine{1014             vnfs.pop\_back();}
+\DoxyCodeLine{1015             vnfs.pop\_back();}
+\DoxyCodeLine{1016             vnfs += \textcolor{stringliteral}{"."};}
+\DoxyCodeLine{1017             std::cout << \textcolor{stringliteral}{"\(\backslash\)t"} << data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a9c3581e4343846ecc0433f87d7f33f40}{getName}}() << \textcolor{stringliteral}{": "} << vnfs << std::endl;}
+\DoxyCodeLine{1018         \}}
+\DoxyCodeLine{1019     \}}
+\DoxyCodeLine{1020 }
+\DoxyCodeLine{1021     std::cout << std::endl << \textcolor{stringliteral}{"Printing Service Function Chain deployment..."} << std::endl;}
+\DoxyCodeLine{1022     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{1023         printDemand(k);}
+\DoxyCodeLine{1024         std::cout << std::endl;}
+\DoxyCodeLine{1025     \}}
+\DoxyCodeLine{1026 }
+\DoxyCodeLine{1027     std::cout << std::endl << \textcolor{stringliteral}{"Printing optimization informations..."}                   << std::endl;}
+\DoxyCodeLine{1028     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Objective value:           "} << cplex.getValue(obj)                << std::endl;}
+\DoxyCodeLine{1029     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Nodes evaluated:           "} << cplex.getNnodes()                  << std::endl;}
+\DoxyCodeLine{1030     std::cout << \textcolor{stringliteral}{"\(\backslash\)t User cuts added:           "} << callback-\/>\mbox{\hyperlink{classCallback_a5c5e35c895664da84eb90dcd36364349}{getNbUserCuts}}()          << std::endl;}
+\DoxyCodeLine{1031     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Lazy constraints added:    "} << callback-\/>\mbox{\hyperlink{classCallback_a2e355ff1f8150a2bc19d81fbb3f896e0}{getNbLazyConstraints}}()   << std::endl;}
+\DoxyCodeLine{1032     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Time on cuts:              "} << callback-\/>\mbox{\hyperlink{classCallback_ae9308c0c4da4973d60bb5fb8e24e7fff}{getTime}}()                << std::endl;}
+\DoxyCodeLine{1033     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Total time:                "} << time << std::endl                  << std::endl;}
+\DoxyCodeLine{1034 }
+\DoxyCodeLine{1035 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_aef475e4724f28b31c2dabb4525e3d55e}\label{classModel_aef475e4724f28b31c2dabb4525e3d55e}} 
+\index{Model@{Model}!run@{run}}
+\index{run@{run}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily void Model\+::run (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Solves the M\+IP. 
+
+Definition at line 964 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{965 \{}
+\DoxyCodeLine{966     std::cout << std::endl;}
+\DoxyCodeLine{967     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{968     std::cout << \textcolor{stringliteral}{"-\/                Running optimization procedure.                -\/"} << std::endl;}
+\DoxyCodeLine{969     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{970     }
+\DoxyCodeLine{971     time = cplex.getCplexTime();}
+\DoxyCodeLine{972     cplex.solve();}
+\DoxyCodeLine{973     time = cplex.getCplexTime() -\/ time;}
+\DoxyCodeLine{974 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a84323566317a3a2f0bb99911ef628193}\label{classModel_a84323566317a3a2f0bb99911ef628193}} 
+\index{Model@{Model}!setArcUsageVariables@{setArcUsageVariables}}
+\index{setArcUsageVariables@{setArcUsageVariables}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setArcUsageVariables()}{setArcUsageVariables()}}
+{\footnotesize\ttfamily void Model\+::set\+Arc\+Usage\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up arc usage variables.
+
+Set up S\+FC arc usage variables\+: For any demand k, section i, and arc a, arc\+\_\+usage\mbox{[}k\mbox{]}\mbox{[}i\mbox{]}\mbox{[}a\mbox{]} = 1 if arc a is used for routing the i-\/th section of demand k 
+
+Definition at line 226 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{226                                 \{}
+\DoxyCodeLine{227     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up SFC arc usage variables... "} << std::endl;}
+\DoxyCodeLine{228     arc\_usage.resize(data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}());}
+\DoxyCodeLine{229     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{230         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{231         arc\_usage[k].resize(NB\_SECTIONS);}
+\DoxyCodeLine{232         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{233             \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_ARCS = lemon::countArcs(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}());}
+\DoxyCodeLine{234             arc\_usage[k][i].resize(NB\_ARCS);}
+\DoxyCodeLine{235             \textcolor{keywordflow}{for} (ArcIt arc\_it(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); arc\_it != lemon::INVALID; ++arc\_it)\{}
+\DoxyCodeLine{236                 \textcolor{keywordtype}{int} a = data.\mbox{\hyperlink{classData_abed4b39766ebda2e6dd5977e784d92a1}{getArcId}}(arc\_it);}
+\DoxyCodeLine{237                 \textcolor{keywordtype}{int} tail = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}().source(arc\_it));}
+\DoxyCodeLine{238                 \textcolor{keywordtype}{int} head = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}().target(arc\_it));}
+\DoxyCodeLine{239                 std::string name = \textcolor{stringliteral}{"pi("} + std::to\_string(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_afda5a058a7756f0757f64306c4259d3a}{getId}}()) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{","} + std::to\_string(a) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{240                 \textcolor{keywordtype}{double} lb = 0.0;}
+\DoxyCodeLine{241                 \textcolor{keywordtype}{double} ub = 1.0;}
+\DoxyCodeLine{242                 \textcolor{comment}{// specific cases where arc can be fixed to zero}}
+\DoxyCodeLine{243                 \textcolor{keywordflow}{if} (i == 0 \&\& head == data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a871d696ca3e1f1cdadb7655464ac61f5}{getSource}}())\{}
+\DoxyCodeLine{244                     ub = lb;}
+\DoxyCodeLine{245                 \}}
+\DoxyCodeLine{246                 \textcolor{keywordflow}{if} (i == (NB\_SECTIONS-\/1) \&\& tail == data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a1733aacd85838734ed53d989884e7ce2}{getTarget}}())\{}
+\DoxyCodeLine{247                     ub = lb;}
+\DoxyCodeLine{248                 \}}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250                 \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_ad9c337709edb5e53fdb4679f4b0a6298}{isRelaxation}}())\{}
+\DoxyCodeLine{251                     arc\_usage[k][i][a] = IloNumVar(env, lb, ub, ILOFLOAT, name.c\_str());}
+\DoxyCodeLine{252                 \}}
+\DoxyCodeLine{253                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{254                     arc\_usage[k][i][a] = IloNumVar(env, lb, ub, ILOINT, name.c\_str());}
+\DoxyCodeLine{255                 \}}
+\DoxyCodeLine{256                 model.add(arc\_usage[k][i][a]);}
+\DoxyCodeLine{257             \}}
+\DoxyCodeLine{258         \}}
+\DoxyCodeLine{259     \}}
+\DoxyCodeLine{260 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a43f0b853c716c4ff90e9d887d727ee5d}\label{classModel_a43f0b853c716c4ff90e9d887d727ee5d}} 
+\index{Model@{Model}!setAssignmentVariables@{setAssignmentVariables}}
+\index{setAssignmentVariables@{setAssignmentVariables}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setAssignmentVariables()}{setAssignmentVariables()}}
+{\footnotesize\ttfamily void Model\+::set\+Assignment\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up assignment variables.
+
+Set up \mbox{\hyperlink{classVNF}{V\+NF}} assignment variables\+: For any demand k, section i, and node v, x\mbox{[}k\mbox{]}\mbox{[}i\mbox{]}\mbox{[}v\mbox{]} = 1 if the i-\/th \mbox{\hyperlink{classVNF}{V\+NF}} of S\+FC k can be processed on node v; 0 otherwise. 
+
+Definition at line 98 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{98                                   \{}
+\DoxyCodeLine{99     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up VNF assignment variables... "} << std::endl;}
+\DoxyCodeLine{100     x.resize(data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}());}
+\DoxyCodeLine{101     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{102         x[k].resize(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}());}
+\DoxyCodeLine{103         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{104             x[k][i].resize(lemon::countNodes(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()));}
+\DoxyCodeLine{105             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{106                 \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{107                 std::string name = \textcolor{stringliteral}{"x("} + std::to\_string(v) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{","} + std::to\_string(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_afda5a058a7756f0757f64306c4259d3a}{getId}}()) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{108                 \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_ad9c337709edb5e53fdb4679f4b0a6298}{isRelaxation}}())\{}
+\DoxyCodeLine{109                     x[k][i][v] = IloNumVar(env, 0.0, 1.0, ILOFLOAT, name.c\_str());}
+\DoxyCodeLine{110                 \}}
+\DoxyCodeLine{111                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{112                     x[k][i][v] = IloNumVar(env, 0.0, 1.0, ILOINT, name.c\_str());}
+\DoxyCodeLine{113                 \}}
+\DoxyCodeLine{114                 model.add(x[k][i][v]);}
+\DoxyCodeLine{115             \}}
+\DoxyCodeLine{116         \}}
+\DoxyCodeLine{117     \}}
+\DoxyCodeLine{118 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a1363471920be26e141f9ee4af7e79600}\label{classModel_a1363471920be26e141f9ee4af7e79600}} 
+\index{Model@{Model}!setAvailabilityVariables@{setAvailabilityVariables}}
+\index{setAvailabilityVariables@{setAvailabilityVariables}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setAvailabilityVariables()}{setAvailabilityVariables()}}
+{\footnotesize\ttfamily void Model\+::set\+Availability\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up availability variables.
+
+Set up availability variables\+: For any demand k, and section i, sec\+Avail\mbox{[}k\mbox{]}\mbox{[}i\mbox{]} refers to the availability of the i-\/th section of demand k. 
+
+Definition at line 264 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{264                                     \{}
+\DoxyCodeLine{265     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up section availability variables... "} << std::endl;}
+\DoxyCodeLine{266     \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_DEMANDS = data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}();}
+\DoxyCodeLine{267     secAvail.resize(NB\_DEMANDS);}
+\DoxyCodeLine{268     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < NB\_DEMANDS; k++)\{}
+\DoxyCodeLine{269         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_VNFS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}();}
+\DoxyCodeLine{270         secAvail[k].resize(NB\_VNFS);}
+\DoxyCodeLine{271         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_VNFS; i++)\{}
+\DoxyCodeLine{272             std::string name = \textcolor{stringliteral}{"secAvail("} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{273             \textcolor{keyword}{const} \textcolor{keywordtype}{double} LB = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}();}
+\DoxyCodeLine{274             \textcolor{keyword}{const} \textcolor{keywordtype}{double} UB = data.\mbox{\hyperlink{classData_a8116dc8ebcf1637140b168e6a5d2e431}{getParallelAvailability}}(data.\mbox{\hyperlink{classData_a3fae1be6a2eaf0b09e7b28b611071c5e}{getAvailNodeRank}}());}
+\DoxyCodeLine{275             secAvail[k][i] = IloNumVar(env, LB, UB, ILOFLOAT, name.c\_str());}
+\DoxyCodeLine{276             model.add(secAvail[k][i]);}
+\DoxyCodeLine{277         \}}
+\DoxyCodeLine{278     \}}
+\DoxyCodeLine{279 }
+\DoxyCodeLine{280     \textcolor{comment}{// secUnavail is an auxiliary variable such that secUnavail = 1 -\/ secAvail}}
+\DoxyCodeLine{281     secUnavail.resize(NB\_DEMANDS);}
+\DoxyCodeLine{282     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < NB\_DEMANDS; k++)\{}
+\DoxyCodeLine{283         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_VNFS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}();}
+\DoxyCodeLine{284         secUnavail[k].resize(NB\_VNFS);}
+\DoxyCodeLine{285         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_VNFS; i++)\{}
+\DoxyCodeLine{286             std::string name = \textcolor{stringliteral}{"secUnavail("} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{287             \textcolor{keyword}{const} \textcolor{keywordtype}{double} LB = 1.0 -\/ data.\mbox{\hyperlink{classData_a8116dc8ebcf1637140b168e6a5d2e431}{getParallelAvailability}}(data.\mbox{\hyperlink{classData_a3fae1be6a2eaf0b09e7b28b611071c5e}{getAvailNodeRank}}());}
+\DoxyCodeLine{288             \textcolor{keyword}{const} \textcolor{keywordtype}{double} UB = 1.0 -\/ data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}();}
+\DoxyCodeLine{289             secUnavail[k][i] = IloNumVar(env, LB, UB, ILOFLOAT, name.c\_str());}
+\DoxyCodeLine{290             model.add(secUnavail[k][i]);}
+\DoxyCodeLine{291         \}}
+\DoxyCodeLine{292     \}}
+\DoxyCodeLine{293 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_abf52678ca9e6e71808b81b2c96416248}\label{classModel_abf52678ca9e6e71808b81b2c96416248}} 
+\index{Model@{Model}!setBandwidthConstraints@{setBandwidthConstraints}}
+\index{setBandwidthConstraints@{setBandwidthConstraints}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setBandwidthConstraints()}{setBandwidthConstraints()}}
+{\footnotesize\ttfamily void Model\+::set\+Bandwidth\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add up the bandwidth constraints\+: The bandwidth allocated on each arc must be at most its capacity. 
+
+Definition at line 682 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{682                                    \{}
+\DoxyCodeLine{683     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Setting up Bandwidth constraints... "} << std::endl;}
+\DoxyCodeLine{684     \textcolor{keywordflow}{for} (ArcIt arc\_it(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); arc\_it != lemon::INVALID; ++arc\_it)\{}
+\DoxyCodeLine{685         \textcolor{keywordtype}{int} a = data.\mbox{\hyperlink{classData_abed4b39766ebda2e6dd5977e784d92a1}{getArcId}}(arc\_it);}
+\DoxyCodeLine{686         IloExpr exp(env);}
+\DoxyCodeLine{687         \textcolor{keywordtype}{double} rhs = data.\mbox{\hyperlink{classData_aa0f01d1e34c9304b3afcf37e1efea388}{getLink}}(a).\mbox{\hyperlink{classLink_a214f188191b5139bd58c3b6b511cc10f}{getBandwidth}}();}
+\DoxyCodeLine{688         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{689             \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{690             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{691                 \textcolor{keywordtype}{double} demand\_band = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a3d252d46213613383844f02b9cb7da50}{getBandwidth}}();}
+\DoxyCodeLine{692                 exp += (demand\_band * arc\_usage[k][i][a]);}
+\DoxyCodeLine{693             \}}
+\DoxyCodeLine{694         \}}
+\DoxyCodeLine{695         std::string name = \textcolor{stringliteral}{"Band("} + std::to\_string(a) +\textcolor{stringliteral}{")"};}
+\DoxyCodeLine{696         constraints.add(IloRange(env, -\/IloInfinity, exp, rhs, name.c\_str()));}
+\DoxyCodeLine{697         exp.clear();}
+\DoxyCodeLine{698         exp.end();}
+\DoxyCodeLine{699     \}}
+\DoxyCodeLine{700 }
+\DoxyCodeLine{701     \textcolor{comment}{// Linking band}}
+\DoxyCodeLine{702     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{703         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{704         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{705             \textcolor{keywordflow}{for} (ArcIt arc\_it(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); arc\_it != lemon::INVALID; ++arc\_it)\{}
+\DoxyCodeLine{706                 \textcolor{keywordtype}{int} a = data.\mbox{\hyperlink{classData_abed4b39766ebda2e6dd5977e784d92a1}{getArcId}}(arc\_it);}
+\DoxyCodeLine{707                 \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{708                     \textcolor{keywordtype}{int} s = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{709                     \textcolor{keywordflow}{for} (NodeIt n2(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n2 != lemon::INVALID; ++n2)\{}
+\DoxyCodeLine{710                         \textcolor{keywordtype}{int} t = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n2);}
+\DoxyCodeLine{711                         \textcolor{keywordflow}{if} (s != t)\{}
+\DoxyCodeLine{712                             IloExpr exp(env);}
+\DoxyCodeLine{713                             exp += r[k][i][a][s][t];}
+\DoxyCodeLine{714                             exp -\/= arc\_usage[k][i][a];}
+\DoxyCodeLine{715                             std::string name = \textcolor{stringliteral}{"Link\_band("} + std::to\_string(s) + \textcolor{stringliteral}{","} + std::to\_string(t) + \textcolor{stringliteral}{","} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{","} + std::to\_string(a) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{716                             constraints.add(IloRange(env, -\/IloInfinity, exp, 0, name.c\_str()));}
+\DoxyCodeLine{717                             exp.clear();}
+\DoxyCodeLine{718                             exp.end();}
+\DoxyCodeLine{719                         \}}
+\DoxyCodeLine{720                     \}}
+\DoxyCodeLine{721                 \}}
+\DoxyCodeLine{722             \}}
+\DoxyCodeLine{723         \}}
+\DoxyCodeLine{724     \}}
+\DoxyCodeLine{725 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_ae8911b15f6c396d6c6cd04bab589f9a1}\label{classModel_ae8911b15f6c396d6c6cd04bab589f9a1}} 
+\index{Model@{Model}!setConstraints@{setConstraints}}
+\index{setConstraints@{setConstraints}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setConstraints()}{setConstraints()}}
+{\footnotesize\ttfamily void Model\+::set\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up the constraints. 
+
+Definition at line 334 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{334                           \{}
+\DoxyCodeLine{335     std::cout << std::endl << \textcolor{stringliteral}{"Setting up constraints... "} << std::endl;}
+\DoxyCodeLine{336     \textcolor{comment}{// Placement related constraints}}
+\DoxyCodeLine{337     \mbox{\hyperlink{classModel_ab9c051e00cc23088f48afe2b68e3207a}{setVnfAssignmentConstraints}}();}
+\DoxyCodeLine{338     \mbox{\hyperlink{classModel_a0edd0d607e2072a84d5f4ca87d3380e9}{setNodeCapacityConstraints}}();}
+\DoxyCodeLine{339     \textcolor{keywordflow}{switch} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a3b4d0f1f3e6acc26ca9389c3e701032f}{getDisaggregatedVnfPlacement}}())\{}
+\DoxyCodeLine{340         \textcolor{keywordflow}{case} Input::DISAGGREGATED\_VNF\_PLACEMENT\_OFF:}
+\DoxyCodeLine{341             \mbox{\hyperlink{classModel_af362cb01dbf65a7d06b59df7abdf385a}{setOriginalVnfPlacementConstraints}}();}
+\DoxyCodeLine{342         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{343         \textcolor{keywordflow}{case} Input::DISAGGREGATED\_VNF\_PLACEMENT\_ON:}
+\DoxyCodeLine{344             \mbox{\hyperlink{classModel_aaf1d2b2bdb6a9a1d7baec3f9679701cd}{setVnfPlacementConstraints}}();}
+\DoxyCodeLine{345         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{346         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{347             std::cout << \textcolor{stringliteral}{"ERROR: DISAGGREGATED\_VNF\_PLACEMENT not recognized."} << std::endl;}
+\DoxyCodeLine{348             exit(EXIT\_FAILURE);}
+\DoxyCodeLine{349         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{350     \}}
+\DoxyCodeLine{351 }
+\DoxyCodeLine{352     \textcolor{comment}{// Routing related constraints}}
+\DoxyCodeLine{353     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a1ea74a71f2a6be5655a4099117246dc4}{getRoutingActivation}}() == Input::ROUTING\_ON)\{}
+\DoxyCodeLine{354         \mbox{\hyperlink{classModel_a5e4d68f54c63a74363b2fdf4a88ea3a8}{setDelayConstraints}}();}
+\DoxyCodeLine{355         \mbox{\hyperlink{classModel_a07288a33ed7eeb2882b1721b7a0b0ad1}{setLinkingConstraints}}();}
+\DoxyCodeLine{356         \mbox{\hyperlink{classModel_a79a8787ea56eb7a681d9ef01d3695a83}{setRoutingConstraints}}();}
+\DoxyCodeLine{357         \textcolor{comment}{//setBandwidthConstraints();}}
+\DoxyCodeLine{358     \}}
+\DoxyCodeLine{359 }
+\DoxyCodeLine{360     \textcolor{comment}{// Availability approx related constraints}}
+\DoxyCodeLine{361     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a81f1950337e045f575122540250622d6}{getApproximationType}}() != Input::APPROXIMATION\_TYPE\_NONE)\{}
+\DoxyCodeLine{362         setSFCAvailabilityApproxConstraints();}
+\DoxyCodeLine{363         setSectionAvailabilityApproxConstraints();}
+\DoxyCodeLine{364     \}}
+\DoxyCodeLine{365 }
+\DoxyCodeLine{366 }
+\DoxyCodeLine{367     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a06a09828ca8f11233a5a274fca648361}{getStrongNodeCapacity}}() == Input::STRONG\_NODE\_CAPACITY\_ON)\{}
+\DoxyCodeLine{368         \mbox{\hyperlink{classModel_a98f46f94ffc56357367bca09d315a08e}{setStrongNodeCapacityConstraints}}();}
+\DoxyCodeLine{369     \}}
+\DoxyCodeLine{370     }
+\DoxyCodeLine{371     model.add(constraints);}
+\DoxyCodeLine{372 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_aa286bb5e9079066ec0c8002cb6da1acc}\label{classModel_aa286bb5e9079066ec0c8002cb6da1acc}} 
+\index{Model@{Model}!setCplexParameters@{setCplexParameters}}
+\index{setCplexParameters@{setCplexParameters}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setCplexParameters()}{setCplexParameters()}}
+{\footnotesize\ttfamily void Model\+::set\+Cplex\+Parameters (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up the Cplex parameters. Time limit definition
+
+Definition at line 22 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{22                               \{}
+\DoxyCodeLine{23     std::cout << std::endl << \textcolor{stringliteral}{"Setting up CPLEX optimization parameters... "} << std::endl;}
+\DoxyCodeLine{24     \textcolor{comment}{// build callback}}
+\DoxyCodeLine{25     callback = \textcolor{keyword}{new} \mbox{\hyperlink{classCallback}{Callback}}(env, data, x, y, secAvail, secUnavail);}
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27     \textcolor{comment}{// define contexts on which the callback will be used}}
+\DoxyCodeLine{28     CPXLONG contextmask = 0;}
+\DoxyCodeLine{29     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a7b10324213e25af813d9453c1d0f7013}{getLazy}}() == Input::LAZY\_ON)\{}
+\DoxyCodeLine{30         contextmask |= IloCplex::Callback::Context::Id::Candidate;}
+\DoxyCodeLine{31     \}}
+\DoxyCodeLine{32     contextmask |= IloCplex::Callback::Context::Id::Relaxation;}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     \textcolor{comment}{// activate the callback usage}}
+\DoxyCodeLine{35     cplex.use(callback, contextmask);}
+\DoxyCodeLine{36 }
+\DoxyCodeLine{38     cplex.setParam(IloCplex::Param::TimeLimit, data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a0c410ac4e3eb99c66d256763153d1e3c}{getTimeLimit}}());}
+\DoxyCodeLine{39     \textcolor{comment}{// Treads limited to one}}
+\DoxyCodeLine{40     cplex.setParam(IloCplex::Param::Threads, 1); }
+\DoxyCodeLine{41     }
+\DoxyCodeLine{42     \textcolor{comment}{// cplex.setParam(IloCplex::Param::MIP::Strategy::HeuristicFreq, -\/1); // Uncomment to desactivate CPLEX automatic heuristics}}
+\DoxyCodeLine{43 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a5e4d68f54c63a74363b2fdf4a88ea3a8}\label{classModel_a5e4d68f54c63a74363b2fdf4a88ea3a8}} 
+\index{Model@{Model}!setDelayConstraints@{setDelayConstraints}}
+\index{setDelayConstraints@{setDelayConstraints}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setDelayConstraints()}{setDelayConstraints()}}
+{\footnotesize\ttfamily void Model\+::set\+Delay\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add up the delay constraints\+: The longest S\+FC path must not exceed its required latency. 
+
+Definition at line 500 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{500                                \{}
+\DoxyCodeLine{501     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up Delay constraints... "} << std::endl;}
+\DoxyCodeLine{502     \textcolor{comment}{// Section delay}}
+\DoxyCodeLine{503     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{504         \textcolor{keywordtype}{int} s = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{505         \textcolor{keywordflow}{for} (NodeIt n2(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n2 != lemon::INVALID; ++n2)\{}
+\DoxyCodeLine{506             \textcolor{keywordtype}{int} t = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n2);}
+\DoxyCodeLine{507             \textcolor{keywordflow}{if} (s != t)\{}
+\DoxyCodeLine{508                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{509                     \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{510                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{511                         IloExpr exp(env);}
+\DoxyCodeLine{512                         \textcolor{keywordflow}{for} (ArcIt arc\_it(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); arc\_it != lemon::INVALID; ++arc\_it)\{}
+\DoxyCodeLine{513                             \textcolor{keywordtype}{int} a = data.\mbox{\hyperlink{classData_abed4b39766ebda2e6dd5977e784d92a1}{getArcId}}(arc\_it);}
+\DoxyCodeLine{514                             \textcolor{keywordtype}{double} arc\_delay = data.\mbox{\hyperlink{classData_aa0f01d1e34c9304b3afcf37e1efea388}{getLink}}(a).\mbox{\hyperlink{classLink_a6aadd57b65d4e246640ed13bb8ee293c}{getDelay}}();}
+\DoxyCodeLine{515                             exp += (arc\_delay * r[k][i][a][s][t]);}
+\DoxyCodeLine{516                         \}}
+\DoxyCodeLine{517                         exp -\/= delay[k][i];}
+\DoxyCodeLine{518                         std::string name = \textcolor{stringliteral}{"Section\_Delay("} + std::to\_string(s) + \textcolor{stringliteral}{","} + std::to\_string(t) + \textcolor{stringliteral}{","} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) +\textcolor{stringliteral}{")"};}
+\DoxyCodeLine{519                         constraints.add(IloRange(env, -\/IloInfinity, exp, 0, name.c\_str()));}
+\DoxyCodeLine{520                         exp.clear();}
+\DoxyCodeLine{521                         exp.end();}
+\DoxyCodeLine{522                     \}}
+\DoxyCodeLine{523                 \}}
+\DoxyCodeLine{524             \}}
+\DoxyCodeLine{525         \}}
+\DoxyCodeLine{526     \}}
+\DoxyCodeLine{527 }
+\DoxyCodeLine{528     \textcolor{comment}{// Total delay}}
+\DoxyCodeLine{529     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{530         IloExpr exp(env);}
+\DoxyCodeLine{531         \textcolor{keywordtype}{double} rhs = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_acb26c804c3ae5578c2a43e97e76a5497}{getMaxLatency}}();}
+\DoxyCodeLine{532         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{533         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{534             exp += delay[k][i];}
+\DoxyCodeLine{535         \}}
+\DoxyCodeLine{536         std::string name = \textcolor{stringliteral}{"Delay("} + std::to\_string(k) +\textcolor{stringliteral}{")"};}
+\DoxyCodeLine{537         constraints.add(IloRange(env, -\/IloInfinity, exp, rhs, name.c\_str()));}
+\DoxyCodeLine{538         exp.clear();}
+\DoxyCodeLine{539         exp.end();}
+\DoxyCodeLine{540     \}}
+\DoxyCodeLine{541 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a40b73dc319080851a82abe2d2bd2b342}\label{classModel_a40b73dc319080851a82abe2d2bd2b342}} 
+\index{Model@{Model}!setDelayVariables@{setDelayVariables}}
+\index{setDelayVariables@{setDelayVariables}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setDelayVariables()}{setDelayVariables()}}
+{\footnotesize\ttfamily void Model\+::set\+Delay\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up delay variables.
+
+Set up S\+FC delay variables\+: For any demand k, and section i, delay\mbox{[}k\mbox{]}\mbox{[}i\mbox{]} corresponds to the maximal delay that can be obtained in this section 
+
+Definition at line 210 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{210                              \{}
+\DoxyCodeLine{211     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up SFC delay variables... "} << std::endl;}
+\DoxyCodeLine{212     delay.resize(data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}());}
+\DoxyCodeLine{213     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{214         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{215         delay[k].resize(NB\_SECTIONS);}
+\DoxyCodeLine{216         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{217             std::string name = \textcolor{stringliteral}{"l("} + std::to\_string(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_afda5a058a7756f0757f64306c4259d3a}{getId}}()) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{218             delay[k][i] = IloNumVar(env, 0.0, IloInfinity, ILOFLOAT, name.c\_str());}
+\DoxyCodeLine{219             model.add(delay[k][i]);}
+\DoxyCodeLine{220         \}}
+\DoxyCodeLine{221     \}}
+\DoxyCodeLine{222 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a07288a33ed7eeb2882b1721b7a0b0ad1}\label{classModel_a07288a33ed7eeb2882b1721b7a0b0ad1}} 
+\index{Model@{Model}!setLinkingConstraints@{setLinkingConstraints}}
+\index{setLinkingConstraints@{setLinkingConstraints}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setLinkingConstraints()}{setLinkingConstraints()}}
+{\footnotesize\ttfamily void Model\+::set\+Linking\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add up the linking constraints\+: Constraints linking variables. 
+
+Definition at line 544 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{544                                  \{}
+\DoxyCodeLine{545     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up Linking constraints... "} << std::endl;}
+\DoxyCodeLine{546     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{547         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{548         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{549             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{550                 \textcolor{keywordtype}{int} s = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{551                 \textcolor{keywordflow}{for} (NodeIt n2(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n2 != lemon::INVALID; ++n2)\{}
+\DoxyCodeLine{552                     \textcolor{keywordtype}{int} t = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n2);}
+\DoxyCodeLine{553                     \textcolor{comment}{// tail link}}
+\DoxyCodeLine{554                     \textcolor{keywordflow}{if} (i != 0)\{}
+\DoxyCodeLine{555                         IloExpr exp(env);}
+\DoxyCodeLine{556                         \textcolor{keywordtype}{int} vnf = i-\/1;}
+\DoxyCodeLine{557                         exp += z[k][i][s][t];}
+\DoxyCodeLine{558                         exp -\/= x[k][vnf][s];}
+\DoxyCodeLine{559                         std::string name = \textcolor{stringliteral}{"Tail\_link("} + std::to\_string(s) + \textcolor{stringliteral}{","} + std::to\_string(t) + \textcolor{stringliteral}{","} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) +\textcolor{stringliteral}{")"};}
+\DoxyCodeLine{560                         constraints.add(IloRange(env, -\/IloInfinity, exp, 0, name.c\_str()));}
+\DoxyCodeLine{561                         exp.clear();}
+\DoxyCodeLine{562                         exp.end();}
+\DoxyCodeLine{563                     \}}
+\DoxyCodeLine{564                     \textcolor{comment}{// head link}}
+\DoxyCodeLine{565                     \textcolor{keywordflow}{if} (i != NB\_SECTIONS-\/1)\{}
+\DoxyCodeLine{566                         IloExpr exp(env);}
+\DoxyCodeLine{567                         exp += z[k][i][s][t];}
+\DoxyCodeLine{568                         exp -\/= x[k][i][t];}
+\DoxyCodeLine{569                         std::string name = \textcolor{stringliteral}{"Head\_link("} + std::to\_string(s) + \textcolor{stringliteral}{","} + std::to\_string(t) + \textcolor{stringliteral}{","} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) +\textcolor{stringliteral}{")"};}
+\DoxyCodeLine{570                         constraints.add(IloRange(env, -\/IloInfinity, exp, 0, name.c\_str()));}
+\DoxyCodeLine{571                         exp.clear();}
+\DoxyCodeLine{572                         exp.end();}
+\DoxyCodeLine{573                     \}}
+\DoxyCodeLine{574                     \textcolor{comment}{// imposition link}}
+\DoxyCodeLine{575                     \textcolor{keywordflow}{if} (i == 0)\{}
+\DoxyCodeLine{576                         \textcolor{keywordflow}{if} (s == data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a871d696ca3e1f1cdadb7655464ac61f5}{getSource}}())\{}
+\DoxyCodeLine{577                             IloExpr exp(env);}
+\DoxyCodeLine{578                             exp += x[k][i][t];}
+\DoxyCodeLine{579                             exp -\/= z[k][i][s][t];}
+\DoxyCodeLine{580                             std::string name = \textcolor{stringliteral}{"Imp\_link("} + std::to\_string(s) + \textcolor{stringliteral}{","} + std::to\_string(t) + \textcolor{stringliteral}{","} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) +\textcolor{stringliteral}{")"};}
+\DoxyCodeLine{581                             constraints.add(IloRange(env, 0, exp, 0, name.c\_str()));}
+\DoxyCodeLine{582                             exp.clear();}
+\DoxyCodeLine{583                             exp.end();}
+\DoxyCodeLine{584                         \}}
+\DoxyCodeLine{585                     \}}
+\DoxyCodeLine{586                     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{587                         \textcolor{keywordflow}{if} (i == NB\_SECTIONS-\/1)\{}
+\DoxyCodeLine{588                             \textcolor{keywordflow}{if} (t == data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a1733aacd85838734ed53d989884e7ce2}{getTarget}}())\{}
+\DoxyCodeLine{589                                 IloExpr exp(env);}
+\DoxyCodeLine{590                                 exp += x[k][i-\/1][s];}
+\DoxyCodeLine{591                                 exp -\/= z[k][i][s][t];}
+\DoxyCodeLine{592                                 std::string name = \textcolor{stringliteral}{"Imp\_link("} + std::to\_string(s) + \textcolor{stringliteral}{","} + std::to\_string(t) + \textcolor{stringliteral}{","} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) +\textcolor{stringliteral}{")"};}
+\DoxyCodeLine{593                                 constraints.add(IloRange(env, 0, exp, 0, name.c\_str()));}
+\DoxyCodeLine{594                                 exp.clear();}
+\DoxyCodeLine{595                                 exp.end();}
+\DoxyCodeLine{596                             \}}
+\DoxyCodeLine{597                         \}}
+\DoxyCodeLine{598                         \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{599                             IloExpr exp(env);}
+\DoxyCodeLine{600                             exp += x[k][i-\/1][s];}
+\DoxyCodeLine{601                             exp += x[k][i][t];}
+\DoxyCodeLine{602                             exp -\/= z[k][i][s][t];}
+\DoxyCodeLine{603                             std::string name = \textcolor{stringliteral}{"Imp\_link("} + std::to\_string(s) + \textcolor{stringliteral}{","} + std::to\_string(t) + \textcolor{stringliteral}{","} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) +\textcolor{stringliteral}{")"};}
+\DoxyCodeLine{604                             constraints.add(IloRange(env, -\/IloInfinity, exp, 1.0, name.c\_str()));}
+\DoxyCodeLine{605                             exp.clear();}
+\DoxyCodeLine{606                             exp.end();}
+\DoxyCodeLine{607                         \}}
+\DoxyCodeLine{608                     \}}
+\DoxyCodeLine{609                 \}}
+\DoxyCodeLine{610             \}}
+\DoxyCodeLine{611         \}}
+\DoxyCodeLine{612     \}}
+\DoxyCodeLine{613 }
+\DoxyCodeLine{614     \textcolor{comment}{// Routing linking}}
+\DoxyCodeLine{615     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{616         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{617         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{618             \textcolor{keywordflow}{for} (ArcIt arc\_it(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); arc\_it != lemon::INVALID; ++arc\_it)\{}
+\DoxyCodeLine{619                 \textcolor{keywordtype}{int} a = data.\mbox{\hyperlink{classData_abed4b39766ebda2e6dd5977e784d92a1}{getArcId}}(arc\_it);}
+\DoxyCodeLine{620                 \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{621                     \textcolor{keywordtype}{int} s = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{622                     \textcolor{keywordflow}{for} (NodeIt n2(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n2 != lemon::INVALID; ++n2)\{}
+\DoxyCodeLine{623                         \textcolor{keywordtype}{int} t = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n2);}
+\DoxyCodeLine{624                         \textcolor{keywordflow}{if} (s != t)\{}
+\DoxyCodeLine{625                             IloExpr exp(env);}
+\DoxyCodeLine{626                             exp += r[k][i][a][s][t];}
+\DoxyCodeLine{627                             exp -\/= z[k][i][s][t];}
+\DoxyCodeLine{628                             std::string name = \textcolor{stringliteral}{"Route\_link("} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{","} +  std::to\_string(a) + \textcolor{stringliteral}{","} + std::to\_string(s) + \textcolor{stringliteral}{","} +  std::to\_string(t) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{629                             constraints.add(IloRange(env, -\/IloInfinity, exp, 0, name.c\_str()));}
+\DoxyCodeLine{630                             exp.clear();}
+\DoxyCodeLine{631                             exp.end();}
+\DoxyCodeLine{632                         \}}
+\DoxyCodeLine{633                     \}}
+\DoxyCodeLine{634                 \}}
+\DoxyCodeLine{635             \}}
+\DoxyCodeLine{636         \}}
+\DoxyCodeLine{637     \}}
+\DoxyCodeLine{638 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a0edd0d607e2072a84d5f4ca87d3380e9}\label{classModel_a0edd0d607e2072a84d5f4ca87d3380e9}} 
+\index{Model@{Model}!setNodeCapacityConstraints@{setNodeCapacityConstraints}}
+\index{setNodeCapacityConstraints@{setNodeCapacityConstraints}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setNodeCapacityConstraints()}{setNodeCapacityConstraints()}}
+{\footnotesize\ttfamily void Model\+::set\+Node\+Capacity\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add up the node capacity constraints\+: the bandwidth treated in a node must respect its capacity. 
+
+Definition at line 453 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{453                                       \{}
+\DoxyCodeLine{454     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up Node Capacity constraints... "} << std::endl;}
+\DoxyCodeLine{455     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{456         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{457         IloExpr exp(env);}
+\DoxyCodeLine{458         \textcolor{keywordtype}{double} capacity = data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a70e448af94bce47949f21ec9124dd519}{getCapacity}}();}
+\DoxyCodeLine{459         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{460             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{461                 \textcolor{keywordtype}{int} vnf = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_acd986f888fd87fb1c6aa6eb6df240b30}{getVNF\_i}}(i);}
+\DoxyCodeLine{462                 \textcolor{keywordtype}{double} coeff = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a3d252d46213613383844f02b9cb7da50}{getBandwidth}}() * data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(vnf).\mbox{\hyperlink{classVNF_ad89fe3a96f7b288afc4a40e6acf651fa}{getConsumption}}();}
+\DoxyCodeLine{463                 exp += (coeff * x[k][i][v]);}
+\DoxyCodeLine{464             \}}
+\DoxyCodeLine{465         \}}
+\DoxyCodeLine{466         std::string name = \textcolor{stringliteral}{"Node\_Capacity("} + std::to\_string(v) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{467         constraints.add(IloRange(env, 0, exp, capacity, name.c\_str()));}
+\DoxyCodeLine{468         exp.clear();}
+\DoxyCodeLine{469         exp.end();}
+\DoxyCodeLine{470     \}}
+\DoxyCodeLine{471 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_aca66921ff00023f1cff2d0673e13e1b4}\label{classModel_aca66921ff00023f1cff2d0673e13e1b4}} 
+\index{Model@{Model}!setObjective@{setObjective}}
+\index{setObjective@{setObjective}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setObjective()}{setObjective()}}
+{\footnotesize\ttfamily void Model\+::set\+Objective (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up the objective function. 
+
+Definition at line 300 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{300                         \{}
+\DoxyCodeLine{301 }
+\DoxyCodeLine{302     std::cout << \textcolor{stringliteral}{"Setting up objective function... "} << std::endl;}
+\DoxyCodeLine{303 }
+\DoxyCodeLine{304     IloExpr exp(env);}
+\DoxyCodeLine{305     }
+\DoxyCodeLine{306     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Minimizing VNF placement cost. "} << std::endl;}
+\DoxyCodeLine{307     \textcolor{comment}{/* Objective: minimize VNF placement cost */}}
+\DoxyCodeLine{308     \textcolor{keywordflow}{for}(NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n) \{}
+\DoxyCodeLine{309         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{310         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{getNbVnfs}}(); i++)\{}
+\DoxyCodeLine{311             \textcolor{keywordtype}{int} f = data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(i).\mbox{\hyperlink{classVNF_af6cff9552d07f0b026a0b0dfdfde986c}{getId}}();}
+\DoxyCodeLine{312             \textcolor{keywordtype}{double} cost = data.\mbox{\hyperlink{classData_a9f82015ae9c398224442ff6132594a83}{getPlacementCost}}(data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v), data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(f));}
+\DoxyCodeLine{313             exp += ( cost*y[v][f] ); }
+\DoxyCodeLine{314         \}}
+\DoxyCodeLine{315     \}}
+\DoxyCodeLine{316     \textcolor{comment}{// maximize avail}}
+\DoxyCodeLine{317     \textcolor{comment}{// for (int k = 0; k < data.getNbDemands(); k++)\{}}
+\DoxyCodeLine{318     \textcolor{comment}{//     for (int i = 0; i < data.getDemand(k).getNbVNFs(); i++)\{}}
+\DoxyCodeLine{319     \textcolor{comment}{//         exp -\/= 10*secAvail[k][i];}}
+\DoxyCodeLine{320     \textcolor{comment}{//     \}}}
+\DoxyCodeLine{321     \textcolor{comment}{// \}}}
+\DoxyCodeLine{322     obj.setExpr(exp);}
+\DoxyCodeLine{323     obj.setSense(IloObjective::Minimize);}
+\DoxyCodeLine{324     model.add(obj);}
+\DoxyCodeLine{325     exp.clear();}
+\DoxyCodeLine{326     exp.end();}
+\DoxyCodeLine{327 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_af362cb01dbf65a7d06b59df7abdf385a}\label{classModel_af362cb01dbf65a7d06b59df7abdf385a}} 
+\index{Model@{Model}!setOriginalVnfPlacementConstraints@{setOriginalVnfPlacementConstraints}}
+\index{setOriginalVnfPlacementConstraints@{setOriginalVnfPlacementConstraints}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setOriginalVnfPlacementConstraints()}{setOriginalVnfPlacementConstraints()}}
+{\footnotesize\ttfamily void Model\+::set\+Original\+Vnf\+Placement\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add up the original aggregated \mbox{\hyperlink{classVNF}{V\+NF}} placement constraints. 
+
+Definition at line 375 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{376 \{}
+\DoxyCodeLine{377     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up aggregated VNF Placement constraints... "} << std::endl;}
+\DoxyCodeLine{378     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} f = 0; f < data.\mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{getNbVnfs}}(); f++)\{}
+\DoxyCodeLine{379         \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{380             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{381             IloExpr exp(env);}
+\DoxyCodeLine{382             \textcolor{comment}{// build constraint expression}}
+\DoxyCodeLine{383             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{384                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{385                     \textcolor{keywordtype}{int} f\_ik = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_acd986f888fd87fb1c6aa6eb6df240b30}{getVNF\_i}}(i);}
+\DoxyCodeLine{386                     \textcolor{keywordflow}{if} (f\_ik == f)\{}
+\DoxyCodeLine{387                         exp += x[k][i][v];}
+\DoxyCodeLine{388                     \}}
+\DoxyCodeLine{389                 \}}
+\DoxyCodeLine{390             \}}
+\DoxyCodeLine{391             \textcolor{keywordtype}{int} bigM = 0;}
+\DoxyCodeLine{392             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{393                 bigM += data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}();}
+\DoxyCodeLine{394             \}}
+\DoxyCodeLine{395             exp -\/= (bigM * y[v][f]);}
+\DoxyCodeLine{396             \textcolor{comment}{// add constraint}}
+\DoxyCodeLine{397             std::string name = \textcolor{stringliteral}{"Original\_VNF\_Placement("} + std::to\_string(f) + \textcolor{stringliteral}{","} + std::to\_string(v) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{398             constraints.add(IloRange(env, -\/IloInfinity, exp, 0, name.c\_str()));}
+\DoxyCodeLine{399             exp.clear();}
+\DoxyCodeLine{400             exp.end();}
+\DoxyCodeLine{401         \}}
+\DoxyCodeLine{402     \}}
+\DoxyCodeLine{403 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a178a2721aae5c591fcc66c6458c5f358}\label{classModel_a178a2721aae5c591fcc66c6458c5f358}} 
+\index{Model@{Model}!setPairAssignmentVariables@{setPairAssignmentVariables}}
+\index{setPairAssignmentVariables@{setPairAssignmentVariables}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setPairAssignmentVariables()}{setPairAssignmentVariables()}}
+{\footnotesize\ttfamily void Model\+::set\+Pair\+Assignment\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up \mbox{\hyperlink{classVNF}{V\+NF}} pair assignement variables.
+
+Set up \mbox{\hyperlink{classVNF}{V\+NF}} pair assignment variables\+: For any demand k, section i, nodes s and t, z\mbox{[}k\mbox{]}\mbox{[}i\mbox{]}\mbox{[}s\mbox{]}\mbox{[}t\mbox{]} = 1 if for demand k, its i-\/th \mbox{\hyperlink{classVNF}{V\+NF}} is installed on node s and its (i+1)-\/th \mbox{\hyperlink{classVNF}{V\+NF}} is installed on node t 
+
+Definition at line 122 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{122                                       \{}
+\DoxyCodeLine{123     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up VNF pair assignment variables... "} << std::endl;}
+\DoxyCodeLine{124     z.resize(data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}());}
+\DoxyCodeLine{125     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{126         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{127         z[k].resize(NB\_SECTIONS);}
+\DoxyCodeLine{128         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{129             \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_NODES = lemon::countNodes(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}());}
+\DoxyCodeLine{130             z[k][i].resize(NB\_NODES);}
+\DoxyCodeLine{131             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{132                 \textcolor{keywordtype}{int} s = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{133                 z[k][i][s].resize(NB\_NODES);}
+\DoxyCodeLine{134                 \textcolor{keywordflow}{for} (NodeIt n2(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n2 != lemon::INVALID; ++n2)\{}
+\DoxyCodeLine{135                     \textcolor{keywordtype}{int} t = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n2);}
+\DoxyCodeLine{136                     std::string name = \textcolor{stringliteral}{"z("} + std::to\_string(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_afda5a058a7756f0757f64306c4259d3a}{getId}}()) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{","} + std::to\_string(s) + \textcolor{stringliteral}{","} + std::to\_string(t) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{137                     \textcolor{keywordtype}{double} lb = 0.0;}
+\DoxyCodeLine{138                     \textcolor{keywordtype}{double} ub = 1.0;}
+\DoxyCodeLine{139                     \textcolor{comment}{// specific cases where z is fixed}}
+\DoxyCodeLine{140                     \textcolor{keywordflow}{if} (i == 0 \&\& s != data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a871d696ca3e1f1cdadb7655464ac61f5}{getSource}}())\{}
+\DoxyCodeLine{141                         ub = lb;}
+\DoxyCodeLine{142                     \}}
+\DoxyCodeLine{143                     \textcolor{keywordflow}{if} (i == (NB\_SECTIONS-\/1) \&\& t != data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a1733aacd85838734ed53d989884e7ce2}{getTarget}}())\{}
+\DoxyCodeLine{144                         ub = lb;}
+\DoxyCodeLine{145                     \}}
+\DoxyCodeLine{146                     }
+\DoxyCodeLine{147                     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_ad9c337709edb5e53fdb4679f4b0a6298}{isRelaxation}}())\{}
+\DoxyCodeLine{148                         z[k][i][s][t] = IloNumVar(env, lb, ub, ILOFLOAT, name.c\_str());}
+\DoxyCodeLine{149                     \}}
+\DoxyCodeLine{150                     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{151                         z[k][i][s][t] = IloNumVar(env, lb, ub, ILOINT, name.c\_str());}
+\DoxyCodeLine{152                     \}}
+\DoxyCodeLine{153                     model.add(z[k][i][s][t]);}
+\DoxyCodeLine{154                 \}}
+\DoxyCodeLine{155             \}}
+\DoxyCodeLine{156         \}}
+\DoxyCodeLine{157     \}}
+\DoxyCodeLine{158 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_ad87e53b26703634b8741b80bdbc9f8ee}\label{classModel_ad87e53b26703634b8741b80bdbc9f8ee}} 
+\index{Model@{Model}!setPlacementVariables@{setPlacementVariables}}
+\index{setPlacementVariables@{setPlacementVariables}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setPlacementVariables()}{setPlacementVariables()}}
+{\footnotesize\ttfamily void Model\+::set\+Placement\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up placement variables.
+
+Set up \mbox{\hyperlink{classVNF}{V\+NF}} placement variables\+: For any node v and \mbox{\hyperlink{classVNF}{V\+NF}} f, y\mbox{[}v\mbox{]}\mbox{[}f\mbox{]} = 1 if \mbox{\hyperlink{classVNF}{V\+NF}} f is installed on node v; 0 otherwise 
+
+Definition at line 76 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76                                  \{}
+\DoxyCodeLine{77     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up VNF placement variables... "} << std::endl;}
+\DoxyCodeLine{78     y.resize(lemon::countNodes(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()));}
+\DoxyCodeLine{79     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{80         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{81         y[v].resize(data.\mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{getNbVnfs}}());}
+\DoxyCodeLine{82         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} f = 0; f < data.\mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{getNbVnfs}}(); f++)\{}
+\DoxyCodeLine{83             \textcolor{keywordtype}{int} vnf = data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(f).\mbox{\hyperlink{classVNF_af6cff9552d07f0b026a0b0dfdfde986c}{getId}}();}
+\DoxyCodeLine{84             std::string name = \textcolor{stringliteral}{"y("} + std::to\_string(v) + \textcolor{stringliteral}{","} + std::to\_string(vnf) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{85             \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_ad9c337709edb5e53fdb4679f4b0a6298}{isRelaxation}}())\{}
+\DoxyCodeLine{86                 y[v][f] = IloNumVar(env, 0.0, 1.0, ILOFLOAT, name.c\_str());}
+\DoxyCodeLine{87             \}}
+\DoxyCodeLine{88             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{89                 y[v][f] = IloNumVar(env, 0.0, 1.0, ILOINT, name.c\_str());}
+\DoxyCodeLine{90             \}}
+\DoxyCodeLine{91             model.add(y[v][f]);}
+\DoxyCodeLine{92         \}}
+\DoxyCodeLine{93     \}}
+\DoxyCodeLine{94 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a79a8787ea56eb7a681d9ef01d3695a83}\label{classModel_a79a8787ea56eb7a681d9ef01d3695a83}} 
+\index{Model@{Model}!setRoutingConstraints@{setRoutingConstraints}}
+\index{setRoutingConstraints@{setRoutingConstraints}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setRoutingConstraints()}{setRoutingConstraints()}}
+{\footnotesize\ttfamily void Model\+::set\+Routing\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add up the routing constraints\+: There must be a path between any two consecutive V\+N\+Fs. 
+
+Definition at line 641 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{641                                  \{}
+\DoxyCodeLine{642     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up Routing constraints... "} << std::endl;}
+\DoxyCodeLine{643     \textcolor{comment}{// tail route}}
+\DoxyCodeLine{644     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{645         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{646         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{647             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{648                 \textcolor{keywordtype}{int} s = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{649                 \textcolor{keywordflow}{for} (NodeIt n2(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n2 != lemon::INVALID; ++n2)\{}
+\DoxyCodeLine{650                     \textcolor{keywordtype}{int} t = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n2);}
+\DoxyCodeLine{651                     \textcolor{keywordflow}{if} (s != t)\{}
+\DoxyCodeLine{652                         \textcolor{keywordflow}{for} (NodeIt n3(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n3 != lemon::INVALID; ++n3)\{}
+\DoxyCodeLine{653                             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n3);}
+\DoxyCodeLine{654                             IloExpr exp(env);}
+\DoxyCodeLine{655                             \textcolor{keywordflow}{for} (OutArcIt arc\_it(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}(), n3); arc\_it != lemon::INVALID; ++arc\_it)\{}
+\DoxyCodeLine{656                                 \textcolor{keywordtype}{int} a = data.\mbox{\hyperlink{classData_abed4b39766ebda2e6dd5977e784d92a1}{getArcId}}(arc\_it);}
+\DoxyCodeLine{657                                 exp += r[k][i][a][s][t];}
+\DoxyCodeLine{658                             \}}
+\DoxyCodeLine{659                             \textcolor{keywordflow}{for} (InArcIt arc\_it(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}(), n3); arc\_it != lemon::INVALID; ++arc\_it)\{}
+\DoxyCodeLine{660                                 \textcolor{keywordtype}{int} a = data.\mbox{\hyperlink{classData_abed4b39766ebda2e6dd5977e784d92a1}{getArcId}}(arc\_it);}
+\DoxyCodeLine{661                                 exp -\/= r[k][i][a][s][t];}
+\DoxyCodeLine{662                             \}}
+\DoxyCodeLine{663                             \textcolor{keywordflow}{if} (v == s)\{}
+\DoxyCodeLine{664                                 exp -\/= z[k][i][s][t];}
+\DoxyCodeLine{665                             \}}
+\DoxyCodeLine{666                             \textcolor{keywordflow}{if} (v == t)\{}
+\DoxyCodeLine{667                                 exp += z[k][i][s][t];}
+\DoxyCodeLine{668                             \}}
+\DoxyCodeLine{669                             std::string name = \textcolor{stringliteral}{"Routing\_tail("} + std::to\_string(s) + \textcolor{stringliteral}{","} + std::to\_string(t) + \textcolor{stringliteral}{","} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{","} + std::to\_string(v) +\textcolor{stringliteral}{")"};}
+\DoxyCodeLine{670                             constraints.add(IloRange(env, 0, exp, 0, name.c\_str()));}
+\DoxyCodeLine{671                             exp.clear();}
+\DoxyCodeLine{672                             exp.end();}
+\DoxyCodeLine{673                         \}}
+\DoxyCodeLine{674                     \}}
+\DoxyCodeLine{675                 \}}
+\DoxyCodeLine{676             \}}
+\DoxyCodeLine{677         \}}
+\DoxyCodeLine{678     \}}
+\DoxyCodeLine{679 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a82df70f98d1d769a2d10e1cce22ea879}\label{classModel_a82df70f98d1d769a2d10e1cce22ea879}} 
+\index{Model@{Model}!setRoutingVariables@{setRoutingVariables}}
+\index{setRoutingVariables@{setRoutingVariables}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setRoutingVariables()}{setRoutingVariables()}}
+{\footnotesize\ttfamily void Model\+::set\+Routing\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up routing variables.
+
+Set up S\+FC routing variables\+: For any demand k, section i, arc a, and nodes s and t, r\mbox{[}k\mbox{]}\mbox{[}i\mbox{]}\mbox{[}a\mbox{]}\mbox{[}s\mbox{]}\mbox{[}t\mbox{]} = 1 if the arc a is used for routing the i-\/th section of demand k from s to t 
+
+Definition at line 162 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162                                \{}
+\DoxyCodeLine{163     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up SFC routing variables... "} << std::endl;}
+\DoxyCodeLine{164     r.resize(data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}());}
+\DoxyCodeLine{165     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{166         \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_SECTIONS = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()+1;}
+\DoxyCodeLine{167         r[k].resize(NB\_SECTIONS);}
+\DoxyCodeLine{168         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < NB\_SECTIONS; i++)\{}
+\DoxyCodeLine{169             \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_ARCS = lemon::countArcs(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}());}
+\DoxyCodeLine{170             r[k][i].resize(NB\_ARCS);}
+\DoxyCodeLine{171             \textcolor{keywordflow}{for} (ArcIt arc\_it(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); arc\_it != lemon::INVALID; ++arc\_it)\{}
+\DoxyCodeLine{172                 \textcolor{keywordtype}{int} a = data.\mbox{\hyperlink{classData_abed4b39766ebda2e6dd5977e784d92a1}{getArcId}}(arc\_it);}
+\DoxyCodeLine{173                 \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_NODES = lemon::countNodes(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}());}
+\DoxyCodeLine{174                 r[k][i][a].resize(NB\_NODES);}
+\DoxyCodeLine{175                 \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{176                     \textcolor{keywordtype}{int} s = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{177                     r[k][i][a][s].resize(NB\_NODES);}
+\DoxyCodeLine{178                     \textcolor{keywordflow}{for} (NodeIt n2(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n2 != lemon::INVALID; ++n2)\{}
+\DoxyCodeLine{179                         \textcolor{keywordtype}{int} t = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n2);}
+\DoxyCodeLine{180                         std::string name = \textcolor{stringliteral}{"r("} + std::to\_string(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_afda5a058a7756f0757f64306c4259d3a}{getId}}()) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{","} + std::to\_string(a) + \textcolor{stringliteral}{","} + std::to\_string(s) + \textcolor{stringliteral}{","} + std::to\_string(t) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{181                         \textcolor{keywordtype}{double} lb = 0.0;}
+\DoxyCodeLine{182                         \textcolor{keywordtype}{double} ub = 1.0;}
+\DoxyCodeLine{183                         \textcolor{comment}{// specific cases where r is fixed to zero}}
+\DoxyCodeLine{184                         \textcolor{keywordflow}{if} (i == 0 \&\& s != data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a871d696ca3e1f1cdadb7655464ac61f5}{getSource}}())\{}
+\DoxyCodeLine{185                             ub = lb;}
+\DoxyCodeLine{186                         \}}
+\DoxyCodeLine{187                         \textcolor{keywordflow}{if} (i == (NB\_SECTIONS-\/1) \&\& t != data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a1733aacd85838734ed53d989884e7ce2}{getTarget}}())\{}
+\DoxyCodeLine{188                             ub = lb;}
+\DoxyCodeLine{189                         \}}
+\DoxyCodeLine{190                         \textcolor{keywordflow}{if} (s == t)\{}
+\DoxyCodeLine{191                             ub = lb;}
+\DoxyCodeLine{192                         \}}
+\DoxyCodeLine{193                         \textcolor{comment}{// define variable}}
+\DoxyCodeLine{194                         \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_ad9c337709edb5e53fdb4679f4b0a6298}{isRelaxation}}())\{}
+\DoxyCodeLine{195                             r[k][i][a][s][t] = IloNumVar(env, lb, ub, ILOFLOAT, name.c\_str());}
+\DoxyCodeLine{196                         \}}
+\DoxyCodeLine{197                         \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{198                             r[k][i][a][s][t] = IloNumVar(env, lb, ub, ILOINT, name.c\_str());}
+\DoxyCodeLine{199                         \}}
+\DoxyCodeLine{200                         model.add(r[k][i][a][s][t]);}
+\DoxyCodeLine{201                     \}}
+\DoxyCodeLine{202                 \}}
+\DoxyCodeLine{203             \}}
+\DoxyCodeLine{204         \}}
+\DoxyCodeLine{205     \}}
+\DoxyCodeLine{206 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a98f46f94ffc56357367bca09d315a08e}\label{classModel_a98f46f94ffc56357367bca09d315a08e}} 
+\index{Model@{Model}!setStrongNodeCapacityConstraints@{setStrongNodeCapacityConstraints}}
+\index{setStrongNodeCapacityConstraints@{setStrongNodeCapacityConstraints}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setStrongNodeCapacityConstraints()}{setStrongNodeCapacityConstraints()}}
+{\footnotesize\ttfamily void Model\+::set\+Strong\+Node\+Capacity\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add up the strong node capacity constraints. 
+
+Definition at line 474 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{474                                             \{}
+\DoxyCodeLine{475     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Setting up Strong Node Capacity constraints... "} << std::endl;}
+\DoxyCodeLine{476     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{477         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{478         \textcolor{keywordtype}{double} capacity = data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a70e448af94bce47949f21ec9124dd519}{getCapacity}}();}
+\DoxyCodeLine{479         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} f = 0; f < data.\mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{getNbVnfs}}(); f++)\{}
+\DoxyCodeLine{480             IloExpr exp(env);}
+\DoxyCodeLine{481             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{482                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{483                     \textcolor{keywordtype}{int} vnf = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_acd986f888fd87fb1c6aa6eb6df240b30}{getVNF\_i}}(i);}
+\DoxyCodeLine{484                     \textcolor{keywordflow}{if} (vnf == f)\{}
+\DoxyCodeLine{485                         \textcolor{keywordtype}{double} coeff = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a3d252d46213613383844f02b9cb7da50}{getBandwidth}}() * data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(vnf).\mbox{\hyperlink{classVNF_ad89fe3a96f7b288afc4a40e6acf651fa}{getConsumption}}();}
+\DoxyCodeLine{486                         exp += (coeff * x[k][i][v]);}
+\DoxyCodeLine{487                     \}}
+\DoxyCodeLine{488                 \}}
+\DoxyCodeLine{489             \}}
+\DoxyCodeLine{490             exp -\/= ( capacity * y[v][f]);}
+\DoxyCodeLine{491             std::string name = \textcolor{stringliteral}{"Strong\_Node\_Capacity("} + std::to\_string(v) + \textcolor{stringliteral}{","} + std::to\_string(f) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{492             constraints.add(IloRange(env, -\/IloInfinity, exp, 0, name.c\_str()));}
+\DoxyCodeLine{493             exp.clear();}
+\DoxyCodeLine{494             exp.end();}
+\DoxyCodeLine{495         \}}
+\DoxyCodeLine{496     \}}
+\DoxyCodeLine{497 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_a9c115a91fadc7fb457cc23d179037e70}\label{classModel_a9c115a91fadc7fb457cc23d179037e70}} 
+\index{Model@{Model}!setVariables@{setVariables}}
+\index{setVariables@{setVariables}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setVariables()}{setVariables()}}
+{\footnotesize\ttfamily void Model\+::set\+Variables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Set up the variables.
+
+Set up variables 
+
+Definition at line 49 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49                         \{}
+\DoxyCodeLine{50 }
+\DoxyCodeLine{51     std::cout << \textcolor{stringliteral}{"Setting up variables... "} << std::endl;}
+\DoxyCodeLine{52     \textcolor{comment}{// Define y variables}}
+\DoxyCodeLine{53     \mbox{\hyperlink{classModel_ad87e53b26703634b8741b80bdbc9f8ee}{setPlacementVariables}}();}
+\DoxyCodeLine{54 }
+\DoxyCodeLine{55     \textcolor{comment}{// Define x variables}}
+\DoxyCodeLine{56     \mbox{\hyperlink{classModel_a43f0b853c716c4ff90e9d887d727ee5d}{setAssignmentVariables}}();}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58     \textcolor{comment}{// If routing is activated, define rounting related variables}}
+\DoxyCodeLine{59     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a1ea74a71f2a6be5655a4099117246dc4}{getRoutingActivation}}() == Input::ROUTING\_ON)\{}
+\DoxyCodeLine{60         \mbox{\hyperlink{classModel_a178a2721aae5c591fcc66c6458c5f358}{setPairAssignmentVariables}}();}
+\DoxyCodeLine{61         \mbox{\hyperlink{classModel_a82df70f98d1d769a2d10e1cce22ea879}{setRoutingVariables}}();}
+\DoxyCodeLine{62         \mbox{\hyperlink{classModel_a40b73dc319080851a82abe2d2bd2b342}{setDelayVariables}}();}
+\DoxyCodeLine{63         \mbox{\hyperlink{classModel_a84323566317a3a2f0bb99911ef628193}{setArcUsageVariables}}();}
+\DoxyCodeLine{64     \}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66     \textcolor{comment}{// If availability approximation is used, define auxiliary availability variables}}
+\DoxyCodeLine{67     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a81f1950337e045f575122540250622d6}{getApproximationType}}() != Input::APPROXIMATION\_TYPE\_NONE)\{}
+\DoxyCodeLine{68         \mbox{\hyperlink{classModel_a1363471920be26e141f9ee4af7e79600}{setAvailabilityVariables}}();}
+\DoxyCodeLine{69     \}}
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     std::cout << std::endl;}
+\DoxyCodeLine{72 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_ab9c051e00cc23088f48afe2b68e3207a}\label{classModel_ab9c051e00cc23088f48afe2b68e3207a}} 
+\index{Model@{Model}!setVnfAssignmentConstraints@{setVnfAssignmentConstraints}}
+\index{setVnfAssignmentConstraints@{setVnfAssignmentConstraints}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setVnfAssignmentConstraints()}{setVnfAssignmentConstraints()}}
+{\footnotesize\ttfamily void Model\+::set\+Vnf\+Assignment\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add up the \mbox{\hyperlink{classVNF}{V\+NF}} assignment constraints\+: At least one \mbox{\hyperlink{classVNF}{V\+NF}} must be assigned to each section of each demand. 
+
+Definition at line 427 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{427                                        \{}
+\DoxyCodeLine{428     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up VNF Assignment constraints... "} << std::endl;}
+\DoxyCodeLine{429     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{430         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{431             IloExpr exp(env);}
+\DoxyCodeLine{432             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{433                 \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{434                 exp += x[k][i][v];}
+\DoxyCodeLine{435             \}}
+\DoxyCodeLine{436             std::string name = \textcolor{stringliteral}{"VNF\_Assignment("} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{437             \textcolor{keywordtype}{int} rhs = data.\mbox{\hyperlink{classData_ace7f7f769be8e7e335a1dd46178cd67f}{getMinNbNodes}}(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}());}
+\DoxyCodeLine{438             \textcolor{comment}{//std::cout << rhs << std::endl;}}
+\DoxyCodeLine{439             \textcolor{keywordflow}{if} (rhs >= 1)\{}
+\DoxyCodeLine{440                 constraints.add(IloRange(env, rhs, exp, IloInfinity, name.c\_str()));}
+\DoxyCodeLine{441             \}}
+\DoxyCodeLine{442             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{443                 std::cerr << \textcolor{stringliteral}{"ERROR: Error within method getMinNbNodes. \(\backslash\)n"} << std::endl;}
+\DoxyCodeLine{444                 exit(0);}
+\DoxyCodeLine{445             \}}
+\DoxyCodeLine{446             exp.clear();}
+\DoxyCodeLine{447             exp.end();}
+\DoxyCodeLine{448         \}}
+\DoxyCodeLine{449     \}}
+\DoxyCodeLine{450 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classModel_aaf1d2b2bdb6a9a1d7baec3f9679701cd}\label{classModel_aaf1d2b2bdb6a9a1d7baec3f9679701cd}} 
+\index{Model@{Model}!setVnfPlacementConstraints@{setVnfPlacementConstraints}}
+\index{setVnfPlacementConstraints@{setVnfPlacementConstraints}!Model@{Model}}
+\doxysubsubsection{\texorpdfstring{setVnfPlacementConstraints()}{setVnfPlacementConstraints()}}
+{\footnotesize\ttfamily void Model\+::set\+Vnf\+Placement\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add up the \mbox{\hyperlink{classVNF}{V\+NF}} placement constraints\+: a \mbox{\hyperlink{classVNF}{V\+NF}} can only be assigned to a demand if it is already placed. 
+
+Definition at line 406 of file model.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{407 \{}
+\DoxyCodeLine{408     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up VNF Placement constraints... "} << std::endl;}
+\DoxyCodeLine{409     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{410         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{411             \textcolor{keywordtype}{int} f = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_acd986f888fd87fb1c6aa6eb6df240b30}{getVNF\_i}}(i);}
+\DoxyCodeLine{412             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{413                 \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{414                 IloExpr exp(env);}
+\DoxyCodeLine{415                 exp += x[k][i][v];}
+\DoxyCodeLine{416                 exp -\/= y[v][f];}
+\DoxyCodeLine{417                 std::string name = \textcolor{stringliteral}{"VNF\_Placement("} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{","} + std::to\_string(v) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{418                 constraints.add(IloRange(env, -\/IloInfinity, exp, 0, name.c\_str()));}
+\DoxyCodeLine{419                 exp.clear();}
+\DoxyCodeLine{420                 exp.end();}
+\DoxyCodeLine{421             \}}
+\DoxyCodeLine{422         \}}
+\DoxyCodeLine{423     \}}
+\DoxyCodeLine{424 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/solver/model.\+hpp\item 
+src/solver/model.\+cpp\end{DoxyCompactItemize}

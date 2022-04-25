@@ -1,0 +1,34 @@
+#################################################
+#                Input File Paths               #
+#################################################
+nodeFile=../instances/atlanta_15/node_R.csv
+linkFile=../instances/atlanta_15/link.csv
+demandFile=../instances/atlanta_15/20demand_1.csv
+vnfFile=../instances/atlanta_15/vnf.csv
+
+#################################################
+#            Optimization Parameters            #
+#################################################
+linearRelaxation=0
+timeLimit=7200
+
+#################################################
+#            Formulation Improvements           #
+#################################################
+disaggregated_VNF_Placement=1
+strong_node_capacity=0
+
+lazy=1
+heuristic=0
+availability_cuts=0
+node_cover=0
+chain_cover=0
+vnf_lower_bound=0
+section_failure=0
+routing=0
+availability_approx=1
+nb_breakpoints=2
+#################################################
+#              Output File Paths                #
+#################################################
+outputFile=../output/tests_log.txt

@@ -1,0 +1,193 @@
+\hypertarget{classNode}{}\doxysection{Node Class Reference}
+\label{classNode}\index{Node@{Node}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classNode_aee5a7d699594341bcb984c6e859d585e}{Node}} (const int id\+\_\+=-\/1, const std\+::string name\+\_\+=\char`\"{}\char`\"{}, const double x=0.\+0, const double y=0.\+0, const double cap=0.\+0, const double avail=0.\+0, const double cost=0.\+0)
+\item 
+const int \& \mbox{\hyperlink{classNode_aaecc980695e5c287c8f51c5fd2ac4e13}{get\+Id}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classNode_a9c3581e4343846ecc0433f87d7f33f40}{get\+Name}} () const
+\item 
+const double \& \mbox{\hyperlink{classNode_ae744aa84eb1595a09ade980dc6280365}{get\+CoordinateX}} () const
+\item 
+const double \& \mbox{\hyperlink{classNode_a1435a1852cfb8ce4623286a3f52c0ad3}{get\+CoordinateY}} () const
+\item 
+const double \& \mbox{\hyperlink{classNode_a70e448af94bce47949f21ec9124dd519}{get\+Capacity}} () const
+\item 
+const double \& \mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{get\+Availability}} () const
+\item 
+const double \& \mbox{\hyperlink{classNode_a3830725ba73a3ddea7917791a39b6f73}{get\+Unitary\+Cost}} () const
+\item 
+void \mbox{\hyperlink{classNode_a31cee4b81a8032272bd949254833e551}{print}} () const
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 18 of file node.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNode_aee5a7d699594341bcb984c6e859d585e}\label{classNode_aee5a7d699594341bcb984c6e859d585e}} 
+\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily Node\+::\+Node (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+ = {\ttfamily -\/1},  }\item[{const std\+::string}]{name\+\_\+ = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const double}]{x = {\ttfamily 0.0},  }\item[{const double}]{y = {\ttfamily 0.0},  }\item[{const double}]{cap = {\ttfamily 0.0},  }\item[{const double}]{avail = {\ttfamily 0.0},  }\item[{const double}]{cost = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Constructor.
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+} & \mbox{\hyperlink{classNode}{Node}} id.\\
+\hline
+{\em name\+\_\+} & \mbox{\hyperlink{classNode}{Node}} name.\\
+\hline
+{\em x} & \mbox{\hyperlink{classNode}{Node}}\textquotesingle{}s x coordinate.\\
+\hline
+{\em y} & \mbox{\hyperlink{classNode}{Node}}\textquotesingle{}s y coordinate.\\
+\hline
+{\em cap} & \mbox{\hyperlink{classNode}{Node}}\textquotesingle{}s capacity.\\
+\hline
+{\em avail} & \mbox{\hyperlink{classNode}{Node}}\textquotesingle{}s availability.\\
+\hline
+{\em cost} & \mbox{\hyperlink{classNode}{Node}}\textquotesingle{}s unitary cost.\\
+\hline
+\end{DoxyParams}
+Constructor. 
+
+Definition at line 8 of file node.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                                                                                                                         : }
+\DoxyCodeLine{9                 id(id\_), name(name\_), coordinate\_x(x), coordinate\_y(y), capacity(cap), availability(avail), unitary\_cost(cost) \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}\label{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}} 
+\index{Node@{Node}!getAvailability@{getAvailability}}
+\index{getAvailability@{getAvailability}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getAvailability()}{getAvailability()}}
+{\footnotesize\ttfamily const double\& Node\+::get\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the node\textquotesingle{}s availability. 
+
+Definition at line 56 of file node.\+hpp.
+
+\mbox{\Hypertarget{classNode_a70e448af94bce47949f21ec9124dd519}\label{classNode_a70e448af94bce47949f21ec9124dd519}} 
+\index{Node@{Node}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily const double\& Node\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the node\textquotesingle{}s capacity. 
+
+Definition at line 54 of file node.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54 \{ \textcolor{keywordflow}{return} this-\/>unitary\_cost; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classNode_ae744aa84eb1595a09ade980dc6280365}\label{classNode_ae744aa84eb1595a09ade980dc6280365}} 
+\index{Node@{Node}!getCoordinateX@{getCoordinateX}}
+\index{getCoordinateX@{getCoordinateX}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getCoordinateX()}{getCoordinateX()}}
+{\footnotesize\ttfamily const double\& Node\+::get\+CoordinateX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the node\textquotesingle{}s x coordinate. 
+
+Definition at line 50 of file node.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50 \{ \textcolor{keywordflow}{return} this-\/>capacity; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classNode_a1435a1852cfb8ce4623286a3f52c0ad3}\label{classNode_a1435a1852cfb8ce4623286a3f52c0ad3}} 
+\index{Node@{Node}!getCoordinateY@{getCoordinateY}}
+\index{getCoordinateY@{getCoordinateY}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getCoordinateY()}{getCoordinateY()}}
+{\footnotesize\ttfamily const double\& Node\+::get\+CoordinateY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the node\textquotesingle{}s y coordinate. 
+
+Definition at line 52 of file node.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52 \{ \textcolor{keywordflow}{return} this-\/>availability; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classNode_aaecc980695e5c287c8f51c5fd2ac4e13}\label{classNode_aaecc980695e5c287c8f51c5fd2ac4e13}} 
+\index{Node@{Node}!getId@{getId}}
+\index{getId@{getId}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily const int\& Node\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the node\textquotesingle{}s id. 
+
+Definition at line 46 of file node.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \textcolor{keywordflow}{return} this-\/>coordinate\_x; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classNode_a9c3581e4343846ecc0433f87d7f33f40}\label{classNode_a9c3581e4343846ecc0433f87d7f33f40}} 
+\index{Node@{Node}!getName@{getName}}
+\index{getName@{getName}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string\& Node\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the node\textquotesingle{}s name. 
+
+Definition at line 48 of file node.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48 \{ \textcolor{keywordflow}{return} this-\/>coordinate\_y; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classNode_a3830725ba73a3ddea7917791a39b6f73}\label{classNode_a3830725ba73a3ddea7917791a39b6f73}} 
+\index{Node@{Node}!getUnitaryCost@{getUnitaryCost}}
+\index{getUnitaryCost@{getUnitaryCost}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{getUnitaryCost()}{getUnitaryCost()}}
+{\footnotesize\ttfamily const double\& Node\+::get\+Unitary\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the node\textquotesingle{}s cost per resource unit consumed. 
+
+Definition at line 58 of file node.\+hpp.
+
+\mbox{\Hypertarget{classNode_a31cee4b81a8032272bd949254833e551}\label{classNode_a31cee4b81a8032272bd949254833e551}} 
+\index{Node@{Node}!print@{print}}
+\index{print@{print}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Node\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+Displays information about the node. 
+
+Definition at line 16 of file node.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{16                       \{}
+\DoxyCodeLine{17     std::cout << \textcolor{stringliteral}{"Id: "} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{18               << \textcolor{stringliteral}{"Name: "} << name << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{19               << \textcolor{stringliteral}{"x: "} << coordinate\_x << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{20               << \textcolor{stringliteral}{"y: "} << coordinate\_y << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{21               << \textcolor{stringliteral}{"Capacity: "} << capacity << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{22               << \textcolor{stringliteral}{"Availability: "} << availability << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{23               << \textcolor{stringliteral}{"Cost: "} << unitary\_cost << std::endl;}
+\DoxyCodeLine{24 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/network/node.\+hpp\item 
+src/network/node.\+cpp\end{DoxyCompactItemize}

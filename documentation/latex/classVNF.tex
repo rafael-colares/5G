@@ -1,0 +1,113 @@
+\hypertarget{classVNF}{}\doxysection{V\+NF Class Reference}
+\label{classVNF}\index{VNF@{VNF}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classVNF_a90e4a0b73fb2601603f802f6766fdc53}{V\+NF}} (const int id\+\_\+=-\/1, const std\+::string name\+\_\+=\char`\"{}\char`\"{}, const double cons=0.\+0)
+\item 
+const int \& \mbox{\hyperlink{classVNF_af6cff9552d07f0b026a0b0dfdfde986c}{get\+Id}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classVNF_ab6aad4822fc4820561e6091a97f8989d}{get\+Name}} () const
+\item 
+const double \& \mbox{\hyperlink{classVNF_ad89fe3a96f7b288afc4a40e6acf651fa}{get\+Consumption}} () const
+\item 
+void \mbox{\hyperlink{classVNF_a75bd09f51bcba506ceb384cb49acddd4}{print}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 18 of file vnf.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVNF_a90e4a0b73fb2601603f802f6766fdc53}\label{classVNF_a90e4a0b73fb2601603f802f6766fdc53}} 
+\index{VNF@{VNF}!VNF@{VNF}}
+\index{VNF@{VNF}!VNF@{VNF}}
+\doxysubsubsection{\texorpdfstring{VNF()}{VNF()}}
+{\footnotesize\ttfamily V\+N\+F\+::\+V\+NF (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+ = {\ttfamily -\/1},  }\item[{const std\+::string}]{name\+\_\+ = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const double}]{cons = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Constructor.
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+} & \mbox{\hyperlink{classVNF}{V\+NF}} id.\\
+\hline
+{\em name\+\_\+} & \mbox{\hyperlink{classVNF}{V\+NF}} name.\\
+\hline
+{\em cons} & \mbox{\hyperlink{classVNF}{V\+NF}} resource consumption.\\
+\hline
+\end{DoxyParams}
+Constructor. 
+
+Definition at line 8 of file vnf.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                                                 : }
+\DoxyCodeLine{9             id(id\_), name(name\_), consumption(cons)\{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVNF_ad89fe3a96f7b288afc4a40e6acf651fa}\label{classVNF_ad89fe3a96f7b288afc4a40e6acf651fa}} 
+\index{VNF@{VNF}!getConsumption@{getConsumption}}
+\index{getConsumption@{getConsumption}!VNF@{VNF}}
+\doxysubsubsection{\texorpdfstring{getConsumption()}{getConsumption()}}
+{\footnotesize\ttfamily const double\& V\+N\+F\+::get\+Consumption (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the vnf\textquotesingle{}s resource consumption. 
+
+Definition at line 45 of file vnf.\+hpp.
+
+\mbox{\Hypertarget{classVNF_af6cff9552d07f0b026a0b0dfdfde986c}\label{classVNF_af6cff9552d07f0b026a0b0dfdfde986c}} 
+\index{VNF@{VNF}!getId@{getId}}
+\index{getId@{getId}!VNF@{VNF}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily const int\& V\+N\+F\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the vnf\textquotesingle{}s id. 
+
+Definition at line 41 of file vnf.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{ \textcolor{keywordflow}{return} this-\/>consumption; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classVNF_ab6aad4822fc4820561e6091a97f8989d}\label{classVNF_ab6aad4822fc4820561e6091a97f8989d}} 
+\index{VNF@{VNF}!getName@{getName}}
+\index{getName@{getName}!VNF@{VNF}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string\& V\+N\+F\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the vnf\textquotesingle{}s name. 
+
+Definition at line 43 of file vnf.\+hpp.
+
+\mbox{\Hypertarget{classVNF_a75bd09f51bcba506ceb384cb49acddd4}\label{classVNF_a75bd09f51bcba506ceb384cb49acddd4}} 
+\index{VNF@{VNF}!print@{print}}
+\index{print@{print}!VNF@{VNF}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void V\+N\+F\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays information about the vnf. 
+
+Definition at line 15 of file vnf.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                \{}
+\DoxyCodeLine{16     std::cout << \textcolor{stringliteral}{"Id: "} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{17               << \textcolor{stringliteral}{"Name: "} << name << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{18               << \textcolor{stringliteral}{"Consumption: "} << consumption << std::endl;}
+\DoxyCodeLine{19 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/network/vnf.\+hpp\item 
+src/network/vnf.\+cpp\end{DoxyCompactItemize}

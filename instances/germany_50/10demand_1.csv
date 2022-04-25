@@ -1,0 +1,11 @@
+name;source;target;max_latency;bandwidth;availability;vnf_list;
+d_1;Flensburg;Koeln;60000;28;0.99999;vnf_7,vnf_8,vnf_6,vnf_2,vnf_4
+d_2;Bielefeld;Hannover;40000;10;0.99900;vnf_7,vnf_2,vnf_6,vnf_1,vnf_4,vnf_8
+d_3;Saarbruecken;Frankfurt;40000;10;0.99900;vnf_4,vnf_1,vnf_2,vnf_8,vnf_6,vnf_5
+d_4;Darmstadt;Augsburg;40000;10;0.99900;vnf_3,vnf_2
+d_5;Bielefeld;Koeln;5000;10;0.99999;vnf_8,vnf_7,vnf_2,vnf_5,vnf_3,vnf_1
+d_6;Ulm;Stuttgart;30000;10;0.99999;vnf_3
+d_7;Erfurt;Kassel;40000;10;0.99900;vnf_1
+d_8;Karlsruhe;Bremerhaven;10000;10;0.99990;vnf_3
+d_9;Ulm;Muenster;40000;10;0.99900;vnf_2,vnf_4,vnf_5,vnf_1
+d_10;Muenchen;Erfurt;60000;28;0.99999;vnf_1

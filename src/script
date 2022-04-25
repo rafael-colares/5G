@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+echo "This is a script for running an Orange program.";
+parameter_files=`ls ../params_restriction/*.txt`
+for entry in $parameter_files
+do
+  ./exec $entry;
+done

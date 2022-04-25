@@ -1,0 +1,707 @@
+\hypertarget{classInput}{}\doxysection{Input Class Reference}
+\label{classInput}\index{Input@{Input}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{classInput_aabcc73bcbe5ade804e458519f9acfccf}{Disaggregated\+\_\+\+V\+N\+F\+\_\+\+Placement\+\_\+\+Constraints}} \{ {\bfseries D\+I\+S\+A\+G\+G\+R\+E\+G\+A\+T\+E\+D\+\_\+\+V\+N\+F\+\_\+\+P\+L\+A\+C\+E\+M\+E\+N\+T\+\_\+\+O\+FF} = 0, 
+{\bfseries D\+I\+S\+A\+G\+G\+R\+E\+G\+A\+T\+E\+D\+\_\+\+V\+N\+F\+\_\+\+P\+L\+A\+C\+E\+M\+E\+N\+T\+\_\+\+ON} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{classInput_a66044f896cf283fb5aa66898bac8f773}{Strong\+\_\+\+Node\+\_\+\+Capacity\+\_\+\+Constraints}} \{ {\bfseries S\+T\+R\+O\+N\+G\+\_\+\+N\+O\+D\+E\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+O\+FF} = 0, 
+{\bfseries S\+T\+R\+O\+N\+G\+\_\+\+N\+O\+D\+E\+\_\+\+C\+A\+P\+A\+C\+I\+T\+Y\+\_\+\+ON} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{classInput_a9bfef510cf4b586ee64dffa7569c4146}{Availability\+\_\+\+Usercuts}} \{ {\bfseries A\+V\+A\+I\+L\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+U\+S\+E\+R\+C\+U\+T\+S\+\_\+\+O\+FF} = 0, 
+{\bfseries A\+V\+A\+I\+L\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+U\+S\+E\+R\+C\+U\+T\+S\+\_\+\+ON} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{classInput_a5ee9b9355dff040ffc9435bf2c1c7d98}{Node\+\_\+\+Cover\+\_\+\+Cuts}} \{ {\bfseries N\+O\+D\+E\+\_\+\+C\+O\+V\+E\+R\+\_\+\+O\+FF} = 0, 
+{\bfseries N\+O\+D\+E\+\_\+\+C\+O\+V\+E\+R\+\_\+\+ON} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{classInput_a704f74048b954d3ef3065912159d29a3}{Chain\+\_\+\+Cover\+\_\+\+Cuts}} \{ {\bfseries C\+H\+A\+I\+N\+\_\+\+C\+O\+V\+E\+R\+\_\+\+O\+FF} = 0, 
+{\bfseries C\+H\+A\+I\+N\+\_\+\+C\+O\+V\+E\+R\+\_\+\+ON} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{classInput_a9712099c661e3e771026346b4b31cb9a}{V\+N\+F\+\_\+\+Lower\+\_\+\+Bound\+\_\+\+Cuts}} \{ {\bfseries V\+N\+F\+\_\+\+L\+O\+W\+E\+R\+\_\+\+B\+O\+U\+N\+D\+\_\+\+C\+U\+T\+S\+\_\+\+O\+FF} = 0, 
+{\bfseries V\+N\+F\+\_\+\+L\+O\+W\+E\+R\+\_\+\+B\+O\+U\+N\+D\+\_\+\+C\+U\+T\+S\+\_\+\+ON} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{classInput_a23f5440950647e1bffba6ee1cc202efc}{Section\+\_\+\+Failure\+\_\+\+Cuts}} \{ {\bfseries S\+E\+C\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+C\+U\+T\+S\+\_\+\+O\+FF} = 0, 
+{\bfseries S\+E\+C\+T\+I\+O\+N\+\_\+\+F\+A\+I\+L\+U\+R\+E\+\_\+\+C\+U\+T\+S\+\_\+\+ON} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{classInput_a4e6075e2056993e8cb30fdf210d2eca7}{Routing}} \{ {\bfseries R\+O\+U\+T\+I\+N\+G\+\_\+\+O\+FF} = 0, 
+{\bfseries R\+O\+U\+T\+I\+N\+G\+\_\+\+ON} = 1
+ \}
+\item 
+\mbox{\Hypertarget{classInput_abbfe7c084c08d9909afcaf65980ce7ff}\label{classInput_abbfe7c084c08d9909afcaf65980ce7ff}} 
+enum {\bfseries Approximation\+\_\+\+Type} \{ {\bfseries A\+P\+P\+R\+O\+X\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+E\+S\+T\+R\+I\+C\+T\+I\+ON} = -\/1, 
+{\bfseries A\+P\+P\+R\+O\+X\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+N\+O\+NE} = 0, 
+{\bfseries A\+P\+P\+R\+O\+X\+I\+M\+A\+T\+I\+O\+N\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+E\+L\+A\+X\+A\+T\+I\+ON} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{classInput_a6d1fea1cbe2258b31611c3c5a4944ee1}{Lazy\+\_\+\+Constraints}} \{ {\bfseries L\+A\+Z\+Y\+\_\+\+O\+FF} = 0, 
+{\bfseries L\+A\+Z\+Y\+\_\+\+ON} = 1
+ \}
+\item 
+enum \mbox{\hyperlink{classInput_ac12122cd10e593449d06826a451f4a93}{Heuristic}} \{ {\bfseries H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+O\+FF} = 0, 
+{\bfseries H\+E\+U\+R\+I\+S\+T\+I\+C\+\_\+\+ON} = 1
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classInput_a64066a5e906a44fd0aa574f6c85f5a38}{Input}} (const std\+::string file)
+\item 
+\mbox{\hyperlink{classInput_a518c59262c2e317bd831237167af8576}{Input}} ()=delete
+\item 
+const std\+::string \& \mbox{\hyperlink{classInput_a15a5c0589ec83436e3a71a16ef9545c7}{get\+Parameter\+File}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classInput_a7fe5f18ee6290bf98fc39037db14d146}{get\+Node\+File}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classInput_af2cd12794698f15c9fc72d57674df3d1}{get\+Link\+File}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classInput_a2c57b8a2e75eb7e0e034972f464c1ab1}{get\+Demand\+File}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classInput_aa45295b5132cc03bccbcc38304bd1105}{get\+Vnf\+File}} () const
+\item 
+const \mbox{\hyperlink{classInput_aabcc73bcbe5ade804e458519f9acfccf}{Disaggregated\+\_\+\+V\+N\+F\+\_\+\+Placement\+\_\+\+Constraints}} \& \mbox{\hyperlink{classInput_a3b4d0f1f3e6acc26ca9389c3e701032f}{get\+Disaggregated\+Vnf\+Placement}} () const
+\item 
+const \mbox{\hyperlink{classInput_a66044f896cf283fb5aa66898bac8f773}{Strong\+\_\+\+Node\+\_\+\+Capacity\+\_\+\+Constraints}} \& \mbox{\hyperlink{classInput_a06a09828ca8f11233a5a274fca648361}{get\+Strong\+Node\+Capacity}} () const
+\item 
+const \mbox{\hyperlink{classInput_a5ee9b9355dff040ffc9435bf2c1c7d98}{Node\+\_\+\+Cover\+\_\+\+Cuts}} \& \mbox{\hyperlink{classInput_a8b8250546a117fa9bd4f1ae5b6a89588}{get\+Node\+Cover}} () const
+\item 
+const \mbox{\hyperlink{classInput_a704f74048b954d3ef3065912159d29a3}{Chain\+\_\+\+Cover\+\_\+\+Cuts}} \& \mbox{\hyperlink{classInput_ad274e290e8591b42805b308f2cfda1dc}{get\+Chain\+Cover}} () const
+\item 
+const \mbox{\hyperlink{classInput_a9bfef510cf4b586ee64dffa7569c4146}{Availability\+\_\+\+Usercuts}} \& \mbox{\hyperlink{classInput_a5f588d32b36c4e132c2596b50ba65b5e}{get\+Availability\+Usercuts}} () const
+\item 
+const \mbox{\hyperlink{classInput_a9712099c661e3e771026346b4b31cb9a}{V\+N\+F\+\_\+\+Lower\+\_\+\+Bound\+\_\+\+Cuts}} \& \mbox{\hyperlink{classInput_a3d6a10c5d47045fccc34fbb99e797b70}{get\+Vnf\+Lower\+Bound\+Cuts}} () const
+\item 
+const \mbox{\hyperlink{classInput_a23f5440950647e1bffba6ee1cc202efc}{Section\+\_\+\+Failure\+\_\+\+Cuts}} \& \mbox{\hyperlink{classInput_af14da1c586c06c4fd0db3c0fa10540f8}{get\+Section\+Failure\+Cuts}} () const
+\item 
+const \mbox{\hyperlink{classInput_a4e6075e2056993e8cb30fdf210d2eca7}{Routing}} \& \mbox{\hyperlink{classInput_a1ea74a71f2a6be5655a4099117246dc4}{get\+Routing\+Activation}} () const
+\item 
+const Approximation\+\_\+\+Type \& \mbox{\hyperlink{classInput_a81f1950337e045f575122540250622d6}{get\+Approximation\+Type}} () const
+\item 
+const \mbox{\hyperlink{classInput_a6d1fea1cbe2258b31611c3c5a4944ee1}{Lazy\+\_\+\+Constraints}} \& \mbox{\hyperlink{classInput_a7b10324213e25af813d9453c1d0f7013}{get\+Lazy}} () const
+\item 
+const \mbox{\hyperlink{classInput_ac12122cd10e593449d06826a451f4a93}{Heuristic}} \& \mbox{\hyperlink{classInput_a22b7604c7cac3057d7e5c5c39e3db0ec}{get\+Heuristic}} () const
+\item 
+const bool \& \mbox{\hyperlink{classInput_ad9c337709edb5e53fdb4679f4b0a6298}{is\+Relaxation}} () const
+\item 
+const int \& \mbox{\hyperlink{classInput_a0c410ac4e3eb99c66d256763153d1e3c}{get\+Time\+Limit}} () const
+\item 
+const int \& \mbox{\hyperlink{classInput_aa46b82ee6882534e9d4c3df572aed986}{get\+Nb\+Breakpoints}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classInput_ad1534a880d0564ba7baa43c0ffa2ca7e}{get\+Output\+File}} () const
+\item 
+std\+::string \mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{get\+Parameter\+Value}} (const std\+::string pattern)
+\item 
+void \mbox{\hyperlink{classInput_a862e529a6ed3fcfd0719274a04174b7d}{print}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 14 of file input.\+hpp.
+
+
+
+\doxysubsection{Member Enumeration Documentation}
+\mbox{\Hypertarget{classInput_a9bfef510cf4b586ee64dffa7569c4146}\label{classInput_a9bfef510cf4b586ee64dffa7569c4146}} 
+\index{Input@{Input}!Availability\_Usercuts@{Availability\_Usercuts}}
+\index{Availability\_Usercuts@{Availability\_Usercuts}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Availability\_Usercuts}{Availability\_Usercuts}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classInput_a9bfef510cf4b586ee64dffa7569c4146}{Input\+::\+Availability\+\_\+\+Usercuts}}}
+
+States wheter node cover cuts are activated. 
+
+Definition at line 31 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33                          \{}
+\DoxyCodeLine{34         NODE\_COVER\_OFF = 0,         }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a704f74048b954d3ef3065912159d29a3}\label{classInput_a704f74048b954d3ef3065912159d29a3}} 
+\index{Input@{Input}!Chain\_Cover\_Cuts@{Chain\_Cover\_Cuts}}
+\index{Chain\_Cover\_Cuts@{Chain\_Cover\_Cuts}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Chain\_Cover\_Cuts}{Chain\_Cover\_Cuts}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classInput_a704f74048b954d3ef3065912159d29a3}{Input\+::\+Chain\+\_\+\+Cover\+\_\+\+Cuts}}}
+
+States wheter chain cover cuts are activated. 
+
+Definition at line 41 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44                               \{}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_aabcc73bcbe5ade804e458519f9acfccf}\label{classInput_aabcc73bcbe5ade804e458519f9acfccf}} 
+\index{Input@{Input}!Disaggregated\_VNF\_Placement\_Constraints@{Disaggregated\_VNF\_Placement\_Constraints}}
+\index{Disaggregated\_VNF\_Placement\_Constraints@{Disaggregated\_VNF\_Placement\_Constraints}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Disaggregated\_VNF\_Placement\_Constraints}{Disaggregated\_VNF\_Placement\_Constraints}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classInput_aabcc73bcbe5ade804e458519f9acfccf}{Input\+::\+Disaggregated\+\_\+\+V\+N\+F\+\_\+\+Placement\+\_\+\+Constraints}}}
+
+States wheter disaggregated \mbox{\hyperlink{classVNF}{V\+NF}} placement constraints are activated. 
+
+Definition at line 21 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{23                                           \{}
+\DoxyCodeLine{24         STRONG\_NODE\_CAPACITY\_OFF = 0,       }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_ac12122cd10e593449d06826a451f4a93}\label{classInput_ac12122cd10e593449d06826a451f4a93}} 
+\index{Input@{Input}!Heuristic@{Heuristic}}
+\index{Heuristic@{Heuristic}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Heuristic}{Heuristic}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classInput_ac12122cd10e593449d06826a451f4a93}{Input\+::\+Heuristic}}}
+
+States wheter heuristics are activated. 
+
+Definition at line 73 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{75        :}
+\DoxyCodeLine{76 \textcolor{comment}{    /***** Input file paths *****/}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a6d1fea1cbe2258b31611c3c5a4944ee1}\label{classInput_a6d1fea1cbe2258b31611c3c5a4944ee1}} 
+\index{Input@{Input}!Lazy\_Constraints@{Lazy\_Constraints}}
+\index{Lazy\_Constraints@{Lazy\_Constraints}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Lazy\_Constraints}{Lazy\_Constraints}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classInput_a6d1fea1cbe2258b31611c3c5a4944ee1}{Input\+::\+Lazy\+\_\+\+Constraints}}}
+
+States wheter lazy constraints are activated. 
+
+Definition at line 68 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{70                    \{}
+\DoxyCodeLine{71         HEURISTIC\_OFF = 0,          }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a5ee9b9355dff040ffc9435bf2c1c7d98}\label{classInput_a5ee9b9355dff040ffc9435bf2c1c7d98}} 
+\index{Input@{Input}!Node\_Cover\_Cuts@{Node\_Cover\_Cuts}}
+\index{Node\_Cover\_Cuts@{Node\_Cover\_Cuts}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Node\_Cover\_Cuts}{Node\_Cover\_Cuts}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classInput_a5ee9b9355dff040ffc9435bf2c1c7d98}{Input\+::\+Node\+\_\+\+Cover\+\_\+\+Cuts}}}
+
+States wheter node cover cuts are activated. 
+
+Definition at line 36 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{38                           \{}
+\DoxyCodeLine{39         CHAIN\_COVER\_OFF = 0,        }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a4e6075e2056993e8cb30fdf210d2eca7}\label{classInput_a4e6075e2056993e8cb30fdf210d2eca7}} 
+\index{Input@{Input}!Routing@{Routing}}
+\index{Routing@{Routing}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Routing}{Routing}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classInput_a4e6075e2056993e8cb30fdf210d2eca7}{Input\+::\+Routing}}}
+
+States wheter routing is activated. 
+
+Definition at line 58 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{59                             \{}
+\DoxyCodeLine{60         APPROXIMATION\_TYPE\_RESTRICTION  = -\/1,}
+\DoxyCodeLine{61         APPROXIMATION\_TYPE\_NONE         = 0,        }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a23f5440950647e1bffba6ee1cc202efc}\label{classInput_a23f5440950647e1bffba6ee1cc202efc}} 
+\index{Input@{Input}!Section\_Failure\_Cuts@{Section\_Failure\_Cuts}}
+\index{Section\_Failure\_Cuts@{Section\_Failure\_Cuts}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Section\_Failure\_Cuts}{Section\_Failure\_Cuts}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classInput_a23f5440950647e1bffba6ee1cc202efc}{Input\+::\+Section\+\_\+\+Failure\+\_\+\+Cuts}}}
+
+States wheter section failure cuts are activated. 
+
+Definition at line 53 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                  \{}
+\DoxyCodeLine{56         ROUTING\_OFF = 0,        }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a66044f896cf283fb5aa66898bac8f773}\label{classInput_a66044f896cf283fb5aa66898bac8f773}} 
+\index{Input@{Input}!Strong\_Node\_Capacity\_Constraints@{Strong\_Node\_Capacity\_Constraints}}
+\index{Strong\_Node\_Capacity\_Constraints@{Strong\_Node\_Capacity\_Constraints}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Strong\_Node\_Capacity\_Constraints}{Strong\_Node\_Capacity\_Constraints}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classInput_a66044f896cf283fb5aa66898bac8f773}{Input\+::\+Strong\+\_\+\+Node\+\_\+\+Capacity\+\_\+\+Constraints}}}
+
+States wheter strong node capacity constraints are activated. 
+
+Definition at line 26 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{28                                \{}
+\DoxyCodeLine{29         AVAILABILITY\_USERCUTS\_OFF = 0,          }
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a9712099c661e3e771026346b4b31cb9a}\label{classInput_a9712099c661e3e771026346b4b31cb9a}} 
+\index{Input@{Input}!VNF\_Lower\_Bound\_Cuts@{VNF\_Lower\_Bound\_Cuts}}
+\index{VNF\_Lower\_Bound\_Cuts@{VNF\_Lower\_Bound\_Cuts}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{VNF\_Lower\_Bound\_Cuts}{VNF\_Lower\_Bound\_Cuts}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{classInput_a9712099c661e3e771026346b4b31cb9a}{Input\+::\+V\+N\+F\+\_\+\+Lower\+\_\+\+Bound\+\_\+\+Cuts}}}
+
+States wheter vnf lower bound cuts are activated. 
+
+Definition at line 47 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{50                               \{}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classInput_a64066a5e906a44fd0aa574f6c85f5a38}\label{classInput_a64066a5e906a44fd0aa574f6c85f5a38}} 
+\index{Input@{Input}!Input@{Input}}
+\index{Input@{Input}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Input\+::\+Input (\begin{DoxyParamCaption}\item[{const std\+::string}]{filename }\end{DoxyParamCaption})}
+
+Constructor initializes the object with the information contained in the parameter file.
+\begin{DoxyParams}{Parameters}
+{\em file} & The address of the parameter file (usually the address of file \textquotesingle{}parameters.\+txt\textquotesingle{}).\\
+\hline
+\end{DoxyParams}
+Constructor. 
+
+Definition at line 8 of file input.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                      : parameters\_file(filename)\{}
+\DoxyCodeLine{9     std::cout << std::endl;}
+\DoxyCodeLine{10     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{11     std::cout << \textcolor{stringliteral}{"-\/                   Reading input parameters.                   -\/"} << std::endl;}
+\DoxyCodeLine{12     std::cout << \textcolor{stringliteral}{"================================================================="} << std::endl;}
+\DoxyCodeLine{13     }
+\DoxyCodeLine{14     node\_file   = \mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"nodeFile="});}
+\DoxyCodeLine{15     link\_file   = \mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"linkFile="});}
+\DoxyCodeLine{16     demand\_file = \mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"demandFile="});}
+\DoxyCodeLine{17     vnf\_file    = \mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"vnfFile="});}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19     disaggregated\_vnf\_placement = (\mbox{\hyperlink{classInput_aabcc73bcbe5ade804e458519f9acfccf}{Disaggregated\_VNF\_Placement\_Constraints}})std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"disaggregated\_VNF\_Placement="}));}
+\DoxyCodeLine{20     strong\_node\_capacity        = (\mbox{\hyperlink{classInput_a66044f896cf283fb5aa66898bac8f773}{Strong\_Node\_Capacity\_Constraints}})std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"strong\_node\_capacity="}));}
+\DoxyCodeLine{21     node\_cover                  = (\mbox{\hyperlink{classInput_a5ee9b9355dff040ffc9435bf2c1c7d98}{Node\_Cover\_Cuts}})std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"node\_cover="}));}
+\DoxyCodeLine{22     chain\_cover                 = (\mbox{\hyperlink{classInput_a704f74048b954d3ef3065912159d29a3}{Chain\_Cover\_Cuts}})std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"chain\_cover="}));}
+\DoxyCodeLine{23     vnf\_lower\_bound             = (\mbox{\hyperlink{classInput_a9712099c661e3e771026346b4b31cb9a}{VNF\_Lower\_Bound\_Cuts}})std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"vnf\_lower\_bound="}));}
+\DoxyCodeLine{24     section\_failure\_cuts        = (\mbox{\hyperlink{classInput_a23f5440950647e1bffba6ee1cc202efc}{Section\_Failure\_Cuts}})std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"section\_failure="}));}
+\DoxyCodeLine{25     routing\_activation          = (\mbox{\hyperlink{classInput_a4e6075e2056993e8cb30fdf210d2eca7}{Routing}})std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"routing="}));}
+\DoxyCodeLine{26     approx\_type                 = (Approximation\_Type)std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"availability\_approx="}));}
+\DoxyCodeLine{27     lazy                        = (\mbox{\hyperlink{classInput_a6d1fea1cbe2258b31611c3c5a4944ee1}{Lazy\_Constraints}})std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"lazy="}));}
+\DoxyCodeLine{28     heuristic\_activation        = (\mbox{\hyperlink{classInput_ac12122cd10e593449d06826a451f4a93}{Heuristic}})std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"heuristic="}));}
+\DoxyCodeLine{29 }
+\DoxyCodeLine{30     linear\_relaxation           = std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"linearRelaxation="}));}
+\DoxyCodeLine{31     time\_limit                  = std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"timeLimit="}));}
+\DoxyCodeLine{32     nb\_breakpoints              = std::stoi(\mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"nb\_breakpoints="}));}
+\DoxyCodeLine{33 }
+\DoxyCodeLine{34     output\_file                 = \mbox{\hyperlink{classInput_aa08630fc7924a83e1f1be7fc23ce925f}{getParameterValue}}(\textcolor{stringliteral}{"outputFile="});}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36     \mbox{\hyperlink{classInput_a862e529a6ed3fcfd0719274a04174b7d}{print}}();}
+\DoxyCodeLine{37 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a518c59262c2e317bd831237167af8576}\label{classInput_a518c59262c2e317bd831237167af8576}} 
+\index{Input@{Input}!Input@{Input}}
+\index{Input@{Input}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{Input()}{Input()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Input\+::\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Constructor always need a parameter file. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classInput_a81f1950337e045f575122540250622d6}\label{classInput_a81f1950337e045f575122540250622d6}} 
+\index{Input@{Input}!getApproximationType@{getApproximationType}}
+\index{getApproximationType@{getApproximationType}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getApproximationType()}{getApproximationType()}}
+{\footnotesize\ttfamily const Approximation\+\_\+\+Type\& Input\+::get\+Approximation\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the type of availability approximation to be used. 
+
+Definition at line 154 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{155 \{ \textcolor{keywordflow}{return} heuristic\_activation; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a5f588d32b36c4e132c2596b50ba65b5e}\label{classInput_a5f588d32b36c4e132c2596b50ba65b5e}} 
+\index{Input@{Input}!getAvailabilityUsercuts@{getAvailabilityUsercuts}}
+\index{getAvailabilityUsercuts@{getAvailabilityUsercuts}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getAvailabilityUsercuts()}{getAvailabilityUsercuts()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput_a9bfef510cf4b586ee64dffa7569c4146}{Availability\+\_\+\+Usercuts}}\& Input\+::get\+Availability\+Usercuts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether availability cuts are activated. 
+
+Definition at line 146 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{147 \{ \textcolor{keywordflow}{return} section\_failure\_cuts; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_ad274e290e8591b42805b308f2cfda1dc}\label{classInput_ad274e290e8591b42805b308f2cfda1dc}} 
+\index{Input@{Input}!getChainCover@{getChainCover}}
+\index{getChainCover@{getChainCover}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getChainCover()}{getChainCover()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput_a704f74048b954d3ef3065912159d29a3}{Chain\+\_\+\+Cover\+\_\+\+Cuts}}\& Input\+::get\+Chain\+Cover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether chain cover cuts are activated. 
+
+Definition at line 144 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{145 \{ \textcolor{keywordflow}{return} vnf\_lower\_bound; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a2c57b8a2e75eb7e0e034972f464c1ab1}\label{classInput_a2c57b8a2e75eb7e0e034972f464c1ab1}} 
+\index{Input@{Input}!getDemandFile@{getDemandFile}}
+\index{getDemandFile@{getDemandFile}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getDemandFile()}{getDemandFile()}}
+{\footnotesize\ttfamily const std\+::string\& Input\+::get\+Demand\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the demand file. 
+
+Definition at line 132 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{132 \{ \textcolor{keywordflow}{return} this-\/>vnf\_file; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a3b4d0f1f3e6acc26ca9389c3e701032f}\label{classInput_a3b4d0f1f3e6acc26ca9389c3e701032f}} 
+\index{Input@{Input}!getDisaggregatedVnfPlacement@{getDisaggregatedVnfPlacement}}
+\index{getDisaggregatedVnfPlacement@{getDisaggregatedVnfPlacement}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getDisaggregatedVnfPlacement()}{getDisaggregatedVnfPlacement()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput_aabcc73bcbe5ade804e458519f9acfccf}{Disaggregated\+\_\+\+V\+N\+F\+\_\+\+Placement\+\_\+\+Constraints}}\& Input\+::get\+Disaggregated\+Vnf\+Placement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether disaggregated vnf placement constraints are activated. 
+
+Definition at line 138 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{139 \{ \textcolor{keywordflow}{return} node\_cover; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a22b7604c7cac3057d7e5c5c39e3db0ec}\label{classInput_a22b7604c7cac3057d7e5c5c39e3db0ec}} 
+\index{Input@{Input}!getHeuristic@{getHeuristic}}
+\index{getHeuristic@{getHeuristic}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getHeuristic()}{getHeuristic()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput_ac12122cd10e593449d06826a451f4a93}{Heuristic}}\& Input\+::get\+Heuristic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether heuristics are used. 
+
+Definition at line 158 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{159 \{ \textcolor{keywordflow}{return} this-\/>linear\_relaxation; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a7b10324213e25af813d9453c1d0f7013}\label{classInput_a7b10324213e25af813d9453c1d0f7013}} 
+\index{Input@{Input}!getLazy@{getLazy}}
+\index{getLazy@{getLazy}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getLazy()}{getLazy()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput_a6d1fea1cbe2258b31611c3c5a4944ee1}{Lazy\+\_\+\+Constraints}}\& Input\+::get\+Lazy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether lazy constraints are activated 
+
+Definition at line 156 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{159 \{ \textcolor{keywordflow}{return} this-\/>linear\_relaxation; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_af2cd12794698f15c9fc72d57674df3d1}\label{classInput_af2cd12794698f15c9fc72d57674df3d1}} 
+\index{Input@{Input}!getLinkFile@{getLinkFile}}
+\index{getLinkFile@{getLinkFile}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getLinkFile()}{getLinkFile()}}
+{\footnotesize\ttfamily const std\+::string\& Input\+::get\+Link\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the link file. 
+
+Definition at line 129 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{129 \{ \textcolor{keywordflow}{return} this-\/>demand\_file; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_aa46b82ee6882534e9d4c3df572aed986}\label{classInput_aa46b82ee6882534e9d4c3df572aed986}} 
+\index{Input@{Input}!getNbBreakpoints@{getNbBreakpoints}}
+\index{getNbBreakpoints@{getNbBreakpoints}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getNbBreakpoints()}{getNbBreakpoints()}}
+{\footnotesize\ttfamily const int\& Input\+::get\+Nb\+Breakpoints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of breakpoints to be used in the log approximation. 
+
+Definition at line 168 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{168 \{ \textcolor{keywordflow}{return} this-\/>output\_file; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a8b8250546a117fa9bd4f1ae5b6a89588}\label{classInput_a8b8250546a117fa9bd4f1ae5b6a89588}} 
+\index{Input@{Input}!getNodeCover@{getNodeCover}}
+\index{getNodeCover@{getNodeCover}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getNodeCover()}{getNodeCover()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput_a5ee9b9355dff040ffc9435bf2c1c7d98}{Node\+\_\+\+Cover\+\_\+\+Cuts}}\& Input\+::get\+Node\+Cover (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether node cover cuts are activated. 
+
+Definition at line 142 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{143 \{ \textcolor{keywordflow}{return} availability\_cuts; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a7fe5f18ee6290bf98fc39037db14d146}\label{classInput_a7fe5f18ee6290bf98fc39037db14d146}} 
+\index{Input@{Input}!getNodeFile@{getNodeFile}}
+\index{getNodeFile@{getNodeFile}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getNodeFile()}{getNodeFile()}}
+{\footnotesize\ttfamily const std\+::string\& Input\+::get\+Node\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the node file. 
+
+Definition at line 126 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126 \{ \textcolor{keywordflow}{return} this-\/>link\_file; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_ad1534a880d0564ba7baa43c0ffa2ca7e}\label{classInput_ad1534a880d0564ba7baa43c0ffa2ca7e}} 
+\index{Input@{Input}!getOutputFile@{getOutputFile}}
+\index{getOutputFile@{getOutputFile}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getOutputFile()}{getOutputFile()}}
+{\footnotesize\ttfamily const std\+::string\& Input\+::get\+Output\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the output file. 
+
+Definition at line 171 of file input.\+hpp.
+
+\mbox{\Hypertarget{classInput_a15a5c0589ec83436e3a71a16ef9545c7}\label{classInput_a15a5c0589ec83436e3a71a16ef9545c7}} 
+\index{Input@{Input}!getParameterFile@{getParameterFile}}
+\index{getParameterFile@{getParameterFile}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getParameterFile()}{getParameterFile()}}
+{\footnotesize\ttfamily const std\+::string\& Input\+::get\+Parameter\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the parameters file. 
+
+Definition at line 123 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123 \{ \textcolor{keywordflow}{return} this-\/>node\_file; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_aa08630fc7924a83e1f1be7fc23ce925f}\label{classInput_aa08630fc7924a83e1f1be7fc23ce925f}} 
+\index{Input@{Input}!getParameterValue@{getParameterValue}}
+\index{getParameterValue@{getParameterValue}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getParameterValue()}{getParameterValue()}}
+{\footnotesize\ttfamily std\+::string Input\+::get\+Parameter\+Value (\begin{DoxyParamCaption}\item[{const std\+::string}]{pattern }\end{DoxyParamCaption})}
+
+Returns the pattern value in the parameters file. 
+
+Definition at line 42 of file input.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42                                                    \{}
+\DoxyCodeLine{43     std::string line;}
+\DoxyCodeLine{44     std::string value = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{45     std::ifstream param\_file (parameters\_file.c\_str());}
+\DoxyCodeLine{46     \textcolor{keywordflow}{if} (param\_file.is\_open()) \{}
+\DoxyCodeLine{47         \textcolor{keywordflow}{while} ( std::getline (param\_file, line) ) \{}
+\DoxyCodeLine{48             std::size\_t pos = line.find(pattern);}
+\DoxyCodeLine{49             \textcolor{keywordflow}{if} (pos != std::string::npos)\{}
+\DoxyCodeLine{50                 value = line.substr(pos + pattern.size());}
+\DoxyCodeLine{51                 \textcolor{keywordflow}{if} (value.empty())\{}
+\DoxyCodeLine{52                     std::cout << \textcolor{stringliteral}{"WARNING: Field '"} << pattern << \textcolor{stringliteral}{"' is empty."} << std::endl; }
+\DoxyCodeLine{53                 \}}
+\DoxyCodeLine{54                 \textcolor{keywordflow}{return} value;}
+\DoxyCodeLine{55             \}}
+\DoxyCodeLine{56         \}}
+\DoxyCodeLine{57         param\_file.close();}
+\DoxyCodeLine{58     \}}
+\DoxyCodeLine{59     \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{60         std::cerr << \textcolor{stringliteral}{"ERROR: Unable to open parameters file '"} << parameters\_file << \textcolor{stringliteral}{"'."} << std::endl; }
+\DoxyCodeLine{61         exit(EXIT\_FAILURE);}
+\DoxyCodeLine{62     \}}
+\DoxyCodeLine{63     std::cout << \textcolor{stringliteral}{"WARNING: Did not found field '"} << pattern << \textcolor{stringliteral}{"' inside parameters file."} << std::endl; }
+\DoxyCodeLine{64     \textcolor{keywordflow}{return} value;}
+\DoxyCodeLine{65 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a1ea74a71f2a6be5655a4099117246dc4}\label{classInput_a1ea74a71f2a6be5655a4099117246dc4}} 
+\index{Input@{Input}!getRoutingActivation@{getRoutingActivation}}
+\index{getRoutingActivation@{getRoutingActivation}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getRoutingActivation()}{getRoutingActivation()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput_a4e6075e2056993e8cb30fdf210d2eca7}{Routing}}\& Input\+::get\+Routing\+Activation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether routing is activated. 
+
+Definition at line 152 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{153 \{ \textcolor{keywordflow}{return} lazy; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_af14da1c586c06c4fd0db3c0fa10540f8}\label{classInput_af14da1c586c06c4fd0db3c0fa10540f8}} 
+\index{Input@{Input}!getSectionFailureCuts@{getSectionFailureCuts}}
+\index{getSectionFailureCuts@{getSectionFailureCuts}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getSectionFailureCuts()}{getSectionFailureCuts()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput_a23f5440950647e1bffba6ee1cc202efc}{Section\+\_\+\+Failure\+\_\+\+Cuts}}\& Input\+::get\+Section\+Failure\+Cuts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether section failure cuts are activated. 
+
+Definition at line 150 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{151 \{ \textcolor{keywordflow}{return} approx\_type; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a06a09828ca8f11233a5a274fca648361}\label{classInput_a06a09828ca8f11233a5a274fca648361}} 
+\index{Input@{Input}!getStrongNodeCapacity@{getStrongNodeCapacity}}
+\index{getStrongNodeCapacity@{getStrongNodeCapacity}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getStrongNodeCapacity()}{getStrongNodeCapacity()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput_a66044f896cf283fb5aa66898bac8f773}{Strong\+\_\+\+Node\+\_\+\+Capacity\+\_\+\+Constraints}}\& Input\+::get\+Strong\+Node\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether strong node capacity constraints are activated. 
+
+Definition at line 140 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141 \{ \textcolor{keywordflow}{return} chain\_cover; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a0c410ac4e3eb99c66d256763153d1e3c}\label{classInput_a0c410ac4e3eb99c66d256763153d1e3c}} 
+\index{Input@{Input}!getTimeLimit@{getTimeLimit}}
+\index{getTimeLimit@{getTimeLimit}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getTimeLimit()}{getTimeLimit()}}
+{\footnotesize\ttfamily const int\& Input\+::get\+Time\+Limit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns time limit in seconds to be applied. 
+
+Definition at line 165 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{165 \{ \textcolor{keywordflow}{return} this-\/>nb\_breakpoints; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_aa45295b5132cc03bccbcc38304bd1105}\label{classInput_aa45295b5132cc03bccbcc38304bd1105}} 
+\index{Input@{Input}!getVnfFile@{getVnfFile}}
+\index{getVnfFile@{getVnfFile}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getVnfFile()}{getVnfFile()}}
+{\footnotesize\ttfamily const std\+::string\& Input\+::get\+Vnf\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the \mbox{\hyperlink{classVNF}{V\+NF}} file. 
+
+Definition at line 135 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{135 \{ \textcolor{keywordflow}{return} disaggregated\_vnf\_placement; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a3d6a10c5d47045fccc34fbb99e797b70}\label{classInput_a3d6a10c5d47045fccc34fbb99e797b70}} 
+\index{Input@{Input}!getVnfLowerBoundCuts@{getVnfLowerBoundCuts}}
+\index{getVnfLowerBoundCuts@{getVnfLowerBoundCuts}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{getVnfLowerBoundCuts()}{getVnfLowerBoundCuts()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classInput_a9712099c661e3e771026346b4b31cb9a}{V\+N\+F\+\_\+\+Lower\+\_\+\+Bound\+\_\+\+Cuts}}\& Input\+::get\+Vnf\+Lower\+Bound\+Cuts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns whether vnf lower bound cuts are activated. 
+
+Definition at line 148 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149 \{ \textcolor{keywordflow}{return} routing\_activation; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_ad9c337709edb5e53fdb4679f4b0a6298}\label{classInput_ad9c337709edb5e53fdb4679f4b0a6298}} 
+\index{Input@{Input}!isRelaxation@{isRelaxation}}
+\index{isRelaxation@{isRelaxation}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{isRelaxation()}{isRelaxation()}}
+{\footnotesize\ttfamily const bool\& Input\+::is\+Relaxation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns true if linear relaxation is to be applied. 
+
+Definition at line 162 of file input.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162 \{ \textcolor{keywordflow}{return} this-\/>time\_limit; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classInput_a862e529a6ed3fcfd0719274a04174b7d}\label{classInput_a862e529a6ed3fcfd0719274a04174b7d}} 
+\index{Input@{Input}!print@{print}}
+\index{print@{print}!Input@{Input}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Input\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Print the parameters stored in the parameter file.
+
+Print the info stored in the parameter file. 
+
+Definition at line 68 of file input.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                  \{}
+\DoxyCodeLine{69     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Node File:                     "} << node\_file    << std::endl;}
+\DoxyCodeLine{70     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Link File:                     "} << link\_file    << std::endl;}
+\DoxyCodeLine{71     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Service Chain Function File:   "} << demand\_file  << std::endl;}
+\DoxyCodeLine{72     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Virtual Network Function File: "} << vnf\_file     << std::endl;}
+\DoxyCodeLine{73     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Output File:                   "} << output\_file  << std::endl;}
+\DoxyCodeLine{74     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Linear Relaxation:             "};}
+\DoxyCodeLine{75     \textcolor{keywordflow}{if} (linear\_relaxation)  std::cout << \textcolor{stringliteral}{"TRUE"} << std::endl;}
+\DoxyCodeLine{76     \textcolor{keywordflow}{else}                    std::cout << \textcolor{stringliteral}{"FALSE"} << std::endl;}
+\DoxyCodeLine{77     }
+\DoxyCodeLine{78     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Time Limit:                    "} << time\_limit   << \textcolor{stringliteral}{" seconds"}   << std::endl;}
+\DoxyCodeLine{79     std::cout << std::endl;}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Lazy Constraints:        "} << lazy                         << std::endl;}
+\DoxyCodeLine{82     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Heuristics:              "} << heuristic\_activation         << std::endl;}
+\DoxyCodeLine{83     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Disaggregated placement: "} << disaggregated\_vnf\_placement  << std::endl;}
+\DoxyCodeLine{84     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Strong capacity:         "} << strong\_node\_capacity         << std::endl;}
+\DoxyCodeLine{85     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Node cover:              "} << node\_cover                   << std::endl;}
+\DoxyCodeLine{86     std::cout << \textcolor{stringliteral}{"\(\backslash\)t Chain cover:             "} << chain\_cover                  << std::endl;}
+\DoxyCodeLine{87 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/instance/input.\+hpp\item 
+src/instance/input.\+cpp\end{DoxyCompactItemize}

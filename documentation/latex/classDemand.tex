@@ -1,0 +1,300 @@
+\hypertarget{classDemand}{}\doxysection{Demand Class Reference}
+\label{classDemand}\index{Demand@{Demand}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDemand_a3e1192d881136f6d533b64676c17092c}{Demand}} (const int id\+\_\+=-\/1, const std\+::string name\+\_\+=\char`\"{}\char`\"{}, const int s=-\/1, const int t=-\/1, const double l=0.\+0, const double b=0.\+0, const double a=0.\+0)
+\item 
+const int \& \mbox{\hyperlink{classDemand_afda5a058a7756f0757f64306c4259d3a}{get\+Id}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classDemand_a1787237b852022b3f3ceac625e5c0ee5}{get\+Name}} () const
+\item 
+const int \& \mbox{\hyperlink{classDemand_a871d696ca3e1f1cdadb7655464ac61f5}{get\+Source}} () const
+\item 
+const int \& \mbox{\hyperlink{classDemand_a1733aacd85838734ed53d989884e7ce2}{get\+Target}} () const
+\item 
+const double \& \mbox{\hyperlink{classDemand_acb26c804c3ae5578c2a43e97e76a5497}{get\+Max\+Latency}} () const
+\item 
+const double \& \mbox{\hyperlink{classDemand_a3d252d46213613383844f02b9cb7da50}{get\+Bandwidth}} () const
+\item 
+const double \& \mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{get\+Availability}} () const
+\item 
+const std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classDemand_adeb7cec37d3d13c64e58e928020beb4a}{get\+List\+Of\+V\+N\+Fs}} () const
+\item 
+const int \mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{get\+Nb\+V\+N\+Fs}} () const
+\item 
+const int \mbox{\hyperlink{classDemand_acd986f888fd87fb1c6aa6eb6df240b30}{get\+V\+N\+F\+\_\+i}} (int i) const
+\item 
+const std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classDemand_a3c469bb71b01d1e626f439b80d1ece20}{get\+List\+Of\+Links}} () const
+\item 
+const unsigned int \mbox{\hyperlink{classDemand_a2460cb7b09048ccc24b3bddd8d7a3c92}{get\+Nb\+Hops}} () const
+\item 
+void \mbox{\hyperlink{classDemand_add3d3d58c7bba2268b93e85b18e13dab}{add\+V\+NF}} (const int id)
+\item 
+void \mbox{\hyperlink{classDemand_abf63434813a4e7a57d38b27e8f161234}{print}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 18 of file demand.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDemand_a3e1192d881136f6d533b64676c17092c}\label{classDemand_a3e1192d881136f6d533b64676c17092c}} 
+\index{Demand@{Demand}!Demand@{Demand}}
+\index{Demand@{Demand}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{Demand()}{Demand()}}
+{\footnotesize\ttfamily Demand\+::\+Demand (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+ = {\ttfamily -\/1},  }\item[{const std\+::string}]{name\+\_\+ = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const int}]{s = {\ttfamily -\/1},  }\item[{const int}]{t = {\ttfamily -\/1},  }\item[{const double}]{l = {\ttfamily 0.0},  }\item[{const double}]{b = {\ttfamily 0.0},  }\item[{const double}]{a = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Constructor.
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+} & \mbox{\hyperlink{classDemand}{Demand}} id.\\
+\hline
+{\em name\+\_\+} & \mbox{\hyperlink{classDemand}{Demand}} name.\\
+\hline
+{\em s} & \mbox{\hyperlink{classDemand}{Demand}} source node id.\\
+\hline
+{\em t} & \mbox{\hyperlink{classDemand}{Demand}} target node id.\\
+\hline
+{\em l} & \mbox{\hyperlink{classDemand}{Demand}} maximum latency.\\
+\hline
+{\em b} & \mbox{\hyperlink{classDemand}{Demand}} requested bandwidth.\\
+\hline
+{\em a} & \mbox{\hyperlink{classDemand}{Demand}} requested availability.\\
+\hline
+\end{DoxyParams}
+Constructor. 
+
+Definition at line 8 of file demand.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                                                                                                              : }
+\DoxyCodeLine{9             id(id\_), name(name\_), source(s), target(t), max\_latency(l), bandwidth(b), availability(a) \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDemand_add3d3d58c7bba2268b93e85b18e13dab}\label{classDemand_add3d3d58c7bba2268b93e85b18e13dab}} 
+\index{Demand@{Demand}!addVNF@{addVNF}}
+\index{addVNF@{addVNF}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{addVNF()}{addVNF()}}
+{\footnotesize\ttfamily void Demand\+::add\+V\+NF (\begin{DoxyParamCaption}\item[{const int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds a requested V\+FN.
+\begin{DoxyParams}{Parameters}
+{\em id} & The \mbox{\hyperlink{classVNF}{V\+NF}}\textquotesingle{}s id. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file demand.\+hpp.
+
+\mbox{\Hypertarget{classDemand_ab7351078a5fd0d9c4d46aa9601391776}\label{classDemand_ab7351078a5fd0d9c4d46aa9601391776}} 
+\index{Demand@{Demand}!getAvailability@{getAvailability}}
+\index{getAvailability@{getAvailability}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getAvailability()}{getAvailability()}}
+{\footnotesize\ttfamily const double\& Demand\+::get\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the demand\textquotesingle{}s requested availability. 
+
+Definition at line 60 of file demand.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61 \{ \textcolor{keywordflow}{return} (\textcolor{keywordtype}{int})this-\/>VNF\_list.size(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDemand_a3d252d46213613383844f02b9cb7da50}\label{classDemand_a3d252d46213613383844f02b9cb7da50}} 
+\index{Demand@{Demand}!getBandwidth@{getBandwidth}}
+\index{getBandwidth@{getBandwidth}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getBandwidth()}{getBandwidth()}}
+{\footnotesize\ttfamily const double\& Demand\+::get\+Bandwidth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the demand\textquotesingle{}s requested bandwidth. 
+
+Definition at line 58 of file demand.\+hpp.
+
+\mbox{\Hypertarget{classDemand_afda5a058a7756f0757f64306c4259d3a}\label{classDemand_afda5a058a7756f0757f64306c4259d3a}} 
+\index{Demand@{Demand}!getId@{getId}}
+\index{getId@{getId}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily const int\& Demand\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the demand\textquotesingle{}s id. 
+
+Definition at line 48 of file demand.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49 \{ \textcolor{keywordflow}{return} this-\/>source; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDemand_a3c469bb71b01d1e626f439b80d1ece20}\label{classDemand_a3c469bb71b01d1e626f439b80d1ece20}} 
+\index{Demand@{Demand}!getListOfLinks@{getListOfLinks}}
+\index{getListOfLinks@{getListOfLinks}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getListOfLinks()}{getListOfLinks()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$\& Demand\+::get\+List\+Of\+Links (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the list of arcs routing the demand. 
+
+Definition at line 68 of file demand.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74 \{ this-\/>VNF\_list.push\_back(\textcolor{keywordtype}{id}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDemand_adeb7cec37d3d13c64e58e928020beb4a}\label{classDemand_adeb7cec37d3d13c64e58e928020beb4a}} 
+\index{Demand@{Demand}!getListOfVNFs@{getListOfVNFs}}
+\index{getListOfVNFs@{getListOfVNFs}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getListOfVNFs()}{getListOfVNFs()}}
+{\footnotesize\ttfamily const std\+::vector$<$int$>$\& Demand\+::get\+List\+Of\+V\+N\+Fs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the demand\textquotesingle{}s list of V\+N\+Fs. 
+
+Definition at line 62 of file demand.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{63 \{ \textcolor{keywordflow}{return} this-\/>VNF\_list[i]; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDemand_acb26c804c3ae5578c2a43e97e76a5497}\label{classDemand_acb26c804c3ae5578c2a43e97e76a5497}} 
+\index{Demand@{Demand}!getMaxLatency@{getMaxLatency}}
+\index{getMaxLatency@{getMaxLatency}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getMaxLatency()}{getMaxLatency()}}
+{\footnotesize\ttfamily const double\& Demand\+::get\+Max\+Latency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the demand\textquotesingle{}s maximum latency. 
+
+Definition at line 56 of file demand.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{57 \{ \textcolor{keywordflow}{return} this-\/>availability; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDemand_a1787237b852022b3f3ceac625e5c0ee5}\label{classDemand_a1787237b852022b3f3ceac625e5c0ee5}} 
+\index{Demand@{Demand}!getName@{getName}}
+\index{getName@{getName}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string\& Demand\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the demand\textquotesingle{}s name. 
+
+Definition at line 50 of file demand.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51 \{ \textcolor{keywordflow}{return} this-\/>target; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDemand_a2460cb7b09048ccc24b3bddd8d7a3c92}\label{classDemand_a2460cb7b09048ccc24b3bddd8d7a3c92}} 
+\index{Demand@{Demand}!getNbHops@{getNbHops}}
+\index{getNbHops@{getNbHops}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getNbHops()}{getNbHops()}}
+{\footnotesize\ttfamily const unsigned int Demand\+::get\+Nb\+Hops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of number of hops in demand\textquotesingle{}s path. 
+
+Definition at line 70 of file demand.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74 \{ this-\/>VNF\_list.push\_back(\textcolor{keywordtype}{id}); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDemand_af77e30361d3928992a628e5ec57f503a}\label{classDemand_af77e30361d3928992a628e5ec57f503a}} 
+\index{Demand@{Demand}!getNbVNFs@{getNbVNFs}}
+\index{getNbVNFs@{getNbVNFs}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getNbVNFs()}{getNbVNFs()}}
+{\footnotesize\ttfamily const int Demand\+::get\+Nb\+V\+N\+Fs (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of V\+N\+Fs requested by the demand. 
+
+Definition at line 64 of file demand.\+hpp.
+
+\mbox{\Hypertarget{classDemand_a871d696ca3e1f1cdadb7655464ac61f5}\label{classDemand_a871d696ca3e1f1cdadb7655464ac61f5}} 
+\index{Demand@{Demand}!getSource@{getSource}}
+\index{getSource@{getSource}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily const int\& Demand\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the demand\textquotesingle{}s source node id. 
+
+Definition at line 52 of file demand.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53 \{ \textcolor{keywordflow}{return} this-\/>max\_latency; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDemand_a1733aacd85838734ed53d989884e7ce2}\label{classDemand_a1733aacd85838734ed53d989884e7ce2}} 
+\index{Demand@{Demand}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily const int\& Demand\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the demand\textquotesingle{}s target node id. 
+
+Definition at line 54 of file demand.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55 \{ \textcolor{keywordflow}{return} this-\/>bandwidth; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDemand_acd986f888fd87fb1c6aa6eb6df240b30}\label{classDemand_acd986f888fd87fb1c6aa6eb6df240b30}} 
+\index{Demand@{Demand}!getVNF\_i@{getVNF\_i}}
+\index{getVNF\_i@{getVNF\_i}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{getVNF\_i()}{getVNF\_i()}}
+{\footnotesize\ttfamily const int Demand\+::get\+V\+N\+F\+\_\+i (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the id of the i-\/th V\+N\+Fs of the demand. 
+
+Definition at line 66 of file demand.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67 \{ \textcolor{keywordflow}{return} this-\/>link\_list.size(); \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDemand_abf63434813a4e7a57d38b27e8f161234}\label{classDemand_abf63434813a4e7a57d38b27e8f161234}} 
+\index{Demand@{Demand}!print@{print}}
+\index{print@{print}!Demand@{Demand}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Demand\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays information about the demand. 
+
+Definition at line 15 of file demand.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                   \{}
+\DoxyCodeLine{16     std::cout << \textcolor{stringliteral}{"Id: "} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{17               << \textcolor{stringliteral}{"Name: "} << name << \textcolor{stringliteral}{","}}
+\DoxyCodeLine{18               << \textcolor{stringliteral}{"Source: "} << source << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{19               << \textcolor{stringliteral}{"Target: "} << target << \textcolor{stringliteral}{","}}
+\DoxyCodeLine{20               << \textcolor{stringliteral}{"Max latency: "} << max\_latency << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{21               << \textcolor{stringliteral}{"Availability: "} << availability << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{22               << \textcolor{stringliteral}{"Bandwidth: "} << bandwidth << std::endl;}
+\DoxyCodeLine{23     std::cout << \textcolor{stringliteral}{"\(\backslash\)tVNF list: "};}
+\DoxyCodeLine{24     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < VNF\_list.size(); i++)\{}
+\DoxyCodeLine{25         std::cout << VNF\_list[i] << \textcolor{stringliteral}{", "};}
+\DoxyCodeLine{26     \}}
+\DoxyCodeLine{27     std::cout << std::endl;}
+\DoxyCodeLine{28 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/network/demand.\+hpp\item 
+src/network/demand.\+cpp\end{DoxyCompactItemize}

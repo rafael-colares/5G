@@ -1,0 +1,1478 @@
+\hypertarget{classCallback}{}\doxysection{Callback Class Reference}
+\label{classCallback}\index{Callback@{Callback}}
+Inheritance diagram for Callback\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classCallback}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structCallback_1_1MapAvailability}{Map\+Availability}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCallback_a7bf16d28d3fe913952d31b6bd0144865}{Callback}} (const Ilo\+Env \&env\+\_\+, const \mbox{\hyperlink{classData}{Data}} \&data\+\_\+, const Ilo\+Num\+Var3\+D\+Matrix \&x\+\_\+, const Ilo\+Num\+Var\+Matrix \&y\+\_\+, const Ilo\+Num\+Var\+Matrix \&sec\+Avail\+\_\+, const Ilo\+Num\+Var\+Matrix \&sec\+Unavail\+\_\+)
+\item 
+void \mbox{\hyperlink{classCallback_a860af352108592ffcfbf96deb0a017a7}{invoke}} (const Context \&context)
+\item 
+void \mbox{\hyperlink{classCallback_a7be45b54380acc37017b9e4960c35589}{add\+User\+Cuts}} (const Context \&context)
+\item 
+void \mbox{\hyperlink{classCallback_a936ac1741ada15303c0afdef1efa1134}{add\+Lazy\+Constraints}} (const Context \&context)
+\item 
+void \mbox{\hyperlink{classCallback_a53d301b9315dcad7a7eabe27f763d4bf}{run\+Heuristic}} (const Context \&context)
+\item 
+void \mbox{\hyperlink{classCallback_a298c77c9da89fe7f1e3de7137f4adf51}{get\+Integer\+Solution}} (const Context \&context)
+\item 
+void \mbox{\hyperlink{classCallback_a658d6291ade407650746edb8d041dda0}{get\+Fractional\+Solution}} (const Context \&context)
+\item 
+bool \mbox{\hyperlink{classCallback_ab8d82d7c9b7cdae466f746354c4b5a1c}{check\+Cut\+Pool}} (const Context \&context)
+\item 
+void \mbox{\hyperlink{classCallback_a83509ae2a7ced1b68bdb36861165c2ef}{run\+Heuristic\+\_\+\+Phase\+\_\+I}} (const Context \&context)
+\item 
+bool \mbox{\hyperlink{classCallback_a3dd6148754a74735e2af5a87ba02fbcf}{run\+Heuristic\+\_\+\+Phase\+\_\+\+II}} (const Context \&context)
+\item 
+bool \mbox{\hyperlink{classCallback_a680002507b161963111170dbf1e78f9a}{heuristic\+Rule}} (const Context \&context)
+\item 
+void \mbox{\hyperlink{classCallback_a2d0e531b46ce73c51a3967557f230b6a}{insert\+Heuristic\+Solution}} (const Context \&context)
+\item 
+double \mbox{\hyperlink{classCallback_a9f42d809791c93a02e818b65a7442412}{get\+Solution\+Avail\+\_\+k}} (int k, int \&least)
+\item 
+int \mbox{\hyperlink{classCallback_a6f77dfe89e7a116b2127b92df8281905}{get\+Node\+To\+Install}} (int f, int k)
+\item 
+void \mbox{\hyperlink{classCallback_aba00337c9301daf6bb2de21d88487c31}{set\+Cut\+Pool}} ()
+\item 
+void \mbox{\hyperlink{classCallback_adb6675ce46162107ffeaf74b19670af7}{add\+Availability\+Cover\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classCallback_a6f71b6277aff2738add5c693a991a41f}{add\+Vnf\+Lower\+Bound\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classCallback_a0a07ac8b138cec2f47a6ddf1e4bd0a51}{add\+Section\+Failure\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classCallback_a8bc5a510ee9c9e9b8c1c1378795009ae}{heuristic\+Separation\+Of\+Availibility\+Constraints}} (const Context \&context, const Ilo\+Num3\+D\+Matrix \&x\+Sol)
+\item 
+void \mbox{\hyperlink{classCallback_af0d3d6fe34331d3f0705e12131c55829}{initiate\+Heuristic}} (const int k, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&coeff, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&section\+Nodes, std\+::vector$<$ double $>$ \&section\+Availability, const Ilo\+Num3\+D\+Matrix \&x\+Sol)
+\item 
+void \mbox{\hyperlink{classCallback_ab58750b9e38489e8a47aa6169ffce4cf}{compute\+Delta\+Availability}} (const double C\+H\+A\+I\+N\+\_\+\+A\+V\+A\+IL, std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&delta\+Avail, const std\+::vector$<$ double $>$ \&section\+Avail, const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&coeff)
+\item 
+void \mbox{\hyperlink{classCallback_ac3a933c8244c64c8990504ae70eb114d}{lift}} (Ilo\+Num\+Matrix \&x\+Sol, const double \&availability\+Required, std\+::vector$<$ \mbox{\hyperlink{structCallback_1_1MapAvailability}{Map\+Availability}} $>$ \&section\+Availability, const int \&nb\+Sections)
+\item 
+void \mbox{\hyperlink{classCallback_a35299854baca44c0f6a3b3074bc9c39c}{chain\+Cover\+Separation}} (const Context \&context, const Ilo\+Num3\+D\+Matrix \&x\+Sol)
+\item 
+void \mbox{\hyperlink{classCallback_a1574be0d8c2f3f88e5dc22812378bee9}{generalized\+Cover\+Separation}} (const Context \&context, const Ilo\+Num3\+D\+Matrix \&x\+Sol)
+\item 
+double \mbox{\hyperlink{classCallback_a4a292dcb52b63b69e74f92772dc1a30e}{get\+Availability\+Of\+Section}} (const int \&k, const int \&i, const Ilo\+Num3\+D\+Matrix \&x\+Sol) const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structCallback_1_1MapAvailability}{Map\+Availability}} $>$ \mbox{\hyperlink{classCallback_a9f159bb6e8143e4d3a7daf290c9ae171}{get\+Availabilities\+Of\+Sections}} (const int \&k, const Ilo\+Num3\+D\+Matrix \&x\+Sol) const
+\item 
+const int \mbox{\hyperlink{classCallback_a5c5e35c895664da84eb90dcd36364349}{get\+Nb\+User\+Cuts}} () const
+\item 
+const int \mbox{\hyperlink{classCallback_a2e355ff1f8150a2bc19d81fbb3f896e0}{get\+Nb\+Lazy\+Constraints}} () const
+\item 
+const Ilo\+Num \mbox{\hyperlink{classCallback_ae9308c0c4da4973d60bb5fb8e24e7fff}{get\+Time}} () const
+\item 
+const bool \mbox{\hyperlink{classCallback_a972570b20e65f475c00fd758435fe656}{is\+Integer\+Assignment}} (const int \&k, const Ilo\+Num3\+D\+Matrix \&x\+Sol) const
+\item 
+void \mbox{\hyperlink{classCallback_ae3a01742bb9212bf08d39e2e5d73d33d}{increment\+Lazy\+Constraints}} ()
+\item 
+void \mbox{\hyperlink{classCallback_ac818ffe055fc5552d73337b58a7b18c9}{increment\+Availability\+Cuts\+Heuristic}} ()
+\item 
+void \mbox{\hyperlink{classCallback_a9f0b6346706d7570fac8cb7bf407dcd4}{increment\+Usercuts}} ()
+\item 
+void \mbox{\hyperlink{classCallback_a2dcba0ea1f2ce22053db4b9d58f51365}{increment\+Time}} (const Ilo\+Num time)
+\item 
+\mbox{\hyperlink{classCallback_ac5a98dfe0ad07d5d0c9b94fc541184e7}{$\sim$\+Callback}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 49 of file callback.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCallback_a7bf16d28d3fe913952d31b6bd0144865}\label{classCallback_a7bf16d28d3fe913952d31b6bd0144865}} 
+\index{Callback@{Callback}!Callback@{Callback}}
+\index{Callback@{Callback}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{Callback()}{Callback()}}
+{\footnotesize\ttfamily Callback\+::\+Callback (\begin{DoxyParamCaption}\item[{const Ilo\+Env \&}]{env\+\_\+,  }\item[{const \mbox{\hyperlink{classData}{Data}} \&}]{data\+\_\+,  }\item[{const Ilo\+Num\+Var3\+D\+Matrix \&}]{x\+\_\+,  }\item[{const Ilo\+Num\+Var\+Matrix \&}]{y\+\_\+,  }\item[{const Ilo\+Num\+Var\+Matrix \&}]{sec\+Avail\+\_\+,  }\item[{const Ilo\+Num\+Var\+Matrix \&}]{sec\+Unavail\+\_\+ }\end{DoxyParamCaption})}
+
+Constructor. Initializes callback variables.
+
+\mbox{\hyperlink{classCallback}{Callback}} constructor. This is called only once, before the optimization procedure is launched. 
+
+Definition at line 7 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{9                                                                                           :}
+\DoxyCodeLine{10                     env(env\_), data(data\_), }
+\DoxyCodeLine{11                     x(x\_), y(y\_), }
+\DoxyCodeLine{12                     secAvail(secAvail\_), secUnavail(secUnavail\_),}
+\DoxyCodeLine{13                     cutPool(env)}
+\DoxyCodeLine{14 \{   }
+\DoxyCodeLine{15 \textcolor{comment}{    /*** Control ***/}}
+\DoxyCodeLine{16     thread\_flag.lock();}
+\DoxyCodeLine{17 }
+\DoxyCodeLine{18     nb\_cuts\_avail\_heuristic = 0;}
+\DoxyCodeLine{19     nbLazyConstraints       = 0;}
+\DoxyCodeLine{20     nbCuts                  = 0;}
+\DoxyCodeLine{21     timeAll                 = 0;}
+\DoxyCodeLine{22     \mbox{\hyperlink{classCallback_aba00337c9301daf6bb2de21d88487c31}{setCutPool}}();}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24     \textcolor{comment}{// Solution related initialization}}
+\DoxyCodeLine{25     \textcolor{keyword}{const} \textcolor{keywordtype}{int} NB\_NODES = lemon::countNodes(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}());}
+\DoxyCodeLine{26     ySol.resize(lemon::countNodes(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()));}
+\DoxyCodeLine{27     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{28         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{29         ySol[v].resize(data.\mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{getNbVnfs}}());}
+\DoxyCodeLine{30     \}}
+\DoxyCodeLine{31     xSol.resize(data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}());}
+\DoxyCodeLine{32     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{33         xSol[k].resize(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}());}
+\DoxyCodeLine{34         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{35             xSol[k][i].resize(NB\_NODES);}
+\DoxyCodeLine{36         \}}
+\DoxyCodeLine{37     \}}
+\DoxyCodeLine{38 }
+\DoxyCodeLine{39     \textcolor{comment}{// heuristic related initializations}}
+\DoxyCodeLine{40     objSol = 0.0;}
+\DoxyCodeLine{41     remainingCapacity.resize(NB\_NODES);}
+\DoxyCodeLine{42 }
+\DoxyCodeLine{43     \textcolor{comment}{// input a big hard-\/coded number to serve as seed}}
+\DoxyCodeLine{44     \textcolor{keyword}{const} \textcolor{keywordtype}{int} SEED = 20102019;}
+\DoxyCodeLine{45     srand(SEED);}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{47     thread\_flag.unlock();}
+\DoxyCodeLine{48 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_ac5a98dfe0ad07d5d0c9b94fc541184e7}\label{classCallback_ac5a98dfe0ad07d5d0c9b94fc541184e7}} 
+\index{Callback@{Callback}!````~Callback@{$\sim$Callback}}
+\index{````~Callback@{$\sim$Callback}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{$\sim$Callback()}{~Callback()}}
+{\footnotesize\ttfamily Callback\+::$\sim$\+Callback (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Destructor 
+
+Definition at line 231 of file callback.\+hpp.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCallback_adb6675ce46162107ffeaf74b19670af7}\label{classCallback_adb6675ce46162107ffeaf74b19670af7}} 
+\index{Callback@{Callback}!addAvailabilityCoverConstraints@{addAvailabilityCoverConstraints}}
+\index{addAvailabilityCoverConstraints@{addAvailabilityCoverConstraints}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{addAvailabilityCoverConstraints()}{addAvailabilityCoverConstraints()}}
+{\footnotesize\ttfamily void Callback\+::add\+Availability\+Cover\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add (some) availability cover constraints to the cut pool. Only sets \{j \textbackslash{}in V \+: a(j) $<$= a(v) \} for each v \textbackslash{}in V are considered.
+
+Add availability cover constraints to the cut pool. 
+
+Definition at line 355 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{355                                               \{}
+\DoxyCodeLine{356     std::cout << \textcolor{stringliteral}{"Adding node cover cuts to the pool..."} << std::endl;}
+\DoxyCodeLine{357     \textcolor{comment}{/* For each SFC */}}
+\DoxyCodeLine{358     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{359         \textcolor{comment}{/* Compute the coefficient c[v] for each node v. */}}
+\DoxyCodeLine{360         std::vector<int> c;}
+\DoxyCodeLine{361         c.resize(data.\mbox{\hyperlink{classData_a3fae1be6a2eaf0b09e7b28b611071c5e}{getAvailNodeRank}}().size());}
+\DoxyCodeLine{362         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a3fae1be6a2eaf0b09e7b28b611071c5e}{getAvailNodeRank}}().size(); i++)\{}
+\DoxyCodeLine{363             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a3fae1be6a2eaf0b09e7b28b611071c5e}{getAvailNodeRank}}()[i];}
+\DoxyCodeLine{364             c[v] = data.\mbox{\hyperlink{classData_ace7f7f769be8e7e335a1dd46178cd67f}{getMinNbNodes}}(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}(), data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}());}
+\DoxyCodeLine{365         \}}
+\DoxyCodeLine{366         \textcolor{comment}{/* For each VNF section */}}
+\DoxyCodeLine{367         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{368             \textcolor{comment}{/* For each node */}}
+\DoxyCodeLine{369             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{370                 \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{371                 \textcolor{keywordtype}{int} pos = data.\mbox{\hyperlink{classData_a081d1e03b4a51da4bfc2e1b423d62e3e}{getNodeRankPosition}}(v);}
+\DoxyCodeLine{372                 \textcolor{comment}{/* Define only the non-\/dominated constraints. */}}
+\DoxyCodeLine{373                 \textcolor{keywordflow}{if} (pos > 0) \{}
+\DoxyCodeLine{374                     \textcolor{keywordflow}{if} (c[v] > c[data.\mbox{\hyperlink{classData_a3fae1be6a2eaf0b09e7b28b611071c5e}{getAvailNodeRank}}()[pos-\/1]]) \{}
+\DoxyCodeLine{375                         \textcolor{comment}{/* Define availability cover constraint for S = \{j \(\backslash\)in V : a(j) <= a(v) \} */}}
+\DoxyCodeLine{376                         IloExpr exp(env);}
+\DoxyCodeLine{377                         \textcolor{keywordflow}{for} (NodeIt it(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); it != lemon::INVALID; ++it)\{}
+\DoxyCodeLine{378                             \textcolor{keywordtype}{int} node\_id = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(it);}
+\DoxyCodeLine{379                             \textcolor{keywordtype}{int} coeff = 0;}
+\DoxyCodeLine{380                             \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_a081d1e03b4a51da4bfc2e1b423d62e3e}{getNodeRankPosition}}(node\_id) < data.\mbox{\hyperlink{classData_a081d1e03b4a51da4bfc2e1b423d62e3e}{getNodeRankPosition}}(v))\{}
+\DoxyCodeLine{381                                 coeff = std::max(c[v] -\/ c[node\_id] + 1, 1);}
+\DoxyCodeLine{382                             \}}
+\DoxyCodeLine{383                             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{384                                 coeff = 1;}
+\DoxyCodeLine{385                             \}}
+\DoxyCodeLine{386                             exp += coeff*x[k][i][node\_id];}
+\DoxyCodeLine{387                         \}}
+\DoxyCodeLine{388                         std::string name = \textcolor{stringliteral}{"NodeCover("} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{","} + std::to\_string(v) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{389                         cutPool.add(IloRange(env, c[v], exp, IloInfinity, name.c\_str()));}
+\DoxyCodeLine{390                         exp.clear();}
+\DoxyCodeLine{391                         exp.end();}
+\DoxyCodeLine{392                     \}}
+\DoxyCodeLine{393                 \}}
+\DoxyCodeLine{394             \}}
+\DoxyCodeLine{395         \}}
+\DoxyCodeLine{396     \}}
+\DoxyCodeLine{397 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a936ac1741ada15303c0afdef1efa1134}\label{classCallback_a936ac1741ada15303c0afdef1efa1134}} 
+\index{Callback@{Callback}!addLazyConstraints@{addLazyConstraints}}
+\index{addLazyConstraints@{addLazyConstraints}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{addLazyConstraints()}{addLazyConstraints()}}
+{\footnotesize\ttfamily void Callback\+::add\+Lazy\+Constraints (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+Solves the separation problems for a given integer solution. \begin{DoxyNote}{Note}
+Should only be called within candidate context. 
+\end{DoxyNote}
+
+
+Definition at line 699 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{700 \{}
+\DoxyCodeLine{701     \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{702         \textcolor{comment}{/* Get current integer solution */}}
+\DoxyCodeLine{703         \mbox{\hyperlink{classCallback_a298c77c9da89fe7f1e3de7137f4adf51}{getIntegerSolution}}(context); }
+\DoxyCodeLine{704 }
+\DoxyCodeLine{705         \textcolor{comment}{/* Check VNF placement availability for each demand */}}
+\DoxyCodeLine{706         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{707             }
+\DoxyCodeLine{708             \textcolor{comment}{/* Compute sections availability and sort them by increasing order */}}
+\DoxyCodeLine{709             std::vector<MapAvailability> sectionAvailability = \mbox{\hyperlink{classCallback_a9f159bb6e8143e4d3a7daf290c9ae171}{getAvailabilitiesOfSections}}(k, xSol);}
+\DoxyCodeLine{710             std::sort(sectionAvailability.begin(), sectionAvailability.end(), compareAvailability);}
+\DoxyCodeLine{711 }
+\DoxyCodeLine{712             \textcolor{comment}{/* Find smallest subset of sections violating the SFC availability. */}}
+\DoxyCodeLine{713             \textcolor{keyword}{const} \textcolor{keywordtype}{double} REQUIRED\_AVAIL = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}(); }
+\DoxyCodeLine{714             \textcolor{keywordtype}{double} chainAvailability = 1.0;}
+\DoxyCodeLine{715             \textcolor{keywordtype}{int} index = 0;}
+\DoxyCodeLine{716             \textcolor{keywordtype}{int} nbSelectedSections = 0;}
+\DoxyCodeLine{717             \textcolor{keywordflow}{while} ((chainAvailability >= REQUIRED\_AVAIL) \&\& (index < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}()))\{}
+\DoxyCodeLine{718                 chainAvailability *= sectionAvailability[index].availability;}
+\DoxyCodeLine{719                 nbSelectedSections++;}
+\DoxyCodeLine{720                 index++;}
+\DoxyCodeLine{721             \}}
+\DoxyCodeLine{722             \textcolor{comment}{/* If such subset is found, add lazy constraint. */}}
+\DoxyCodeLine{723             \textcolor{keywordflow}{if} (chainAvailability < REQUIRED\_AVAIL)\{}
+\DoxyCodeLine{724                 \textcolor{comment}{/* Try to lift the separating inequality */}}
+\DoxyCodeLine{725                 \mbox{\hyperlink{classCallback_ac3a933c8244c64c8990504ae70eb114d}{lift}}(xSol[k], REQUIRED\_AVAIL, sectionAvailability, nbSelectedSections);}
+\DoxyCodeLine{726 }
+\DoxyCodeLine{727                 \textcolor{comment}{/* Build inequality. */}}
+\DoxyCodeLine{728                 IloExpr exp(env);}
+\DoxyCodeLine{729                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} s = 0; s < nbSelectedSections; ++s)\{}
+\DoxyCodeLine{730                     \textcolor{keywordtype}{int} i = sectionAvailability[s].section;}
+\DoxyCodeLine{731                     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{732                         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{733                         \textcolor{keywordflow}{if} (xSol[k][i][v] < 1 -\/ EPS)\{}
+\DoxyCodeLine{734                             exp += x[k][i][v];}
+\DoxyCodeLine{735                         \}}
+\DoxyCodeLine{736                     \}}
+\DoxyCodeLine{737                 \}}
+\DoxyCodeLine{738                 IloRange cut(env, 1.0, exp, IloInfinity);}
+\DoxyCodeLine{739                 context.rejectCandidate(cut);}
+\DoxyCodeLine{740                 \mbox{\hyperlink{classCallback_ae3a01742bb9212bf08d39e2e5d73d33d}{incrementLazyConstraints}}();}
+\DoxyCodeLine{741                 exp.end();}
+\DoxyCodeLine{742             \}}
+\DoxyCodeLine{743         \}}
+\DoxyCodeLine{744     \}}
+\DoxyCodeLine{745     \textcolor{keywordflow}{catch} (...) \{}
+\DoxyCodeLine{746         \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{747     \}}
+\DoxyCodeLine{748 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a0a07ac8b138cec2f47a6ddf1e4bd0a51}\label{classCallback_a0a07ac8b138cec2f47a6ddf1e4bd0a51}} 
+\index{Callback@{Callback}!addSectionFailureConstraints@{addSectionFailureConstraints}}
+\index{addSectionFailureConstraints@{addSectionFailureConstraints}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{addSectionFailureConstraints()}{addSectionFailureConstraints()}}
+{\footnotesize\ttfamily void Callback\+::add\+Section\+Failure\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add section failure constraints to the cut pool. 
+
+Definition at line 301 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{302 \{}
+\DoxyCodeLine{303     std::cout << \textcolor{stringliteral}{"Adding section failure cuts to the pool..."} << std::endl;}
+\DoxyCodeLine{304     \textcolor{comment}{/* For each SFC */}}
+\DoxyCodeLine{305     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{306         \textcolor{comment}{/* For each VNF section */}}
+\DoxyCodeLine{307         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{308             \textcolor{keyword}{const} \textcolor{keywordtype}{double} REQ\_AVAIL = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}();}
+\DoxyCodeLine{309             \textcolor{keyword}{const} \textcolor{keywordtype}{double} RHS       = -\/std::log(1.0 -\/ REQ\_AVAIL);}
+\DoxyCodeLine{310             IloExpr exp(env);}
+\DoxyCodeLine{311             \textcolor{comment}{/* For each node */}}
+\DoxyCodeLine{312             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{313                 \textcolor{keyword}{const} \textcolor{keywordtype}{int} v             = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{314                 \textcolor{keyword}{const} \textcolor{keywordtype}{double} NODE\_AVAIL = data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}();}
+\DoxyCodeLine{315                 \textcolor{keywordtype}{double} coeff            = -\/std::log(1.0 -\/ NODE\_AVAIL);}
+\DoxyCodeLine{316                 exp += coeff*x[k][i][v];}
+\DoxyCodeLine{317             \}}
+\DoxyCodeLine{318             std::string name = \textcolor{stringliteral}{"Section\_Fail("} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(i) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{319             cutPool.add(IloRange(env, RHS, exp, IloInfinity, name.c\_str()));}
+\DoxyCodeLine{320             exp.clear();}
+\DoxyCodeLine{321             exp.end();}
+\DoxyCodeLine{322         \}}
+\DoxyCodeLine{323     \}}
+\DoxyCodeLine{324 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a7be45b54380acc37017b9e4960c35589}\label{classCallback_a7be45b54380acc37017b9e4960c35589}} 
+\index{Callback@{Callback}!addUserCuts@{addUserCuts}}
+\index{addUserCuts@{addUserCuts}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{addUserCuts()}{addUserCuts()}}
+{\footnotesize\ttfamily void Callback\+::add\+User\+Cuts (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+Solves the separation problems for a given fractional solution. \begin{DoxyNote}{Note}
+Should only be called within relaxation context. 
+\end{DoxyNote}
+If no cut in the cutpool is violated, \`{} then, look for the violated cuts in the exponential-\/sized families of valid inequalities
+
+Definition at line 400 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{401 \{}
+\DoxyCodeLine{402     \textcolor{keywordflow}{try} \{    }
+\DoxyCodeLine{403         \mbox{\hyperlink{classCallback_a658d6291ade407650746edb8d041dda0}{getFractionalSolution}}(context);}
+\DoxyCodeLine{407         \textcolor{keywordflow}{if} (\mbox{\hyperlink{classCallback_ab8d82d7c9b7cdae466f746354c4b5a1c}{checkCutPool}}(context) == \textcolor{keyword}{false})\{}
+\DoxyCodeLine{408             \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_ad274e290e8591b42805b308f2cfda1dc}{getChainCover}}() == Input::CHAIN\_COVER\_ON)\{}
+\DoxyCodeLine{409                 \mbox{\hyperlink{classCallback_a1574be0d8c2f3f88e5dc22812378bee9}{generalizedCoverSeparation}}(context, xSol);}
+\DoxyCodeLine{410                 \mbox{\hyperlink{classCallback_a35299854baca44c0f6a3b3074bc9c39c}{chainCoverSeparation}}(context, xSol);}
+\DoxyCodeLine{411             \}}
+\DoxyCodeLine{412             \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a5f588d32b36c4e132c2596b50ba65b5e}{getAvailabilityUsercuts}}() == Input::AVAILABILITY\_USERCUTS\_ON)\{}
+\DoxyCodeLine{413                 \mbox{\hyperlink{classCallback_a8bc5a510ee9c9e9b8c1c1378795009ae}{heuristicSeparationOfAvailibilityConstraints}}(context, xSol);}
+\DoxyCodeLine{414             \}}
+\DoxyCodeLine{415         \}}
+\DoxyCodeLine{416     \}}
+\DoxyCodeLine{417     \textcolor{keywordflow}{catch} (...) \{}
+\DoxyCodeLine{418         \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{419     \}}
+\DoxyCodeLine{420 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a6f71b6277aff2738add5c693a991a41f}\label{classCallback_a6f71b6277aff2738add5c693a991a41f}} 
+\index{Callback@{Callback}!addVnfLowerBoundConstraints@{addVnfLowerBoundConstraints}}
+\index{addVnfLowerBoundConstraints@{addVnfLowerBoundConstraints}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{addVnfLowerBoundConstraints()}{addVnfLowerBoundConstraints()}}
+{\footnotesize\ttfamily void Callback\+::add\+Vnf\+Lower\+Bound\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Add vnf lower bound constraints to the cut pool. \begin{DoxyNote}{Note}
+These are chain cover constraints where the set of considered sections is the whole set of sections, i.\+e., Q = I.
+\end{DoxyNote}
+Add vnf lower bound constraints to the cut pool. 
+
+Definition at line 327 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{328 \{}
+\DoxyCodeLine{329     std::cout << \textcolor{stringliteral}{"Adding chain cover cuts to the pool..."} << std::endl;}
+\DoxyCodeLine{330     \textcolor{comment}{/* For each SFC */}}
+\DoxyCodeLine{331     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{332         \textcolor{comment}{//std::cout << "Demand " << k << ": ";}}
+\DoxyCodeLine{333         \textcolor{keyword}{const} \textcolor{keywordtype}{double} REQUIRED\_AVAIL = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}();}
+\DoxyCodeLine{334         \textcolor{keyword}{const} \textcolor{keywordtype}{int}    NB\_SECTIONS    = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}();}
+\DoxyCodeLine{335         \textcolor{keyword}{const} \textcolor{keywordtype}{int}    RHS            = data.\mbox{\hyperlink{classData_a7d16b75cc741920b091f39ef55eb2099}{getVnfLB}}(REQUIRED\_AVAIL, NB\_SECTIONS);}
+\DoxyCodeLine{336         \textcolor{keywordflow}{if} (RHS > NB\_SECTIONS*data.\mbox{\hyperlink{classData_a7d16b75cc741920b091f39ef55eb2099}{getVnfLB}}(REQUIRED\_AVAIL, 1))\{}
+\DoxyCodeLine{337             IloExpr exp(env);}
+\DoxyCodeLine{338             \textcolor{comment}{/* For each VNF section */}}
+\DoxyCodeLine{339             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{340                 \textcolor{comment}{/* For each node */}}
+\DoxyCodeLine{341                 \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{342                     \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{343                     exp += x[k][i][v];}
+\DoxyCodeLine{344                 \}}
+\DoxyCodeLine{345             \}}
+\DoxyCodeLine{346             std::string name = \textcolor{stringliteral}{"VNF\_LowerBound("} + std::to\_string(k) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{347             cutPool.add(IloRange(env, RHS, exp, IloInfinity, name.c\_str()));}
+\DoxyCodeLine{348             exp.clear();}
+\DoxyCodeLine{349             exp.end();}
+\DoxyCodeLine{350         \}}
+\DoxyCodeLine{351     \}}
+\DoxyCodeLine{352 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a35299854baca44c0f6a3b3074bc9c39c}\label{classCallback_a35299854baca44c0f6a3b3074bc9c39c}} 
+\index{Callback@{Callback}!chainCoverSeparation@{chainCoverSeparation}}
+\index{chainCoverSeparation@{chainCoverSeparation}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{chainCoverSeparation()}{chainCoverSeparation()}}
+{\footnotesize\ttfamily void Callback\+::chain\+Cover\+Separation (\begin{DoxyParamCaption}\item[{const Context \&}]{context,  }\item[{const Ilo\+Num3\+D\+Matrix \&}]{x\+Sol }\end{DoxyParamCaption})}
+
+Solves the separation problem associated with the chain cover constraints. 
+
+Definition at line 488 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{489 \{}
+\DoxyCodeLine{490     \textcolor{comment}{/* Check VNF placement availability for each demand */}}
+\DoxyCodeLine{491     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{492         std::vector<double> sum\_over\_nodes(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}(), 0.0);}
+\DoxyCodeLine{493         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{494             sum\_over\_nodes[i] = 0.0;}
+\DoxyCodeLine{495             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{496                 \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{497                 sum\_over\_nodes[i] += xSol[k][i][v];}
+\DoxyCodeLine{498             \}}
+\DoxyCodeLine{499         \}}
+\DoxyCodeLine{500         std::vector<int> sorted\_sections = getSortedIndexes\_Asc(sum\_over\_nodes);}
+\DoxyCodeLine{501         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} nb\_sections = 1; nb\_sections <= data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); nb\_sections++)\{}
+\DoxyCodeLine{502             \textcolor{keywordtype}{double} lhs = 0.0;}
+\DoxyCodeLine{503             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < nb\_sections; i++)\{}
+\DoxyCodeLine{504                 lhs += sum\_over\_nodes[sorted\_sections[i]];}
+\DoxyCodeLine{505             \}}
+\DoxyCodeLine{506             \textcolor{keywordtype}{double} rhs = data.\mbox{\hyperlink{classData_a7d16b75cc741920b091f39ef55eb2099}{getVnfLB}}(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}(), nb\_sections);}
+\DoxyCodeLine{507             \textcolor{comment}{/* If violated, build and add cut. */}}
+\DoxyCodeLine{508             \textcolor{keywordflow}{if} (lhs < rhs -\/ EPS)\{}
+\DoxyCodeLine{509                 IloExpr expr(env);}
+\DoxyCodeLine{510                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < nb\_sections; i++)\{}
+\DoxyCodeLine{511                     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{512                         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{513                         \textcolor{keywordtype}{int} section = sorted\_sections[i];}
+\DoxyCodeLine{514                         expr += x[k][section][v];}
+\DoxyCodeLine{515                     \}}
+\DoxyCodeLine{516                 \}}
+\DoxyCodeLine{517                 std::string name = \textcolor{stringliteral}{"ChainCoverCut"} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(nb\_sections) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{518 }
+\DoxyCodeLine{519                 IloRange cut(env, rhs, expr, IloInfinity, name.c\_str());}
+\DoxyCodeLine{520                 std::cout << \textcolor{stringliteral}{"Adding "} << cut.getName() << std::endl;}
+\DoxyCodeLine{521                 context.addUserCut(cut, IloCplex::UseCutForce, IloFalse);}
+\DoxyCodeLine{522                 \mbox{\hyperlink{classCallback_a9f0b6346706d7570fac8cb7bf407dcd4}{incrementUsercuts}}();}
+\DoxyCodeLine{523                 expr.end();}
+\DoxyCodeLine{524                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{525             \}}
+\DoxyCodeLine{526         \}}
+\DoxyCodeLine{527     \}}
+\DoxyCodeLine{528 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_ab8d82d7c9b7cdae466f746354c4b5a1c}\label{classCallback_ab8d82d7c9b7cdae466f746354c4b5a1c}} 
+\index{Callback@{Callback}!checkCutPool@{checkCutPool}}
+\index{checkCutPool@{checkCutPool}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{checkCutPool()}{checkCutPool()}}
+{\footnotesize\ttfamily bool Callback\+::check\+Cut\+Pool (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+Checks whether the current solution satisfies all cuts in the pool and add the unsatisfied one. 
+
+Definition at line 424 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{424                                                  \{}
+\DoxyCodeLine{425     \textcolor{keywordtype}{bool} found\_violated\_cut = \textcolor{keyword}{false};}
+\DoxyCodeLine{426     \textcolor{keywordflow}{for} (IloInt i = 0; i < cutPool.getSize(); ++i) \{}
+\DoxyCodeLine{427         \textcolor{keyword}{const} IloRange\& cut = cutPool[i];}
+\DoxyCodeLine{428         \textcolor{keyword}{const} IloNum    LHS = context.getRelaxationValue(cut.getExpr());}
+\DoxyCodeLine{429 }
+\DoxyCodeLine{430         \textcolor{keywordflow}{if} ( LHS < cut.getLB() -\/ EPS || LHS > cut.getUB() + EPS ) \{}
+\DoxyCodeLine{431             std::cout << \textcolor{stringliteral}{"Adding "} << cut.getName() << std::endl;}
+\DoxyCodeLine{432             context.addUserCut(cut, IloCplex::UseCutForce, IloFalse);}
+\DoxyCodeLine{433             \mbox{\hyperlink{classCallback_a9f0b6346706d7570fac8cb7bf407dcd4}{incrementUsercuts}}();}
+\DoxyCodeLine{434             found\_violated\_cut = \textcolor{keyword}{true};}
+\DoxyCodeLine{435             \textcolor{comment}{/* Uncomment next line to add only one violated cut at a time. */}}
+\DoxyCodeLine{436             \textcolor{comment}{// return true;}}
+\DoxyCodeLine{437         \}}
+\DoxyCodeLine{438     \}}
+\DoxyCodeLine{439     \textcolor{keywordflow}{return} found\_violated\_cut;}
+\DoxyCodeLine{440 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_ab58750b9e38489e8a47aa6169ffce4cf}\label{classCallback_ab58750b9e38489e8a47aa6169ffce4cf}} 
+\index{Callback@{Callback}!computeDeltaAvailability@{computeDeltaAvailability}}
+\index{computeDeltaAvailability@{computeDeltaAvailability}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{computeDeltaAvailability()}{computeDeltaAvailability()}}
+{\footnotesize\ttfamily void Callback\+::compute\+Delta\+Availability (\begin{DoxyParamCaption}\item[{const double}]{C\+H\+A\+I\+N\+\_\+\+A\+V\+A\+IL,  }\item[{std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \&}]{delta\+Avail,  }\item[{const std\+::vector$<$ double $>$ \&}]{section\+Avail,  }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{coeff }\end{DoxyParamCaption})}
+
+Computes the availability increment resulted from the instalation of a new vnf.
+\begin{DoxyParams}{Parameters}
+{\em C\+H\+A\+I\+N\+\_\+\+A\+V\+A\+IL} & The chain required availability.\\
+\hline
+{\em delta\+Avail} & The matrix to be computed.\\
+\hline
+{\em section\+Avail} & T\+He current section availabilities.\\
+\hline
+{\em coeff} & The matrix of coefficients storing the possible vnfs to be placed. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 682 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{682                                                                                                                                                                                               \{}
+\DoxyCodeLine{683     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} i = 0; i < sectionAvail.size(); i++)\{}
+\DoxyCodeLine{684         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} v = 0; v < coeff[i].size(); v++)\{}
+\DoxyCodeLine{685             \textcolor{comment}{/* If node is already placed, forbid inclusion */}}
+\DoxyCodeLine{686             \textcolor{keywordflow}{if} (coeff[i][v] == 0)\{}
+\DoxyCodeLine{687                 deltaAvail[i][v] = 10.0;}
+\DoxyCodeLine{688             \}}
+\DoxyCodeLine{689             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{690                 \textcolor{keywordtype}{double} newSectionAvail = (1.0 -\/ ((1.0 -\/ sectionAvail[i])*(1.0 -\/ data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}())));}
+\DoxyCodeLine{691                 \textcolor{keywordtype}{double} newChainAvail = (CHAIN\_AVAIL / sectionAvail[i])*newSectionAvail;}
+\DoxyCodeLine{692                 deltaAvail[i][v] = newChainAvail -\/ CHAIN\_AVAIL;}
+\DoxyCodeLine{693             \}}
+\DoxyCodeLine{694         \}}
+\DoxyCodeLine{695     \}}
+\DoxyCodeLine{696 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a1574be0d8c2f3f88e5dc22812378bee9}\label{classCallback_a1574be0d8c2f3f88e5dc22812378bee9}} 
+\index{Callback@{Callback}!generalizedCoverSeparation@{generalizedCoverSeparation}}
+\index{generalizedCoverSeparation@{generalizedCoverSeparation}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{generalizedCoverSeparation()}{generalizedCoverSeparation()}}
+{\footnotesize\ttfamily void Callback\+::generalized\+Cover\+Separation (\begin{DoxyParamCaption}\item[{const Context \&}]{context,  }\item[{const Ilo\+Num3\+D\+Matrix \&}]{x\+Sol }\end{DoxyParamCaption})}
+
+Solves the separation problem associated with the generalized cover constraints. 
+
+Definition at line 531 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{532 \{}
+\DoxyCodeLine{533     \textcolor{comment}{/* Check VNF placement availability for each demand */}}
+\DoxyCodeLine{534     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{535         \textcolor{keywordflow}{for} (NodeIt node(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); node != lemon::INVALID; ++node)\{}
+\DoxyCodeLine{536             \textcolor{keywordtype}{int} limit\_node = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(node);}
+\DoxyCodeLine{537             \textcolor{comment}{/* Define set U */}}
+\DoxyCodeLine{538             std::vector<bool> set\_U(data.\mbox{\hyperlink{classData_ae6f978775db75f4064cac55fd6227aff}{getNbNodes}}(), \textcolor{keyword}{false});}
+\DoxyCodeLine{539             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{540                 \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{541                 \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_a081d1e03b4a51da4bfc2e1b423d62e3e}{getNodeRankPosition}}(v) >= data.\mbox{\hyperlink{classData_a081d1e03b4a51da4bfc2e1b423d62e3e}{getNodeRankPosition}}(limit\_node))\{}
+\DoxyCodeLine{542                     set\_U[v] = \textcolor{keyword}{true};}
+\DoxyCodeLine{543                 \}}
+\DoxyCodeLine{544             \}}
+\DoxyCodeLine{545             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} nb\_sections = 1; nb\_sections <= data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); nb\_sections++)\{}
+\DoxyCodeLine{546                 \textcolor{keywordtype}{double} rhs = data.\mbox{\hyperlink{classData_a7d16b75cc741920b091f39ef55eb2099}{getVnfLB}}(set\_U, nb\_sections, data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}());}
+\DoxyCodeLine{547                 \textcolor{keywordflow}{if} (rhs >= 0)\{}
+\DoxyCodeLine{548                     \textcolor{comment}{/* Define sum of nodes of U */}}
+\DoxyCodeLine{549                     std::vector<double> sum\_over\_nodes(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}(), 0.0);}
+\DoxyCodeLine{550                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{551                         \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{552                             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{553                             \textcolor{keywordflow}{if} (set\_U[v] == \textcolor{keyword}{true})\{}
+\DoxyCodeLine{554                                 sum\_over\_nodes[i] += xSol[k][i][v];}
+\DoxyCodeLine{555                             \}}
+\DoxyCodeLine{556                             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{557                                 sum\_over\_nodes[i] += (rhs*xSol[k][i][v]);}
+\DoxyCodeLine{558                             \}}
+\DoxyCodeLine{559                         \}}
+\DoxyCodeLine{560                     \}}
+\DoxyCodeLine{561                     std::vector<int> sorted\_sections = getSortedIndexes\_Asc(sum\_over\_nodes);}
+\DoxyCodeLine{562                     \textcolor{comment}{/* Compute left-\/hand side value */}}
+\DoxyCodeLine{563                     \textcolor{keywordtype}{double} lhs = 0.0;}
+\DoxyCodeLine{564                     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < nb\_sections; i++)\{}
+\DoxyCodeLine{565                         lhs += sum\_over\_nodes[sorted\_sections[i]];}
+\DoxyCodeLine{566                     \}}
+\DoxyCodeLine{567                     \textcolor{comment}{/* If violated, build and add cut. */}}
+\DoxyCodeLine{568                     \textcolor{keywordflow}{if} (lhs < rhs -\/ EPS)\{}
+\DoxyCodeLine{569                         IloExpr expr(env);}
+\DoxyCodeLine{570                         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < nb\_sections; i++)\{}
+\DoxyCodeLine{571                             \textcolor{keywordtype}{int} section = sorted\_sections[i];}
+\DoxyCodeLine{572                             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{573                                 \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{574                                 \textcolor{keywordflow}{if} (set\_U[v] == \textcolor{keyword}{true})\{}
+\DoxyCodeLine{575                                     expr += x[k][section][v];}
+\DoxyCodeLine{576                                 \}}
+\DoxyCodeLine{577                                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{578                                     expr += rhs*x[k][section][v];}
+\DoxyCodeLine{579                                 \}}
+\DoxyCodeLine{580                             \}}
+\DoxyCodeLine{581                         \}}
+\DoxyCodeLine{582                         std::string name = \textcolor{stringliteral}{"GenCoverCut"} + std::to\_string(k) + \textcolor{stringliteral}{","} + std::to\_string(nb\_sections) + \textcolor{stringliteral}{","} + std::to\_string(limit\_node) + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{583                         IloRange cut(env, rhs, expr, IloInfinity, name.c\_str());}
+\DoxyCodeLine{584                         std::cout << \textcolor{stringliteral}{"Adding "} << cut.getName() << std::endl;}
+\DoxyCodeLine{585                         context.addUserCut(cut, IloCplex::UseCutForce, IloFalse);}
+\DoxyCodeLine{586                         \mbox{\hyperlink{classCallback_a9f0b6346706d7570fac8cb7bf407dcd4}{incrementUsercuts}}();}
+\DoxyCodeLine{587                         expr.end();}
+\DoxyCodeLine{588                         \textcolor{keywordflow}{return};}
+\DoxyCodeLine{589                     \}}
+\DoxyCodeLine{590                 \}}
+\DoxyCodeLine{591             \}}
+\DoxyCodeLine{592         \}}
+\DoxyCodeLine{593     \}}
+\DoxyCodeLine{594 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a9f159bb6e8143e4d3a7daf290c9ae171}\label{classCallback_a9f159bb6e8143e4d3a7daf290c9ae171}} 
+\index{Callback@{Callback}!getAvailabilitiesOfSections@{getAvailabilitiesOfSections}}
+\index{getAvailabilitiesOfSections@{getAvailabilitiesOfSections}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{getAvailabilitiesOfSections()}{getAvailabilitiesOfSections()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{structCallback_1_1MapAvailability}{Callback\+::\+Map\+Availability}} $>$ Callback\+::get\+Availabilities\+Of\+Sections (\begin{DoxyParamCaption}\item[{const int \&}]{k,  }\item[{const Ilo\+Num3\+D\+Matrix \&}]{x\+Sol }\end{DoxyParamCaption}) const}
+
+Returns the availabilities of the sections of a S\+FC demand obtained from an integer solution.
+\begin{DoxyParams}{Parameters}
+{\em k} & The demand id.\\
+\hline
+{\em x\+Sol} & The current integer solution. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 798 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{799 \{   }
+\DoxyCodeLine{800     std::vector<MapAvailability> sectionAvailability;}
+\DoxyCodeLine{801     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{802         MapAvailability entry;}
+\DoxyCodeLine{803         entry.section = i;}
+\DoxyCodeLine{804         entry.availability = \mbox{\hyperlink{classCallback_a4a292dcb52b63b69e74f92772dc1a30e}{getAvailabilityOfSection}}(k,i, xSol);}
+\DoxyCodeLine{805         sectionAvailability.push\_back(entry);}
+\DoxyCodeLine{806     \}}
+\DoxyCodeLine{807     \textcolor{keywordflow}{return} sectionAvailability;}
+\DoxyCodeLine{808 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a4a292dcb52b63b69e74f92772dc1a30e}\label{classCallback_a4a292dcb52b63b69e74f92772dc1a30e}} 
+\index{Callback@{Callback}!getAvailabilityOfSection@{getAvailabilityOfSection}}
+\index{getAvailabilityOfSection@{getAvailabilityOfSection}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{getAvailabilityOfSection()}{getAvailabilityOfSection()}}
+{\footnotesize\ttfamily double Callback\+::get\+Availability\+Of\+Section (\begin{DoxyParamCaption}\item[{const int \&}]{k,  }\item[{const int \&}]{i,  }\item[{const Ilo\+Num3\+D\+Matrix \&}]{x\+Sol }\end{DoxyParamCaption}) const}
+
+Returns the availability of the i-\/th section of a S\+FC demand obtained from an integer solution.
+\begin{DoxyParams}{Parameters}
+{\em k} & The demand id.\\
+\hline
+{\em i} & The section id.\\
+\hline
+{\em x\+Sol} & The current integer solution. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 784 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{785 \{}
+\DoxyCodeLine{786     \textcolor{keywordtype}{double} failure\_prob = 1.0;}
+\DoxyCodeLine{787     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{788         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{789         \textcolor{keywordflow}{if} (xSol[k][i][v] >= 1 -\/ EPS)\{}
+\DoxyCodeLine{790             failure\_prob *= (1.0 -\/ data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}());}
+\DoxyCodeLine{791         \}}
+\DoxyCodeLine{792     \}}
+\DoxyCodeLine{793     \textcolor{keywordtype}{double} availability = 1.0 -\/ failure\_prob;}
+\DoxyCodeLine{794     \textcolor{keywordflow}{return} availability;}
+\DoxyCodeLine{795 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a658d6291ade407650746edb8d041dda0}\label{classCallback_a658d6291ade407650746edb8d041dda0}} 
+\index{Callback@{Callback}!getFractionalSolution@{getFractionalSolution}}
+\index{getFractionalSolution@{getFractionalSolution}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{getFractionalSolution()}{getFractionalSolution()}}
+{\footnotesize\ttfamily void Callback\+::get\+Fractional\+Solution (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+Returns the current fractional solution. \begin{DoxyNote}{Note}
+Should only be called within relaxation context. 
+\end{DoxyNote}
+
+
+Definition at line 835 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{836 \{}
+\DoxyCodeLine{837     \textcolor{comment}{/* Fill solution matrix */}}
+\DoxyCodeLine{838     \textcolor{keywordflow}{if} (context.getId() == Context::Id::Relaxation)\{}
+\DoxyCodeLine{839         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{840             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{841                 \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{842                     \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{843                     xSol[k][i][v] = context.getRelaxationPoint(x[k][i][v]);}
+\DoxyCodeLine{844                 \}}
+\DoxyCodeLine{845             \}}
+\DoxyCodeLine{846         \}}
+\DoxyCodeLine{847     \}}
+\DoxyCodeLine{848     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{849        \textcolor{keywordflow}{throw} IloCplex::Exception(-\/1, \textcolor{stringliteral}{"ERROR: Trying to get fractional solution while not in relaxation context !"});}
+\DoxyCodeLine{850     \}}
+\DoxyCodeLine{851     }
+\DoxyCodeLine{852 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a298c77c9da89fe7f1e3de7137f4adf51}\label{classCallback_a298c77c9da89fe7f1e3de7137f4adf51}} 
+\index{Callback@{Callback}!getIntegerSolution@{getIntegerSolution}}
+\index{getIntegerSolution@{getIntegerSolution}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{getIntegerSolution()}{getIntegerSolution()}}
+{\footnotesize\ttfamily void Callback\+::get\+Integer\+Solution (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+Returns the current integer solution. \begin{DoxyNote}{Note}
+Should only be called within candidate context. 
+\end{DoxyNote}
+
+
+Definition at line 811 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{812 \{}
+\DoxyCodeLine{813     \textcolor{comment}{/* Fill solution matrix */}}
+\DoxyCodeLine{814     \textcolor{keywordflow}{if} (context.getId() == Context::Id::Candidate)\{}
+\DoxyCodeLine{815         \textcolor{keywordflow}{if} (context.isCandidatePoint()) \{}
+\DoxyCodeLine{816             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{817                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{818                     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{819                         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{820                         xSol[k][i][v] = context.getCandidatePoint(x[k][i][v]);}
+\DoxyCodeLine{821                     \}}
+\DoxyCodeLine{822                 \}}
+\DoxyCodeLine{823             \}}
+\DoxyCodeLine{824         \}}
+\DoxyCodeLine{825         \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{826             \textcolor{keywordflow}{throw} IloCplex::Exception(-\/1, \textcolor{stringliteral}{"ERROR: Unbounded solution within callback !"});}
+\DoxyCodeLine{827         \}}
+\DoxyCodeLine{828     \}}
+\DoxyCodeLine{829     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{830         \textcolor{keywordflow}{throw} IloCplex::Exception(-\/1, \textcolor{stringliteral}{"ERROR: Trying to get integer solution while not in candidate context !"});}
+\DoxyCodeLine{831     \}}
+\DoxyCodeLine{832 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a2e355ff1f8150a2bc19d81fbb3f896e0}\label{classCallback_a2e355ff1f8150a2bc19d81fbb3f896e0}} 
+\index{Callback@{Callback}!getNbLazyConstraints@{getNbLazyConstraints}}
+\index{getNbLazyConstraints@{getNbLazyConstraints}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{getNbLazyConstraints()}{getNbLazyConstraints()}}
+{\footnotesize\ttfamily const int Callback\+::get\+Nb\+Lazy\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of lazy constraints added so far. 
+
+Definition at line 206 of file callback.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{206 \{ \textcolor{keywordflow}{return} timeAll; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a5c5e35c895664da84eb90dcd36364349}\label{classCallback_a5c5e35c895664da84eb90dcd36364349}} 
+\index{Callback@{Callback}!getNbUserCuts@{getNbUserCuts}}
+\index{getNbUserCuts@{getNbUserCuts}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{getNbUserCuts()}{getNbUserCuts()}}
+{\footnotesize\ttfamily const int Callback\+::get\+Nb\+User\+Cuts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the number of user cuts added so far. 
+
+Definition at line 203 of file callback.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{203 \{ \textcolor{keywordflow}{return} nbLazyConstraints; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a6f77dfe89e7a116b2127b92df8281905}\label{classCallback_a6f77dfe89e7a116b2127b92df8281905}} 
+\index{Callback@{Callback}!getNodeToInstall@{getNodeToInstall}}
+\index{getNodeToInstall@{getNodeToInstall}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{getNodeToInstall()}{getNodeToInstall()}}
+{\footnotesize\ttfamily int Callback\+::get\+Node\+To\+Install (\begin{DoxyParamCaption}\item[{int}]{f,  }\item[{int}]{k }\end{DoxyParamCaption})}
+
+Chooses on which node \mbox{\hyperlink{classVNF}{V\+NF}} f should be installed for demand k 
+
+Definition at line 170 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{170                                           \{}
+\DoxyCodeLine{171     \textcolor{keyword}{const} \textcolor{keywordtype}{double} REQ\_CAPACITY   = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a3d252d46213613383844f02b9cb7da50}{getBandwidth}}() * data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(f).\mbox{\hyperlink{classVNF_ad89fe3a96f7b288afc4a40e6acf651fa}{getConsumption}}();}
+\DoxyCodeLine{172     IloNum maxRemainingCapacity = 0.0;}
+\DoxyCodeLine{173     IloNum minValue             = IloInfinity;}
+\DoxyCodeLine{174     \textcolor{keywordtype}{int} selectedNode            = -\/1;}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{177         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{178         \textcolor{keywordflow}{if} (REQ\_CAPACITY <= remainingCapacity[v])\{}
+\DoxyCodeLine{179             \textcolor{keyword}{const} IloNum ADDITIONAL\_COST = (data.\mbox{\hyperlink{classData_a9f82015ae9c398224442ff6132594a83}{getPlacementCost}}(data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v), data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(f))) * (1.0 -\/ ySol[v][f]);}
+\DoxyCodeLine{180             \textcolor{keywordflow}{if} (ADDITIONAL\_COST <= minValue + EPSILON)\{}
+\DoxyCodeLine{181                 \textcolor{keywordflow}{if} (ADDITIONAL\_COST <= minValue -\/ EPSILON)\{}
+\DoxyCodeLine{182                     selectedNode         = v;}
+\DoxyCodeLine{183                     minValue             = ADDITIONAL\_COST;}
+\DoxyCodeLine{184                     maxRemainingCapacity = remainingCapacity[v];}
+\DoxyCodeLine{185                 \}}
+\DoxyCodeLine{186                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{187                     \textcolor{comment}{//check the remaining capacity}}
+\DoxyCodeLine{188                     \textcolor{keywordflow}{if} (remainingCapacity[v] >= maxRemainingCapacity + EPSILON)\{}
+\DoxyCodeLine{189                         selectedNode         = v;}
+\DoxyCodeLine{190                         minValue             = ADDITIONAL\_COST;}
+\DoxyCodeLine{191                         maxRemainingCapacity = remainingCapacity[v];}
+\DoxyCodeLine{192                     \}}
+\DoxyCodeLine{193                 \}}
+\DoxyCodeLine{194             \}}
+\DoxyCodeLine{195         \}}
+\DoxyCodeLine{196     \}}
+\DoxyCodeLine{197     \textcolor{keywordflow}{return} selectedNode;}
+\DoxyCodeLine{198 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a9f42d809791c93a02e818b65a7442412}\label{classCallback_a9f42d809791c93a02e818b65a7442412}} 
+\index{Callback@{Callback}!getSolutionAvail\_k@{getSolutionAvail\_k}}
+\index{getSolutionAvail\_k@{getSolutionAvail\_k}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{getSolutionAvail\_k()}{getSolutionAvail\_k()}}
+{\footnotesize\ttfamily double Callback\+::get\+Solution\+Avail\+\_\+k (\begin{DoxyParamCaption}\item[{int}]{k,  }\item[{int \&}]{least\+Available\+Section }\end{DoxyParamCaption})}
+
+Returns the availability of S\+FC k obtained from the solution stored in x\+Sol. \begin{DoxyNote}{Note}
+least will store the index of the least available section of the S\+FC 
+\end{DoxyNote}
+
+
+Definition at line 201 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{201                                                                     \{}
+\DoxyCodeLine{202     \textcolor{keywordtype}{double} availability     = 1.0;}
+\DoxyCodeLine{203     \textcolor{keywordtype}{double} minSectionAvail  = 1.0;}
+\DoxyCodeLine{204     leastAvailableSection   = -\/1;}
+\DoxyCodeLine{205     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{206         \textcolor{keywordtype}{double} section\_fail = 1.0;}
+\DoxyCodeLine{207         \textcolor{comment}{// compute section availability}}
+\DoxyCodeLine{208         \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{209             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{210             \textcolor{keywordflow}{if} (xSol[k][i][v] == 1)\{}
+\DoxyCodeLine{211                 section\_fail *= (1.0 -\/ data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}());}
+\DoxyCodeLine{212             \}}
+\DoxyCodeLine{213         \}}
+\DoxyCodeLine{214         \textcolor{keywordtype}{double} section\_avail = 1.0 -\/ section\_fail;}
+\DoxyCodeLine{215         \textcolor{comment}{// check if it is the least available section}}
+\DoxyCodeLine{216         \textcolor{keywordflow}{if} (section\_avail < minSectionAvail)\{}
+\DoxyCodeLine{217             minSectionAvail = section\_avail;}
+\DoxyCodeLine{218             leastAvailableSection = i;}
+\DoxyCodeLine{219         \}}
+\DoxyCodeLine{220         \textcolor{comment}{// compute global availability}}
+\DoxyCodeLine{221         availability *= section\_avail;}
+\DoxyCodeLine{222     \}}
+\DoxyCodeLine{223     \textcolor{keywordflow}{return} availability;}
+\DoxyCodeLine{224 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_ae9308c0c4da4973d60bb5fb8e24e7fff}\label{classCallback_ae9308c0c4da4973d60bb5fb8e24e7fff}} 
+\index{Callback@{Callback}!getTime@{getTime}}
+\index{getTime@{getTime}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{getTime()}{getTime()}}
+{\footnotesize\ttfamily const Ilo\+Num Callback\+::get\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the total time spent on callback so far. 
+
+Definition at line 209 of file callback.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{228 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a680002507b161963111170dbf1e78f9a}\label{classCallback_a680002507b161963111170dbf1e78f9a}} 
+\index{Callback@{Callback}!heuristicRule@{heuristicRule}}
+\index{heuristicRule@{heuristicRule}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{heuristicRule()}{heuristicRule()}}
+{\footnotesize\ttfamily bool Callback\+::heuristic\+Rule (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+Checks if the heuristic should be launched. 
+
+Definition at line 271 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{271                                                   \{}
+\DoxyCodeLine{272     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a81f1950337e045f575122540250622d6}{getApproximationType}}() != Input::APPROXIMATION\_TYPE\_NONE) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{273     }
+\DoxyCodeLine{274     \textcolor{keyword}{const} \textcolor{keywordtype}{double} OBJ    = context.getRelaxationObjective();}
+\DoxyCodeLine{275     \textcolor{keyword}{const} \textcolor{keywordtype}{double} UB     = context.getIncumbentObjective();}
+\DoxyCodeLine{276     \textcolor{keyword}{const} \textcolor{keywordtype}{double} LIMIT  = (UB -\/ OBJ) / UB;}
+\DoxyCodeLine{277     \textcolor{keyword}{const} \textcolor{keywordtype}{double} RND    = ((double) rand() / (RAND\_MAX));}
+\DoxyCodeLine{278 }
+\DoxyCodeLine{279     \textcolor{keywordflow}{return} (RND <= LIMIT);}
+\DoxyCodeLine{280 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a8bc5a510ee9c9e9b8c1c1378795009ae}\label{classCallback_a8bc5a510ee9c9e9b8c1c1378795009ae}} 
+\index{Callback@{Callback}!heuristicSeparationOfAvailibilityConstraints@{heuristicSeparationOfAvailibilityConstraints}}
+\index{heuristicSeparationOfAvailibilityConstraints@{heuristicSeparationOfAvailibilityConstraints}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{heuristicSeparationOfAvailibilityConstraints()}{heuristicSeparationOfAvailibilityConstraints()}}
+{\footnotesize\ttfamily void Callback\+::heuristic\+Separation\+Of\+Availibility\+Constraints (\begin{DoxyParamCaption}\item[{const Context \&}]{context,  }\item[{const Ilo\+Num3\+D\+Matrix \&}]{x\+Sol }\end{DoxyParamCaption})}
+
+Greedly solves the separation problem associated with the availability constraints. 
+
+Definition at line 597 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{598 \{}
+\DoxyCodeLine{599     \textcolor{comment}{/* Check VNF placement availability for each demand */}}
+\DoxyCodeLine{600     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{601         }
+\DoxyCodeLine{602         \textcolor{comment}{/* Declare auxiliary structures. */}}
+\DoxyCodeLine{603         std::vector< std::vector<int> > coeff;          \textcolor{comment}{// the variable coefficient in the constraint}}
+\DoxyCodeLine{604         std::vector< std::vector<int> > sectionNodes;   \textcolor{comment}{// the set of nodes placed in each section}}
+\DoxyCodeLine{605         std::vector< double > sectionAvailability;      \textcolor{comment}{// the availability assoaciated with the placement}}
+\DoxyCodeLine{606         }
+\DoxyCodeLine{607         \mbox{\hyperlink{classCallback_af0d3d6fe34331d3f0705e12131c55829}{initiateHeuristic}}(k, coeff, sectionNodes, sectionAvailability, xSol);}
+\DoxyCodeLine{608 }
+\DoxyCodeLine{609         \textcolor{keywordtype}{double} chainAvailability = data.\mbox{\hyperlink{classData_aab804b40bee75fb495b09c08635a2082}{getChainAvailability}}(sectionAvailability);}
+\DoxyCodeLine{610         \textcolor{keyword}{const} \textcolor{keywordtype}{double} REQUIRED\_AVAIL = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}(); }
+\DoxyCodeLine{611         }
+\DoxyCodeLine{612         \textcolor{keywordflow}{if} (chainAvailability < REQUIRED\_AVAIL)\{}
+\DoxyCodeLine{613             std::vector< std::vector<double> > deltaAvailability;}
+\DoxyCodeLine{614             deltaAvailability.resize(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}());}
+\DoxyCodeLine{615             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{616                 deltaAvailability[i].resize(xSol[k][i].size());}
+\DoxyCodeLine{617             \}}
+\DoxyCodeLine{618 }
+\DoxyCodeLine{619             \textcolor{keywordtype}{bool} STOP = \textcolor{keyword}{false};}
+\DoxyCodeLine{620             \textcolor{keywordflow}{while} (!STOP)\{}
+\DoxyCodeLine{621                 \mbox{\hyperlink{classCallback_ab58750b9e38489e8a47aa6169ffce4cf}{computeDeltaAvailability}}(REQUIRED\_AVAIL, deltaAvailability, sectionAvailability, coeff);  }
+\DoxyCodeLine{622                 \textcolor{keywordtype}{int} nextSection = -\/1;}
+\DoxyCodeLine{623                 \textcolor{keywordtype}{int} nextNode = -\/1;}
+\DoxyCodeLine{624                 \textcolor{keywordtype}{double} bestRatio = -\/1.0;}
+\DoxyCodeLine{625 }
+\DoxyCodeLine{626                 \textcolor{comment}{/* Search for next vnf to include on placement without satifying the chain availability. */}}
+\DoxyCodeLine{627                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{628                     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{629                         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{630                         \textcolor{keywordflow}{if} ((chainAvailability + deltaAvailability[i][v] < REQUIRED\_AVAIL) \&\& ((xSol[k][i][v]/deltaAvailability[i][v]) > bestRatio))\{}
+\DoxyCodeLine{631                             bestRatio = (xSol[k][i][v]/deltaAvailability[i][v]);}
+\DoxyCodeLine{632                             nextSection = i;}
+\DoxyCodeLine{633                             nextNode = v;}
+\DoxyCodeLine{634                         \}}
+\DoxyCodeLine{635                     \}}
+\DoxyCodeLine{636                 \}}
+\DoxyCodeLine{637                 \textcolor{comment}{/* If a vnf is found, include it. */}}
+\DoxyCodeLine{638                 \textcolor{keywordflow}{if} ((nextSection != -\/1) \&\& (nextNode != -\/1))\{}
+\DoxyCodeLine{639                     chainAvailability += deltaAvailability[nextSection][nextNode];}
+\DoxyCodeLine{640                     sectionAvailability[nextSection] = (1.0 -\/ ((1.0 -\/ sectionAvailability[nextSection])*(1.0 -\/ data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(nextNode).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}())));}
+\DoxyCodeLine{641                     coeff[nextSection][nextNode] = 0;}
+\DoxyCodeLine{642                     sectionNodes[nextSection].push\_back(nextNode);}
+\DoxyCodeLine{643                 \}}
+\DoxyCodeLine{644                 \textcolor{comment}{/* If not, stop */}}
+\DoxyCodeLine{645                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{646                     STOP = \textcolor{keyword}{true};}
+\DoxyCodeLine{647                 \}}
+\DoxyCodeLine{648             \}}
+\DoxyCodeLine{649             }
+\DoxyCodeLine{650             \textcolor{keywordtype}{double} lhs = 0.0;}
+\DoxyCodeLine{651             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}(); i++)\{}
+\DoxyCodeLine{652                 \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{653                     \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{654                     lhs += (coeff[i][v]*xSol[k][i][v]);}
+\DoxyCodeLine{655                 \}}
+\DoxyCodeLine{656             \}}
+\DoxyCodeLine{657 }
+\DoxyCodeLine{658             \textcolor{keywordflow}{if} (lhs < 1 -\/ EPS)\{}
+\DoxyCodeLine{659                 IloExpr expr(env);}
+\DoxyCodeLine{660                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{661                     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{662                         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{663                         \textcolor{keywordflow}{if} (coeff[i][v] == 1)\{}
+\DoxyCodeLine{664                             expr += x[k][i][v];}
+\DoxyCodeLine{665                         \}}
+\DoxyCodeLine{666                     \}}
+\DoxyCodeLine{667                 \}}
+\DoxyCodeLine{668                 std::string name = \textcolor{stringliteral}{"heurAvailabilityCut"};}
+\DoxyCodeLine{669 }
+\DoxyCodeLine{670                 IloRange cut(env, 1, expr, IloInfinity, name.c\_str());}
+\DoxyCodeLine{671                 std::cout << \textcolor{stringliteral}{"Adding "} << cut.getName() << std::endl;}
+\DoxyCodeLine{672                 context.addUserCut(cut, IloCplex::UseCutForce, IloFalse);}
+\DoxyCodeLine{673                 \mbox{\hyperlink{classCallback_ac818ffe055fc5552d73337b58a7b18c9}{incrementAvailabilityCutsHeuristic}}();}
+\DoxyCodeLine{674                 \mbox{\hyperlink{classCallback_a9f0b6346706d7570fac8cb7bf407dcd4}{incrementUsercuts}}();}
+\DoxyCodeLine{675                 expr.end();}
+\DoxyCodeLine{676             \}}
+\DoxyCodeLine{677         \}}
+\DoxyCodeLine{678     \}}
+\DoxyCodeLine{679 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_ac818ffe055fc5552d73337b58a7b18c9}\label{classCallback_ac818ffe055fc5552d73337b58a7b18c9}} 
+\index{Callback@{Callback}!incrementAvailabilityCutsHeuristic@{incrementAvailabilityCutsHeuristic}}
+\index{incrementAvailabilityCutsHeuristic@{incrementAvailabilityCutsHeuristic}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{incrementAvailabilityCutsHeuristic()}{incrementAvailabilityCutsHeuristic()}}
+{\footnotesize\ttfamily void Callback\+::increment\+Availability\+Cuts\+Heuristic (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increase by one the number of availability cuts added through the heuristic procedure. 
+
+Definition at line 875 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{876 \{}
+\DoxyCodeLine{877     thread\_flag.lock();}
+\DoxyCodeLine{878     ++nb\_cuts\_avail\_heuristic;}
+\DoxyCodeLine{879     thread\_flag.unlock();}
+\DoxyCodeLine{880 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_ae3a01742bb9212bf08d39e2e5d73d33d}\label{classCallback_ae3a01742bb9212bf08d39e2e5d73d33d}} 
+\index{Callback@{Callback}!incrementLazyConstraints@{incrementLazyConstraints}}
+\index{incrementLazyConstraints@{incrementLazyConstraints}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{incrementLazyConstraints()}{incrementLazyConstraints()}}
+{\footnotesize\ttfamily void Callback\+::increment\+Lazy\+Constraints (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increase by one the number of lazy constraints added. 
+
+Definition at line 868 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{869 \{}
+\DoxyCodeLine{870     thread\_flag.lock();}
+\DoxyCodeLine{871     ++nbLazyConstraints;}
+\DoxyCodeLine{872     thread\_flag.unlock();}
+\DoxyCodeLine{873 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a2dcba0ea1f2ce22053db4b9d58f51365}\label{classCallback_a2dcba0ea1f2ce22053db4b9d58f51365}} 
+\index{Callback@{Callback}!incrementTime@{incrementTime}}
+\index{incrementTime@{incrementTime}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{incrementTime()}{incrementTime()}}
+{\footnotesize\ttfamily void Callback\+::increment\+Time (\begin{DoxyParamCaption}\item[{const Ilo\+Num}]{time }\end{DoxyParamCaption})}
+
+Increases the total callback time.
+\begin{DoxyParams}{Parameters}
+{\em time} & The time to be added. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 889 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{890 \{}
+\DoxyCodeLine{891     thread\_flag.lock();}
+\DoxyCodeLine{892     timeAll += time;}
+\DoxyCodeLine{893     thread\_flag.unlock();}
+\DoxyCodeLine{894 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a9f0b6346706d7570fac8cb7bf407dcd4}\label{classCallback_a9f0b6346706d7570fac8cb7bf407dcd4}} 
+\index{Callback@{Callback}!incrementUsercuts@{incrementUsercuts}}
+\index{incrementUsercuts@{incrementUsercuts}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{incrementUsercuts()}{incrementUsercuts()}}
+{\footnotesize\ttfamily void Callback\+::increment\+Usercuts (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Increase by one the number of user cuts added. 
+
+Definition at line 882 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{883 \{}
+\DoxyCodeLine{884     thread\_flag.lock();}
+\DoxyCodeLine{885     ++nbCuts;}
+\DoxyCodeLine{886     thread\_flag.unlock();}
+\DoxyCodeLine{887 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_af0d3d6fe34331d3f0705e12131c55829}\label{classCallback_af0d3d6fe34331d3f0705e12131c55829}} 
+\index{Callback@{Callback}!initiateHeuristic@{initiateHeuristic}}
+\index{initiateHeuristic@{initiateHeuristic}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{initiateHeuristic()}{initiateHeuristic()}}
+{\footnotesize\ttfamily void Callback\+::initiate\+Heuristic (\begin{DoxyParamCaption}\item[{const int}]{k,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{coeff,  }\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{section\+Nodes,  }\item[{std\+::vector$<$ double $>$ \&}]{section\+Availability,  }\item[{const Ilo\+Num3\+D\+Matrix \&}]{x\+Sol }\end{DoxyParamCaption})}
+
+Initializes the availability heuristic. 
+
+Definition at line 443 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{444 \{}
+\DoxyCodeLine{445     coeff.resize(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}());}
+\DoxyCodeLine{446     sectionNodes.resize(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}());}
+\DoxyCodeLine{447     sectionAvailability.resize(data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}());}
+\DoxyCodeLine{448 }
+\DoxyCodeLine{449     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{450         coeff[i].resize(xSol[k][i].size());}
+\DoxyCodeLine{451         \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{452             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{453             coeff[i][v] = 1;}
+\DoxyCodeLine{454         \}}
+\DoxyCodeLine{455     \}}
+\DoxyCodeLine{456 }
+\DoxyCodeLine{457     \textcolor{comment}{/* Initialization of placement */}}
+\DoxyCodeLine{458     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{459         \textcolor{comment}{/* Place every integer variable */}}
+\DoxyCodeLine{460         \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{461             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{462             \textcolor{keywordflow}{if} (xSol[k][i][v] >= 1 -\/ EPS)\{}
+\DoxyCodeLine{463                 sectionNodes[i].push\_back(v);}
+\DoxyCodeLine{464                 coeff[i][v] = 0;}
+\DoxyCodeLine{465             \}}
+\DoxyCodeLine{466         \}}
+\DoxyCodeLine{467         \textcolor{comment}{/* If still empty, select some initial node based on the best x/availability ratio. */}}
+\DoxyCodeLine{468         \textcolor{keywordflow}{if} (sectionNodes[i].empty())\{}
+\DoxyCodeLine{469             \textcolor{keywordtype}{int} selectedNode = -\/1;}
+\DoxyCodeLine{470             \textcolor{keywordtype}{double} bestValue = -\/1.0;}
+\DoxyCodeLine{471             \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{472                 \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{473                 \textcolor{keywordflow}{if} ( (xSol[k][i][v] / data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}()) > bestValue)\{}
+\DoxyCodeLine{474                     bestValue = (xSol[k][i][v] / data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}());}
+\DoxyCodeLine{475                     selectedNode = v;}
+\DoxyCodeLine{476                 \}}
+\DoxyCodeLine{477             \}}
+\DoxyCodeLine{478             sectionNodes[i].push\_back(selectedNode);}
+\DoxyCodeLine{479             coeff[i][selectedNode] = 0;}
+\DoxyCodeLine{480         \}}
+\DoxyCodeLine{481         \textcolor{comment}{/* Set initial section availability. */}}
+\DoxyCodeLine{482         sectionAvailability[i] = 1.0 -\/ data.\mbox{\hyperlink{classData_a27d50d0df049a27552ac2ae8bfe97c2f}{getFailureProb}}(sectionNodes[i]);}
+\DoxyCodeLine{483     \}}
+\DoxyCodeLine{484 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a2d0e531b46ce73c51a3967557f230b6a}\label{classCallback_a2d0e531b46ce73c51a3967557f230b6a}} 
+\index{Callback@{Callback}!insertHeuristicSolution@{insertHeuristicSolution}}
+\index{insertHeuristicSolution@{insertHeuristicSolution}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{insertHeuristicSolution()}{insertHeuristicSolution()}}
+{\footnotesize\ttfamily void Callback\+::insert\+Heuristic\+Solution (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+Posts an heuristic solution into the optimization procedure. 
+
+Definition at line 227 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{227                                                             \{}
+\DoxyCodeLine{228     IloNumArray vals(context.getEnv());}
+\DoxyCodeLine{229     \textcolor{keywordflow}{try}\{  }
+\DoxyCodeLine{230       IloNumVarArray vars(context.getEnv());}
+\DoxyCodeLine{231     }
+\DoxyCodeLine{232         \textcolor{comment}{// build heuristic solution representation}}
+\DoxyCodeLine{233         \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{234             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{235             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} f = 0; f < data.\mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{getNbVnfs}}(); f++)\{}
+\DoxyCodeLine{236                 vars.add(y[v][f]);}
+\DoxyCodeLine{237                 vals.add(ySol[v][f]);}
+\DoxyCodeLine{238            \}}
+\DoxyCodeLine{239         \}}
+\DoxyCodeLine{240         \textcolor{comment}{/*... fill Arrays ... */}}
+\DoxyCodeLine{241         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{242             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{243                 \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{244                     \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{245                     vars.add(x[k][i][v]);}
+\DoxyCodeLine{246                     vals.add(xSol[k][i][v]);}
+\DoxyCodeLine{247                 \}}
+\DoxyCodeLine{248             \}}
+\DoxyCodeLine{249         \}}
+\DoxyCodeLine{250         }
+\DoxyCodeLine{251         \textcolor{comment}{//post heuristic solution}}
+\DoxyCodeLine{252         \textcolor{keywordtype}{double} objVal = 0.0;}
+\DoxyCodeLine{253         \textcolor{keywordflow}{for}(NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n) \{}
+\DoxyCodeLine{254             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{255             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{getNbVnfs}}(); i++)\{}
+\DoxyCodeLine{256                 \textcolor{keywordtype}{int} f = data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(i).\mbox{\hyperlink{classVNF_af6cff9552d07f0b026a0b0dfdfde986c}{getId}}();}
+\DoxyCodeLine{257                 \textcolor{keywordtype}{double} cost = data.\mbox{\hyperlink{classData_a9f82015ae9c398224442ff6132594a83}{getPlacementCost}}(data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v), data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(f));}
+\DoxyCodeLine{258                 objVal += ( cost*ySol[v][f] ); }
+\DoxyCodeLine{259             \}}
+\DoxyCodeLine{260         \}}
+\DoxyCodeLine{261         context.postHeuristicSolution(vars, vals, objVal, IloCplex::Callback::Context::SolutionStrategy::NoCheck);}
+\DoxyCodeLine{262         vals.end();}
+\DoxyCodeLine{263     \}}
+\DoxyCodeLine{264     \textcolor{keywordflow}{catch} (...) \{}
+\DoxyCodeLine{265         vals.end();}
+\DoxyCodeLine{266         \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{267     \}}
+\DoxyCodeLine{268 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a860af352108592ffcfbf96deb0a017a7}\label{classCallback_a860af352108592ffcfbf96deb0a017a7}} 
+\index{Callback@{Callback}!invoke@{invoke}}
+\index{invoke@{invoke}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{invoke()}{invoke()}}
+{\footnotesize\ttfamily void Callback\+::invoke (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+C\+P\+L\+EX will call this method during the solution process at the places that we asked for.
+\begin{DoxyParams}{Parameters}
+{\em context} & Defines on which places the method is called and we use it do define what to do in each case.\\
+\hline
+\end{DoxyParams}
+This is the main callback function and determines what to do when the callback is invoked during the optimization. 
+
+Definition at line 54 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55 \{}
+\DoxyCodeLine{56     IloNum time\_start = context.getDoubleInfo(IloCplex::Callback::Context::Info::Time);}
+\DoxyCodeLine{57     \textcolor{keywordflow}{switch} (context.getId())\{}
+\DoxyCodeLine{58         \textcolor{comment}{/* When fractional solution is available */}}
+\DoxyCodeLine{59         \textcolor{keywordflow}{case} Context::Id::Relaxation:}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             \textcolor{keywordtype}{int} current\_number\_of\_cuts = \mbox{\hyperlink{classCallback_a5c5e35c895664da84eb90dcd36364349}{getNbUserCuts}}();}
+\DoxyCodeLine{62             \textcolor{comment}{// look up for user cuts and add them}}
+\DoxyCodeLine{63             \mbox{\hyperlink{classCallback_a7be45b54380acc37017b9e4960c35589}{addUserCuts}}(context);}
+\DoxyCodeLine{64             \textcolor{comment}{// if no additional cut was found, launch heuristic}}
+\DoxyCodeLine{65             \textcolor{keywordflow}{if} (current\_number\_of\_cuts == \mbox{\hyperlink{classCallback_a5c5e35c895664da84eb90dcd36364349}{getNbUserCuts}}())  \mbox{\hyperlink{classCallback_a53d301b9315dcad7a7eabe27f763d4bf}{runHeuristic}}(context);}
+\DoxyCodeLine{66             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{67         \}}
+\DoxyCodeLine{68         \textcolor{comment}{/* When integer solution is available */}}
+\DoxyCodeLine{69         \textcolor{keywordflow}{case} Context::Id::Candidate:}
+\DoxyCodeLine{70         \{}
+\DoxyCodeLine{71             \textcolor{comment}{// if the candidate solution is considered feasible, check if all lazy constraints are satisfied}}
+\DoxyCodeLine{72             \textcolor{keywordflow}{if} (context.isCandidatePoint()) \{}
+\DoxyCodeLine{73                 \mbox{\hyperlink{classCallback_a936ac1741ada15303c0afdef1efa1134}{addLazyConstraints}}(context);}
+\DoxyCodeLine{74             \}}
+\DoxyCodeLine{75             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{76         \}}
+\DoxyCodeLine{77         \textcolor{comment}{/* Not an option for callback */}}
+\DoxyCodeLine{78         \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{79             \textcolor{keywordflow}{throw} IloCplex::Exception(-\/1, \textcolor{stringliteral}{"ERROR: Unexpected context id !"});}
+\DoxyCodeLine{80     \}}
+\DoxyCodeLine{81     IloNum time\_spent = context.getDoubleInfo(IloCplex::Callback::Context::Info::Time) -\/ time\_start;}
+\DoxyCodeLine{82     \mbox{\hyperlink{classCallback_a2dcba0ea1f2ce22053db4b9d58f51365}{incrementTime}}(time\_spent);}
+\DoxyCodeLine{83 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a972570b20e65f475c00fd758435fe656}\label{classCallback_a972570b20e65f475c00fd758435fe656}} 
+\index{Callback@{Callback}!isIntegerAssignment@{isIntegerAssignment}}
+\index{isIntegerAssignment@{isIntegerAssignment}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{isIntegerAssignment()}{isIntegerAssignment()}}
+{\footnotesize\ttfamily const bool Callback\+::is\+Integer\+Assignment (\begin{DoxyParamCaption}\item[{const int \&}]{k,  }\item[{const Ilo\+Num3\+D\+Matrix \&}]{x\+Sol }\end{DoxyParamCaption}) const}
+
+Checks if all placement variables of a given S\+FC demand are integers.
+\begin{DoxyParams}{Parameters}
+{\em k} & The demand id.\\
+\hline
+{\em x\+Sol} & The current solution. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 855 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{855                                                                                       \{}
+\DoxyCodeLine{856     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).getNbVNFs(); i++)\{}
+\DoxyCodeLine{857         \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{858             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{859             \textcolor{keywordflow}{if} ((xSol[k][i][v] >= EPS)  \&\& (xSol[k][i][v] <= 1 -\/ EPS))\{}
+\DoxyCodeLine{860                 \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{861             \}}
+\DoxyCodeLine{862         \}}
+\DoxyCodeLine{863     \}}
+\DoxyCodeLine{864     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{865 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_ac3a933c8244c64c8990504ae70eb114d}\label{classCallback_ac3a933c8244c64c8990504ae70eb114d}} 
+\index{Callback@{Callback}!lift@{lift}}
+\index{lift@{lift}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{lift()}{lift()}}
+{\footnotesize\ttfamily void Callback\+::lift (\begin{DoxyParamCaption}\item[{Ilo\+Num\+Matrix \&}]{x\+Sol,  }\item[{const double \&}]{availability\+Required,  }\item[{std\+::vector$<$ \mbox{\hyperlink{structCallback_1_1MapAvailability}{Map\+Availability}} $>$ \&}]{section\+Availability,  }\item[{const int \&}]{nb\+Sections }\end{DoxyParamCaption})}
+
+Tries to add new vnf placements to the current solution without changing its availability violation.
+\begin{DoxyParams}{Parameters}
+{\em x\+Sol} & The current solution for a given demand.\\
+\hline
+{\em availability\+Required} & The S\+FC required availability.\\
+\hline
+{\em section\+Availability} & The current section availabilities.\\
+\hline
+{\em nb\+Sections} & The number of sections that can be modified. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 751 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{752 \{}
+\DoxyCodeLine{753     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} s = 0; s < nbSections; ++s)\{}
+\DoxyCodeLine{754         \textcolor{keywordtype}{int} i = sectionAvailability[s].section;}
+\DoxyCodeLine{755         \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{756             \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{757             \textcolor{comment}{/* If the i-\/th vnf is not placed on node v */}}
+\DoxyCodeLine{758             \textcolor{keywordflow}{if} (xSol[i][v] < 1 -\/ EPS)\{}
+\DoxyCodeLine{759                 \textcolor{comment}{/* Compute the availability obtained if a i-\/th vnf was placed on node v*/}}
+\DoxyCodeLine{760                 \textcolor{keywordtype}{double} futureAvailability = 1.0;}
+\DoxyCodeLine{761                 \textcolor{keywordtype}{double} futureAvailabilityOfSection = sectionAvailability[s].availability;}
+\DoxyCodeLine{762                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < nbSections; ++j)\{}
+\DoxyCodeLine{763                     \textcolor{keywordflow}{if} (s == j)\{}
+\DoxyCodeLine{764                         \textcolor{keywordtype}{double} newFailureRate = (1.0 -\/ sectionAvailability[j].availability)*(1.0 -\/ data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a72b4ff9922a157a43e022c3d9e16f5a4}{getAvailability}}());}
+\DoxyCodeLine{765                         futureAvailabilityOfSection = (1.0 -\/ newFailureRate);}
+\DoxyCodeLine{766                         futureAvailability *= futureAvailabilityOfSection;}
+\DoxyCodeLine{767                     \}}
+\DoxyCodeLine{768                     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{769                         futureAvailability *= sectionAvailability[j].availability;}
+\DoxyCodeLine{770                     \}}
+\DoxyCodeLine{771                 \}}
+\DoxyCodeLine{772                 \textcolor{comment}{/* If the availability would still be violated */}}
+\DoxyCodeLine{773                 \textcolor{keywordflow}{if} (futureAvailability < availabilityRequired)\{}
+\DoxyCodeLine{774                     \textcolor{comment}{/* Place vnf */}}
+\DoxyCodeLine{775                     xSol[i][v] = 1;}
+\DoxyCodeLine{776                     sectionAvailability[s].availability = futureAvailabilityOfSection;}
+\DoxyCodeLine{777                 \}}
+\DoxyCodeLine{778             \}}
+\DoxyCodeLine{779         \}}
+\DoxyCodeLine{780     \}}
+\DoxyCodeLine{781 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a53d301b9315dcad7a7eabe27f763d4bf}\label{classCallback_a53d301b9315dcad7a7eabe27f763d4bf}} 
+\index{Callback@{Callback}!runHeuristic@{runHeuristic}}
+\index{runHeuristic@{runHeuristic}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{runHeuristic()}{runHeuristic()}}
+{\footnotesize\ttfamily void Callback\+::run\+Heuristic (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+Launches the matheuristic procedure based on a given fractional solution. \begin{DoxyNote}{Note}
+Should only be called within relaxation context. 
+\end{DoxyNote}
+
+
+Definition at line 86 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87 \{}
+\DoxyCodeLine{88     \textcolor{keywordflow}{if} ((data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a22b7604c7cac3057d7e5c5c39e3db0ec}{getHeuristic}}() == Input::HEURISTIC\_OFF) || (\mbox{\hyperlink{classCallback_a680002507b161963111170dbf1e78f9a}{heuristicRule}}(context) == \textcolor{keyword}{false})) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{89     }
+\DoxyCodeLine{90     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{91         \mbox{\hyperlink{classCallback_a83509ae2a7ced1b68bdb36861165c2ef}{runHeuristic\_Phase\_I}}(context);}
+\DoxyCodeLine{92         \textcolor{keywordtype}{bool} isFeasible = \mbox{\hyperlink{classCallback_a3dd6148754a74735e2af5a87ba02fbcf}{runHeuristic\_Phase\_II}}(context);}
+\DoxyCodeLine{93         \textcolor{keywordflow}{if} ((isFeasible) \&\& (objSol < context.getIncumbentObjective()))\{}
+\DoxyCodeLine{94             \mbox{\hyperlink{classCallback_a2d0e531b46ce73c51a3967557f230b6a}{insertHeuristicSolution}}(context);}
+\DoxyCodeLine{95         \}}
+\DoxyCodeLine{96     \}}
+\DoxyCodeLine{97     \textcolor{keywordflow}{catch} (...) \{}
+\DoxyCodeLine{98         \textcolor{keywordflow}{throw};}
+\DoxyCodeLine{99     \}}
+\DoxyCodeLine{100 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a83509ae2a7ced1b68bdb36861165c2ef}\label{classCallback_a83509ae2a7ced1b68bdb36861165c2ef}} 
+\index{Callback@{Callback}!runHeuristic\_Phase\_I@{runHeuristic\_Phase\_I}}
+\index{runHeuristic\_Phase\_I@{runHeuristic\_Phase\_I}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{runHeuristic\_Phase\_I()}{runHeuristic\_Phase\_I()}}
+{\footnotesize\ttfamily void Callback\+::run\+Heuristic\+\_\+\+Phase\+\_\+I (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+Launches the phase I of the matheuristic procedure.
+
+Builds (a possibly unfeasible) integer solution 
+
+Definition at line 103 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103                                                          \{}
+\DoxyCodeLine{104     \textcolor{comment}{//build placement y}}
+\DoxyCodeLine{105     objSol = 0.0;}
+\DoxyCodeLine{106     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{107         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{108         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} f = 0; f < data.\mbox{\hyperlink{classData_a8398677b7fc6b484a1871ec3761a42f0}{getNbVnfs}}(); f++)\{}
+\DoxyCodeLine{109             \textcolor{keyword}{const} \textcolor{keywordtype}{double} RND = ((double) rand() / (RAND\_MAX));}
+\DoxyCodeLine{110             \textcolor{keywordflow}{if} (RND <= context.getRelaxationPoint(y[v][f]))\{}
+\DoxyCodeLine{111                 ySol[v][f] = 1;}
+\DoxyCodeLine{112                 objSol += data.\mbox{\hyperlink{classData_a9f82015ae9c398224442ff6132594a83}{getPlacementCost}}(data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v), data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(f));}
+\DoxyCodeLine{113             \}}
+\DoxyCodeLine{114             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{115                 ySol[v][f] = 0;}
+\DoxyCodeLine{116             \}}
+\DoxyCodeLine{117         \}}
+\DoxyCodeLine{118     \}}
+\DoxyCodeLine{119     \textcolor{comment}{//build assignment x}}
+\DoxyCodeLine{120     \textcolor{keywordflow}{for} (NodeIt n(data.\mbox{\hyperlink{classData_a05f695236682b1ea08cada30785dcef5}{getGraph}}()); n != lemon::INVALID; ++n)\{}
+\DoxyCodeLine{121         \textcolor{keywordtype}{int} v = data.\mbox{\hyperlink{classData_a98dd1828cb3104e0cf3642117e9efd5e}{getNodeId}}(n);}
+\DoxyCodeLine{122         remainingCapacity[v] = data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v).\mbox{\hyperlink{classNode_a70e448af94bce47949f21ec9124dd519}{getCapacity}}();}
+\DoxyCodeLine{123         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{124             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_af77e30361d3928992a628e5ec57f503a}{getNbVNFs}}(); i++)\{}
+\DoxyCodeLine{125                 \textcolor{keywordtype}{int} f = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_acd986f888fd87fb1c6aa6eb6df240b30}{getVNF\_i}}(i);}
+\DoxyCodeLine{126                 \textcolor{keywordtype}{double} req\_capacity = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a3d252d46213613383844f02b9cb7da50}{getBandwidth}}() * data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(f).\mbox{\hyperlink{classVNF_ad89fe3a96f7b288afc4a40e6acf651fa}{getConsumption}}();}
+\DoxyCodeLine{127                 \textcolor{keywordflow}{if} (ySol[v][f] == 1 \&\& req\_capacity <= remainingCapacity[v])\{}
+\DoxyCodeLine{128                     \textcolor{comment}{// there is a chance of assigning the vnf}}
+\DoxyCodeLine{129                     \textcolor{keyword}{const} \textcolor{keywordtype}{double} RND = ((double) rand() / (RAND\_MAX));}
+\DoxyCodeLine{130                     \textcolor{keywordflow}{if} (RND <= context.getRelaxationPoint(x[k][i][v]))\{}
+\DoxyCodeLine{131                         xSol[k][i][v] = 1;}
+\DoxyCodeLine{132                         remainingCapacity[v] -\/= req\_capacity;}
+\DoxyCodeLine{133                     \}}
+\DoxyCodeLine{134                     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{135                         xSol[k][i][v] = 0;}
+\DoxyCodeLine{136                     \}}
+\DoxyCodeLine{137                 \}}
+\DoxyCodeLine{138                 \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{139                     xSol[k][i][v] = 0;}
+\DoxyCodeLine{140                 \}}
+\DoxyCodeLine{141             \}}
+\DoxyCodeLine{142         \}}
+\DoxyCodeLine{143     \}}
+\DoxyCodeLine{144 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_a3dd6148754a74735e2af5a87ba02fbcf}\label{classCallback_a3dd6148754a74735e2af5a87ba02fbcf}} 
+\index{Callback@{Callback}!runHeuristic\_Phase\_II@{runHeuristic\_Phase\_II}}
+\index{runHeuristic\_Phase\_II@{runHeuristic\_Phase\_II}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{runHeuristic\_Phase\_II()}{runHeuristic\_Phase\_II()}}
+{\footnotesize\ttfamily bool Callback\+::run\+Heuristic\+\_\+\+Phase\+\_\+\+II (\begin{DoxyParamCaption}\item[{const Context \&}]{context }\end{DoxyParamCaption})}
+
+Launches the phase II of the matheuristic procedure. Returns true if a feasible solution was found. 
+
+Definition at line 147 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{147                                                           \{}
+\DoxyCodeLine{148     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < data.\mbox{\hyperlink{classData_abf876f3db0583955968023e9163ac1d5}{getNbDemands}}(); k++)\{}
+\DoxyCodeLine{149         \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{150         \textcolor{keyword}{const} \textcolor{keywordtype}{double} REQ\_AVAIL = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_ab7351078a5fd0d9c4d46aa9601391776}{getAvailability}}();}
+\DoxyCodeLine{151         \textcolor{keywordflow}{while} (\mbox{\hyperlink{classCallback_a9f42d809791c93a02e818b65a7442412}{getSolutionAvail\_k}}(k, i) < REQ\_AVAIL)\{}
+\DoxyCodeLine{152             \textcolor{keywordtype}{int} f = data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_acd986f888fd87fb1c6aa6eb6df240b30}{getVNF\_i}}(i);}
+\DoxyCodeLine{153             \textcolor{comment}{//choose node to install the ith vnf of sfc k}}
+\DoxyCodeLine{154             \textcolor{keywordtype}{int} v = \mbox{\hyperlink{classCallback_a6f77dfe89e7a116b2127b92df8281905}{getNodeToInstall}}(f, k);}
+\DoxyCodeLine{155             \textcolor{keywordflow}{if} (v == -\/1) \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{156             }
+\DoxyCodeLine{157             \textcolor{comment}{// set x[k,i,v] to 1 and y[v, f(i,k)] also if needed}}
+\DoxyCodeLine{158             xSol[k][i][v] = 1;}
+\DoxyCodeLine{159             remainingCapacity[v] -\/= data.\mbox{\hyperlink{classData_a5f644b81a19a2b64b3714080b73ee5b7}{getDemand}}(k).\mbox{\hyperlink{classDemand_a3d252d46213613383844f02b9cb7da50}{getBandwidth}}() * data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(f).\mbox{\hyperlink{classVNF_ad89fe3a96f7b288afc4a40e6acf651fa}{getConsumption}}();}
+\DoxyCodeLine{160             \textcolor{keywordflow}{if} (ySol[v][f] == 0)\{}
+\DoxyCodeLine{161                 ySol[v][f] = 1;}
+\DoxyCodeLine{162                 objSol += data.\mbox{\hyperlink{classData_a9f82015ae9c398224442ff6132594a83}{getPlacementCost}}(data.\mbox{\hyperlink{classData_a4911e5e732480bcafad13a74846b5abe}{getNode}}(v), data.\mbox{\hyperlink{classData_a4f2ec71a9919b4f810e127a6e484c0f4}{getVnf}}(f));}
+\DoxyCodeLine{163             \}}
+\DoxyCodeLine{164         \}}
+\DoxyCodeLine{165     \}}
+\DoxyCodeLine{166     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{167 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classCallback_aba00337c9301daf6bb2de21d88487c31}\label{classCallback_aba00337c9301daf6bb2de21d88487c31}} 
+\index{Callback@{Callback}!setCutPool@{setCutPool}}
+\index{setCutPool@{setCutPool}!Callback@{Callback}}
+\doxysubsubsection{\texorpdfstring{setCutPool()}{setCutPool()}}
+{\footnotesize\ttfamily void Callback\+::set\+Cut\+Pool (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Sets up the cut pool that is checked on relaxation context. On this pool, only cuts appearing in a polynomial number are added.
+
+Sets up the cut pool that is checked on relaxation context. On this pool only cuts appearing in a polynomial number are added. 
+
+Definition at line 283 of file callback.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{284 \{}
+\DoxyCodeLine{285     std::cout << \textcolor{stringliteral}{"\(\backslash\)t > Setting up pool of cuts... "} << std::endl;}
+\DoxyCodeLine{286     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a8b8250546a117fa9bd4f1ae5b6a89588}{getNodeCover}}() == Input::NODE\_COVER\_ON)\{}
+\DoxyCodeLine{287         \mbox{\hyperlink{classCallback_adb6675ce46162107ffeaf74b19670af7}{addAvailabilityCoverConstraints}}();}
+\DoxyCodeLine{288     \}}
+\DoxyCodeLine{289     }
+\DoxyCodeLine{290     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_a3d6a10c5d47045fccc34fbb99e797b70}{getVnfLowerBoundCuts}}() == Input::VNF\_LOWER\_BOUND\_CUTS\_ON)\{}
+\DoxyCodeLine{291         \mbox{\hyperlink{classCallback_a6f71b6277aff2738add5c693a991a41f}{addVnfLowerBoundConstraints}}();}
+\DoxyCodeLine{292     \}}
+\DoxyCodeLine{293 }
+\DoxyCodeLine{294     \textcolor{keywordflow}{if} (data.\mbox{\hyperlink{classData_aefa6d5c46bf11f61fecc53774b5c7509}{getInput}}().\mbox{\hyperlink{classInput_af14da1c586c06c4fd0db3c0fa10540f8}{getSectionFailureCuts}}() == Input::SECTION\_FAILURE\_CUTS\_ON)\{}
+\DoxyCodeLine{295         \mbox{\hyperlink{classCallback_a0a07ac8b138cec2f47a6ddf1e4bd0a51}{addSectionFailureConstraints}}();}
+\DoxyCodeLine{296     \}}
+\DoxyCodeLine{297 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/solver/callback.\+hpp\item 
+src/solver/callback.\+cpp\end{DoxyCompactItemize}

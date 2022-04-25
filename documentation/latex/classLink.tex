@@ -1,0 +1,173 @@
+\hypertarget{classLink}{}\doxysection{Link Class Reference}
+\label{classLink}\index{Link@{Link}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLink_ab7a86fdf9d379516bdfec00ca78d3658}{Link}} (const int id\+\_\+=-\/1, const std\+::string name\+\_\+=\char`\"{}\char`\"{}, const int s=-\/1, const int t=-\/1, const double d=0.\+0, const double b=0.\+0)
+\item 
+const int \& \mbox{\hyperlink{classLink_a6c43abcfef32e098df9daa69b5e92bd1}{get\+Id}} () const
+\item 
+const std\+::string \& \mbox{\hyperlink{classLink_aefb34482b4b57dc314decf31cb47194d}{get\+Name}} () const
+\item 
+const int \& \mbox{\hyperlink{classLink_a87ccffa413e840956a9f1a88dcfc1a5f}{get\+Source}} () const
+\item 
+const int \& \mbox{\hyperlink{classLink_a240b7055f226274cd188097116a547ad}{get\+Target}} () const
+\item 
+const double \& \mbox{\hyperlink{classLink_a6aadd57b65d4e246640ed13bb8ee293c}{get\+Delay}} () const
+\item 
+const double \& \mbox{\hyperlink{classLink_a214f188191b5139bd58c3b6b511cc10f}{get\+Bandwidth}} () const
+\item 
+void \mbox{\hyperlink{classLink_a0224dde29ffaf99f28e6dc64817f5775}{print}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 17 of file link.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLink_ab7a86fdf9d379516bdfec00ca78d3658}\label{classLink_ab7a86fdf9d379516bdfec00ca78d3658}} 
+\index{Link@{Link}!Link@{Link}}
+\index{Link@{Link}!Link@{Link}}
+\doxysubsubsection{\texorpdfstring{Link()}{Link()}}
+{\footnotesize\ttfamily Link\+::\+Link (\begin{DoxyParamCaption}\item[{const int}]{id\+\_\+ = {\ttfamily -\/1},  }\item[{const std\+::string}]{name\+\_\+ = {\ttfamily \char`\"{}\char`\"{}},  }\item[{const int}]{s = {\ttfamily -\/1},  }\item[{const int}]{t = {\ttfamily -\/1},  }\item[{const double}]{d = {\ttfamily 0.0},  }\item[{const double}]{b = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+Constructor.
+\begin{DoxyParams}{Parameters}
+{\em id\+\_\+} & \mbox{\hyperlink{classLink}{Link}} id.\\
+\hline
+{\em name\+\_\+} & \mbox{\hyperlink{classLink}{Link}} name.\\
+\hline
+{\em s} & \mbox{\hyperlink{classLink}{Link}}\textquotesingle{}s source id.\\
+\hline
+{\em t} & \mbox{\hyperlink{classLink}{Link}}\textquotesingle{}s target id.\\
+\hline
+{\em d} & \mbox{\hyperlink{classLink}{Link}}\textquotesingle{}s delay.\\
+\hline
+{\em b} & \mbox{\hyperlink{classLink}{Link}}\textquotesingle{}s total bandwidth.\\
+\hline
+\end{DoxyParams}
+Constructor. 
+
+Definition at line 8 of file link.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{8                                                                                                          : }
+\DoxyCodeLine{9                 id(id\_), name(name\_), source\_id(s), target\_id(t), delay(d), bandwidth(b) \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLink_a214f188191b5139bd58c3b6b511cc10f}\label{classLink_a214f188191b5139bd58c3b6b511cc10f}} 
+\index{Link@{Link}!getBandwidth@{getBandwidth}}
+\index{getBandwidth@{getBandwidth}!Link@{Link}}
+\doxysubsubsection{\texorpdfstring{getBandwidth()}{getBandwidth()}}
+{\footnotesize\ttfamily const double\& Link\+::get\+Bandwidth (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the link\textquotesingle{}s total bandwidth. 
+
+Definition at line 51 of file link.\+hpp.
+
+\mbox{\Hypertarget{classLink_a6aadd57b65d4e246640ed13bb8ee293c}\label{classLink_a6aadd57b65d4e246640ed13bb8ee293c}} 
+\index{Link@{Link}!getDelay@{getDelay}}
+\index{getDelay@{getDelay}!Link@{Link}}
+\doxysubsubsection{\texorpdfstring{getDelay()}{getDelay()}}
+{\footnotesize\ttfamily const double\& Link\+::get\+Delay (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the link\textquotesingle{}s delay. 
+
+Definition at line 49 of file link.\+hpp.
+
+\mbox{\Hypertarget{classLink_a6c43abcfef32e098df9daa69b5e92bd1}\label{classLink_a6c43abcfef32e098df9daa69b5e92bd1}} 
+\index{Link@{Link}!getId@{getId}}
+\index{getId@{getId}!Link@{Link}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily const int\& Link\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the link\textquotesingle{}s id. 
+
+Definition at line 41 of file link.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{42 \{ \textcolor{keywordflow}{return} this-\/>source\_id; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLink_aefb34482b4b57dc314decf31cb47194d}\label{classLink_aefb34482b4b57dc314decf31cb47194d}} 
+\index{Link@{Link}!getName@{getName}}
+\index{getName@{getName}!Link@{Link}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily const std\+::string\& Link\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the link\textquotesingle{}s name. 
+
+Definition at line 43 of file link.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44 \{ \textcolor{keywordflow}{return} this-\/>target\_id; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLink_a87ccffa413e840956a9f1a88dcfc1a5f}\label{classLink_a87ccffa413e840956a9f1a88dcfc1a5f}} 
+\index{Link@{Link}!getSource@{getSource}}
+\index{getSource@{getSource}!Link@{Link}}
+\doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
+{\footnotesize\ttfamily const int\& Link\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the link\textquotesingle{}s source id. 
+
+Definition at line 45 of file link.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46 \{ \textcolor{keywordflow}{return} this-\/>delay; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLink_a240b7055f226274cd188097116a547ad}\label{classLink_a240b7055f226274cd188097116a547ad}} 
+\index{Link@{Link}!getTarget@{getTarget}}
+\index{getTarget@{getTarget}!Link@{Link}}
+\doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
+{\footnotesize\ttfamily const int\& Link\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns the link\textquotesingle{}s target id. 
+
+Definition at line 47 of file link.\+hpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48 \{ \textcolor{keywordflow}{return} this-\/>bandwidth; \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classLink_a0224dde29ffaf99f28e6dc64817f5775}\label{classLink_a0224dde29ffaf99f28e6dc64817f5775}} 
+\index{Link@{Link}!print@{print}}
+\index{print@{print}!Link@{Link}}
+\doxysubsubsection{\texorpdfstring{print()}{print()}}
+{\footnotesize\ttfamily void Link\+::print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Displays information about the link. 
+
+Definition at line 15 of file link.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{15                 \{}
+\DoxyCodeLine{16     std::cout << \textcolor{stringliteral}{"Id: "} << \textcolor{keywordtype}{id} << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{17               << \textcolor{stringliteral}{"Name: "} << name << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{18               << \textcolor{stringliteral}{"Source: "} << source\_id << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{19               << \textcolor{stringliteral}{"Target: "} << target\_id << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{20               << \textcolor{stringliteral}{"Delay: "} << delay << \textcolor{stringliteral}{", "}}
+\DoxyCodeLine{21               << \textcolor{stringliteral}{"Bandwidth: "} << bandwidth << std::endl;}
+\DoxyCodeLine{22 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/network/link.\+hpp\item 
+src/network/link.\+cpp\end{DoxyCompactItemize}
